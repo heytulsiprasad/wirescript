@@ -6,6 +6,7 @@ const ParentLayout = styled.div`
   max-width: 1580px;
   margin: 0 auto;
   padding: 0 160px;
+  background-color: #f8f8f7;
 `;
 
 function Layout({ children }) {

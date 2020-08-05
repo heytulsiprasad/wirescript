@@ -15,6 +15,7 @@ const BigBody = styled.h1`
   font-size: 8vh;
   font-weight: 500;
   letter-spacing: -2.5px;
+  max-width: 1000px;
 `;
 
 const HeroHome = styled.div`
@@ -49,7 +50,7 @@ function Hero() {
       <HeroText>
         <BigHead>The Wirescript</BigHead>
         <BigBody>
-          — A journal of an experienced googler and dope ass coder
+          — A journal of an experienced googler and dope ass coder.
         </BigBody>
       </HeroText>
       <Slider>
