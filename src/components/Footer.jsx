@@ -31,7 +31,6 @@ const FooterActual = styled.div`
   grid-column: 1 / -1;
   background-color: var(--color-primary);
   width: 100%;
-  max-width: 1580px;
   margin: 0 auto;
   padding: 0 160px;
 

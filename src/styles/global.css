@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -23,5 +25,9 @@ body {
   --color-secondary: #f8f8f7;
   --color-tertiary: #659d89;
   --color-light-footer: #ffffff96;
-  --color-light-date: #808080;
+
+  --color-text-gray: #808080;
+  --color-light-white: #ffffff;
+
+  --font-raleway: "Raleway", sans-serif;
 }

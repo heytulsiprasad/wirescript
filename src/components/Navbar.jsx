@@ -37,6 +37,7 @@ function Navbar() {
   return (
     <Nav>
       <NavItemMain to="/">The Wirescript</NavItemMain>
+      <NavItem to="/">I'm Feeling Lucky</NavItem>
       <NavItem to="/blog">Blog</NavItem>
       <NavItem to="/about">About</NavItem>
     </Nav>
