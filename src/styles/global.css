@@ -17,3 +17,11 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
 }
+
+:root {
+  --color-primary: #000000;
+  --color-secondary: #f8f8f7;
+  --color-tertiary: #659d89;
+  --color-light-footer: #ffffff96;
+  --color-light-date: #808080;
+}

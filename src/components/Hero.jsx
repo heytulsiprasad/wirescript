@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 import Navbar from "./Navbar";
-import Icon from "../images/arrow.jsx";
+import Arrow from "../images/arrow.jsx";
 
 const BigHead = styled.h1`
   font-size: 9vh;
   font-weight: 500;
   letter-spacing: -3.5px;
-  color: #659d89;
+  color: var(--color-tertiary);
 `;
 
 const BigBody = styled.h1`
@@ -19,6 +19,7 @@ const BigBody = styled.h1`
 `;
 
 const HeroHome = styled.div`
+  color: var(--color-primary);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -54,7 +55,7 @@ function Hero() {
         </BigBody>
       </HeroText>
       <Slider>
-        <Icon />
+        <Arrow />
         <p>Browse topics and resources</p>
       </Slider>
     </HeroHome>

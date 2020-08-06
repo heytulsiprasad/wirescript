@@ -29,7 +29,7 @@ const NavItemMain = styled(LinkReset)`
   margin-left: 5px;
 
   && {
-    color: #659d89;
+    color: var(--color-tertiary);
   }
 `;
 

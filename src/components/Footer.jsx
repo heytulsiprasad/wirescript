@@ -14,7 +14,7 @@ import {
 
 const FooterParent = styled.div`
   display: grid;
-  background-color: #f8f8f7;
+  background-color: var(--color-secondary);
   grid-template-rows: repeat(12, minmax(75px, 1fr));
   grid-template-columns: repeat(8, minmax(100px, 1fr));
 `;
@@ -22,14 +22,14 @@ const FooterParent = styled.div`
 const FooterNewsletter = styled.div`
   grid-row: 2 / span 6;
   grid-column: 3 / -1;
-  background-color: #659d89;
+  background-color: var(--color-tertiary);
   z-index: 2;
 `;
 
 const FooterActual = styled.div`
   grid-row: 7 / -1;
   grid-column: 1 / -1;
-  background-color: black;
+  background-color: var(--color-primary);
   width: 100%;
   max-width: 1580px;
   margin: 0 auto;
@@ -41,35 +41,35 @@ const FooterActual = styled.div`
 `;
 
 const NewsletterTitle = styled.h1`
-  color: #000;
+  color: var(--color-primary);
   padding: 4rem 5rem 0;
   font-weight: 500;
 
   span {
-    color: #f8f8f7;
+    color: var(--color-secondary);
     margin-left: 0.25rem;
   }
 `;
 
 const BigText = styled.h1`
-  color: #f8f8f7;
+  color: var(--color-secondary);
   padding: 1rem 5rem 0;
   font-weight: 700;
   font-size: 12vh;
 
   span {
-    color: #000;
+    color: var(--color-primary);
   }
 `;
 
 const SmallText = styled.h1`
-  color: #f8f8f7;
+  color: var(--color-secondary);
   padding: 0 5rem;
   margin-left: 5px;
   font-weight: 500;
   font-size: 1rem;
   span {
-    color: #000;
+    color: var(--color-primary);
   }
 `;
 
@@ -98,7 +98,7 @@ const FooterItems = styled.div`
 `;
 
 const FooterItem = styled.p`
-  color: #ffffff96;
+  color: var(--color-light-footer);
   font-size: 1rem;
   font-weight: 500;
 
@@ -127,7 +127,7 @@ const FooterCredits = styled.div`
 `;
 
 const FooterCopy = styled.p`
-  color: #ffffff96;
+  color: var(--color-light-footer);
   font-weight: 500;
   font-size: 1rem;
 `;
@@ -140,7 +140,7 @@ const FooterLogo = styled.div`
 const FooterIcons = styled.div`
   display: flex;
   width: fit-content;
-  color: #ffffff96;
+  color: var(--color-light-footer);
 
   & > * + * {
     margin-left: 1rem;
@@ -161,9 +161,24 @@ function Footer() {
           Get <span>In Mail</span>
         </BigText>
         <NewsletterSubscribe as="form">
-          <TextBox type="text" placeholder="Your name" length={15} />
-          <TextBox type="email" placeholder="Your email address" length={20} />
-          <TextBox type="submit" bgColor="#000" color="#f8f8f7" length={8} />
+          <TextBox
+            type="text"
+            bgColor="var(--color-secondary)"
+            placeholder="Your name"
+            length={15}
+          />
+          <TextBox
+            type="email"
+            bgColor="var(--color-secondary)"
+            placeholder="Your email address"
+            length={20}
+          />
+          <TextBox
+            type="submit"
+            bgColor="var(--color-primary)"
+            color="var(--color-secondary)"
+            length={8}
+          />
         </NewsletterSubscribe>
       </FooterNewsletter>
       <FooterActual>
@@ -185,7 +200,7 @@ function Footer() {
         </FooterMenu>
         <FooterCredits>
           <FooterLogo>
-            <Icon color="#f8f8f7" height="75px" width="75px" />
+            <Icon color="var(--color-secondary)" height="75px" width="75px" />
           </FooterLogo>
           <FooterCopy>
             &copy; Copyright The Wirescript {new Date().getFullYear()}

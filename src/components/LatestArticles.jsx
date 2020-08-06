@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 const Main = styled.main`
   width: 100%;
   padding: 100px 0 50px;
+  color: var(--color-primary);
 `;
 
 const BoldText = styled.h2`
@@ -18,7 +19,7 @@ const BoldText = styled.h2`
     display: block;
 
     &:first-of-type {
-      color: #659d89;
+      color: var(--color-tertiary);
     }
   }
 `;
@@ -41,7 +42,7 @@ const Entry = styled.div`
 
 const EntryDate = styled.div`
   font-size: 1rem;
-  color: gray;
+  color: var(--color-light-date);
   align-self: flex-end;
   width: 10rem;
 `;
@@ -81,7 +82,7 @@ const ReferToBlog = styled(Link)`
   }
 
   span {
-    color: #659d89;
+    color: var(--color-tertiary);
   }
 `;
 
