@@ -1,13 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Layout from "../components/Layout";
 import Hero from "./../components/Hero";
 import LatestArticles from "./../components/LatestArticles";
+import Footer from "./../components/Footer";
 
 const IndexPage = () => (
-  <Layout>
-    <Hero />
-    <LatestArticles />
-  </Layout>
+  <Fragment>
+    <Layout>
+      <Hero />
+      <LatestArticles />
+    </Layout>
+    <Footer />
+  </Fragment>
 );
 
 export default IndexPage;

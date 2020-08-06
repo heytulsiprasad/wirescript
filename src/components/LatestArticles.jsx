@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Main = styled.main`
   width: 100%;
-  padding: 100px 0 200px;
+  padding: 100px 0 150px;
 `;
 
 const BoldText = styled.h2`
