@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
-import IndexHero from "../components/HeroComponents/IndexHero";
+import IndexHero from "../components/IndexComponents/IndexHero";
 import LatestArticles from "./../components/LatestArticles";
 import Footer from "./../components/Footer";
-import IntroSection from "../components/Intro";
+import IndexIntro from "../components/IndexComponents/IndexIntro";
 
 const Index = () => (
   <Fragment>
     <IndexHero />
-    <IntroSection />
+    <IndexIntro />
     <LatestArticles />
     <Footer />
   </Fragment>

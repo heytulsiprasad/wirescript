@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Layout from "./Layout";
-import PictureBox from "./PictureBox";
+import Layout from "../Layout";
+import PictureBox from "../PictureBox";
 
 const Intro = styled.div`
   padding: 5rem 0;
@@ -39,9 +39,9 @@ const IntroText2 = styled(IntroText)`
   grid-column: 3 / span 1;
 `;
 
-function IntroSection() {
+function IndexIntro({ bgColor }) {
   return (
-    <Layout>
+    <Layout bgColor={bgColor}>
       <Intro>
         <HeroText>
           Constant hustle. Unrealistic expectations. Endless pressure. Running
@@ -75,4 +75,4 @@ function IntroSection() {
   );
 }
 
-export default IntroSection;
+export default IndexIntro;

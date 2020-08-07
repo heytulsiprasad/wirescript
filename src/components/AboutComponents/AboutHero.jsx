@@ -9,7 +9,8 @@ function AboutPage() {
       <HeroText>
         <BigHead>About Me</BigHead>
         <BigBody>
-          Let's change ourselves first, so that the world could change by itself
+          Let's change ourselves first, so that the world could change by
+          itself.
         </BigBody>
       </HeroText>
     </Hero>

@@ -81,6 +81,8 @@ function PictureBox({ src, alt, by, align }) {
 
 PictureBox.defaultProps = {
   align: "left",
+  src: "https://i.imgur.com/eZXO4DD.jpg",
+  alt: "Doing work with a Laptop",
 };
 
 export default PictureBox;
