@@ -4,21 +4,21 @@ import Arrow from "../../images/arrow";
 
 import { HeroText, Slider, BigHead, BigBody } from "../styles/styles";
 
-function IndexPage() {
+function BlogsPage() {
   return (
     <Hero>
       <HeroText>
-        <BigHead>The Wirescript</BigHead>
+        <BigHead>More Content</BigHead>
         <BigBody>
-          A journal of an experienced googler and dope ass coder.
+          From the journal of an experienced googler and dope ass coder.
         </BigBody>
       </HeroText>
       <Slider>
         <Arrow />
-        <p>Browse topics and resources</p>
+        <p>Browse all blogs and content</p>
       </Slider>
     </Hero>
   );
 }
 
-export default IndexPage;
+export default BlogsPage;

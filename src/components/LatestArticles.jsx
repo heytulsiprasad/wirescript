@@ -154,7 +154,7 @@ function LatestArticles() {
           </Entry>
         </Entries>
         <Refer to="/blog">
-          <span>— More</span> Articles
+          <span>More</span> Articles
         </Refer>
       </Main>
     </Layout>

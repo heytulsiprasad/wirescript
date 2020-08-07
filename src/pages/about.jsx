@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import AboutHero from "../components/HeroComponents/AboutHero";
+import AboutHero from "../components/AboutComponents/AboutHero";
 
 const About = () => (
   <Fragment>

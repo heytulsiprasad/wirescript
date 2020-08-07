@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import BlogHero from "../components/HeroComponents/BlogHero";
+import BlogsHero from "../components/BlogsComponents/BlogsHero";
 
 const Blog = () => (
   <Fragment>
-    <BlogHero />
+    <BlogsHero />
   </Fragment>
 );
 
