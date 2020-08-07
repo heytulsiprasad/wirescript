@@ -14,7 +14,8 @@ import {
 
 const FooterParent = styled.div`
   display: grid;
-  background-color: var(--color-secondary);
+  background-color: ${({ bgColor }) =>
+    bgColor ? bgColor : "var(--color-secondary)"};
   grid-template-rows: repeat(12, minmax(75px, 1fr));
   grid-template-columns: repeat(8, minmax(100px, 1fr));
 `;
@@ -146,9 +147,9 @@ const FooterIcons = styled.div`
   }
 `;
 
-function Footer() {
+function Footer({ bgColor }) {
   return (
-    <FooterParent>
+    <FooterParent bgColor={bgColor}>
       <FooterNewsletter>
         <NewsletterTitle>
           Wirescript <span>Newsletter —</span>

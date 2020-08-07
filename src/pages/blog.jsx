@@ -8,7 +8,7 @@ const Blog = () => (
   <Fragment>
     <BlogsHero />
     <AllBlogs />
-    <Footer />
+    <Footer bgColor="var(--color-light-white)" />
   </Fragment>
 );
 

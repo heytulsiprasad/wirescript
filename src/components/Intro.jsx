@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "./Layout";
-import PictureBox from "./reusable/PictureBox";
+import PictureBox from "./PictureBox";
 
 const Intro = styled.div`
   padding: 5rem 0;

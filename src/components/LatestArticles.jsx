@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 import Layout from "./Layout";
-import Articles from "./reusable/Articles";
+import Articles from "./Articles";
 
 const Main = styled.main`
   width: 100%;

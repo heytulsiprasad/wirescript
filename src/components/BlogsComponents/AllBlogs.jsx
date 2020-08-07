@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import Layout from "./../Layout";
-import Articles from "../reusable/Articles";
-import PictureBox from "./../reusable/PictureBox";
+import Articles from "../Articles";
+import PictureBox from "../PictureBox";
 
 const AllBlogsContainer = styled.div`
   padding: 0 0 5rem 0;
@@ -72,7 +72,7 @@ const FirstBigText = styled(BigText)`
 
 function AllBlogs() {
   return (
-    <Layout>
+    <Layout bgColor="var(--color-light-white)">
       <AllBlogsContainer>
         <FirstBigText>Web</FirstBigText>
         <Articles blogs={blogs} topic="We learn Redux." />

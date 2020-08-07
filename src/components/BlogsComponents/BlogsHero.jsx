@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../Hero";
 import Arrow from "../../images/arrow";
 
-import { HeroText, Slider, BigHead, BigBody } from "../reusable/styles";
+import { HeroText, Slider, BigHead, BigBody } from "../styles";
 
 function BlogsPage() {
   return (
