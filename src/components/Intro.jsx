@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "./Layout";
+import PictureBox from "./reusable/PictureBox";
 
 const Intro = styled.div`
   padding: 5rem 0;
@@ -38,37 +39,6 @@ const IntroText2 = styled(IntroText)`
   grid-column: 3 / span 1;
 `;
 
-const Picture = styled.div`
-  grid-row: 4 / span 1;
-  grid-column: 1 / span 2;
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-`;
-
-const PicCaption = styled.figcaption`
-  grid-row: 4 / span 1;
-  grid-column: 3 / span 1;
-  justify-self: end;
-  align-self: end;
-  color: var(--color-text-gray);
-  text-transform: uppercase;
-  font-size: 12px;
-
-  a {
-    text-decoration: underline;
-    color: var(--color-text-gray);
-
-    &:active,
-    &:hover,
-    &:focus {
-      color: var(--color-text-gray);
-    }
-  }
-`;
-
 function IntroSection() {
   return (
     <Layout>
@@ -92,17 +62,15 @@ function IntroSection() {
           laboriosam voluptatem modi eaque expedita obcaecati repudiandae nemo
           quasi.
         </IntroText2>
-        <Picture>
-          <img
-            src="https://i.imgur.com/u3EiztR.jpeg"
-            alt="Desk setup of a programmer"
-          />
-        </Picture>
-        <PicCaption>
-          Photo by <a href="https://unsplash.com/@oscrse">@oscrse</a> on{" "}
-          <a href="https://unsplash.com/">Unsplash</a>
-        </PicCaption>
       </Intro>
+      <div style={{ padding: "2rem 0 5rem" }}>
+        <PictureBox
+          align="left"
+          src="https://i.imgur.com/u3EiztR.jpeg"
+          alt="Desk setup of a programmer"
+          by="oscrse"
+        />
+      </div>
     </Layout>
   );
 }
