@@ -36,8 +36,8 @@ const NavItemMain = styled(LinkReset)`
 function Navbar() {
   return (
     <Nav>
-      <NavItemMain to="/one">The Wirescript</NavItemMain>
-      <NavItem to="/">I'm Feeling Lucky</NavItem>
+      <NavItemMain to="/">The Wirescript</NavItemMain>
+      <NavItem to="/one">I'm Feeling Lucky</NavItem>
       <NavItem to="/blog">Blog</NavItem>
       <NavItem to="/about">About</NavItem>
     </Nav>

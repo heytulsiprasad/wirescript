@@ -16,7 +16,7 @@ const Entry = styled.div`
 
 const EntryDate = styled.div`
   font-size: 0.9rem;
-  color: var(--color-text-gray);
+  color: var(--color-text-body);
   text-transform: uppercase;
   min-width: 10rem;
   position: relative;
@@ -29,7 +29,7 @@ const EntryDate = styled.div`
     top: 50%;
     width: 100px;
     height: 2px;
-    background: var(--color-text-gray);
+    background: var(--color-text-divider);
   }
 `;
 
