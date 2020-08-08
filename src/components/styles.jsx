@@ -19,6 +19,7 @@ export const Slider = styled.div`
 `;
 
 export const BigHead = styled.h1`
+  width: 80%;
   font-size: 10vh;
   font-weight: 500;
   letter-spacing: -3.5px;

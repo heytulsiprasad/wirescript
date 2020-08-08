@@ -23,18 +23,18 @@ const PicCaption = styled.figcaption`
 
   justify-self: ${({ align }) => (align === "left" ? "end" : "start")};
   align-self: ${({ align }) => (align === "left" ? "end" : "end")};
-  color: var(--color-text-gray);
+  color: var(--color-text-body);
   text-transform: uppercase;
   font-size: 12px;
 
   a {
     text-decoration: underline;
-    color: var(--color-text-gray);
+    color: var(--color-text-body);
 
     &:active,
     &:hover,
     &:focus {
-      color: var(--color-text-gray);
+      color: var(--color-text-link);
     }
   }
 `;

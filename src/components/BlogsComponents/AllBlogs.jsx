@@ -72,7 +72,7 @@ const FirstBigText = styled(BigText)`
 
 function AllBlogs() {
   return (
-    <Layout bgColor="var(--color-light-white)">
+    <Layout bgColor="var(--color-white)">
       <AllBlogsContainer>
         <FirstBigText>Web</FirstBigText>
         <Articles blogs={blogs} topic="We learn Redux." />

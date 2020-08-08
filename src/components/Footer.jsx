@@ -98,7 +98,7 @@ const FooterItems = styled.div`
 `;
 
 const FooterItem = styled.p`
-  color: var(--color-light-footer);
+  color: var(--color-text-footer);
   font-size: 1rem;
   font-weight: 500;
 
@@ -127,7 +127,7 @@ const FooterCredits = styled.div`
 `;
 
 const FooterCopy = styled.p`
-  color: var(--color-light-footer);
+  color: var(--color-text-footer);
   font-weight: 500;
   font-size: 1rem;
 `;
@@ -140,7 +140,7 @@ const FooterLogo = styled.div`
 const FooterIcons = styled.div`
   display: flex;
   width: fit-content;
-  color: var(--color-light-footer);
+  color: var(--color-text-footer);
 
   & > * + * {
     margin-left: 1rem;

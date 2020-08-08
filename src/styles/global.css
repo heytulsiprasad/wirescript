@@ -24,10 +24,15 @@ body {
   --color-primary: #000000;
   --color-secondary: #f8f8f7;
   --color-tertiary: #659d89;
-  --color-light-footer: #ffffff96;
+  --color-white: #ffffff;
 
-  --color-text-gray: #808080;
-  --color-light-white: #ffffff;
+
+  --color-text-head: #333333;
+  --color-text-head-lower: #444444;
+  --color-text-body: #808080;
+  --color-text-link: #2c2c2c;
+  --color-text-footer: #ffffff96;
+  --color-text-divider: #33333326;
 
   --font-raleway: "Raleway", sans-serif;
 }

@@ -20,7 +20,7 @@ const HeroText = styled.h2`
   font-weight: 400;
   line-height: 40px;
   letter-spacing: -0.5px;
-  color: #333;
+  color: var(--color-text-head);
 
   grid-column: 1 / span 2;
 `;
@@ -33,14 +33,14 @@ const HeroTextWithDivider = styled(HeroText)`
     position: absolute;
     width: 100%;
     height: 1px;
-    background: #33333326;
+    background: var(--color-text-divider);
     top: 10.2rem;
     left: 0rem;
   }
 `;
 
 const IntroText = styled.p`
-  color: #808080;
+  color: var(--color-text-body);
   line-height: 1.4;
 `;
 
@@ -62,7 +62,7 @@ const IntroText3 = styled(IntroText)`
 function AboutIntro() {
   return (
     <Fragment>
-      <Layout bgColor="var(--color-light-white)">
+      <Layout bgColor="var(--color-white)">
         <Intro>
           <HeroText>
             Constant hustle. Unrealistic expectations. Endless pressure. Running
@@ -104,7 +104,7 @@ function AboutIntro() {
             commodi fuga quo at fugit? Ullam, deleniti. Magni, atque! Similique
             quidem laboriosam voluptatem modi eaque expedita obcaecati molestiae
             repudiandae nemo quasi, em ipsum dolor sit amet consectetur
-            adipisicing elit. Error aperiam nesciunt corporis tempora quis
+            adipisicing elit. Error apTeriam nesciunt corporis tempora quis
             dolore eaque quasi, eius hic commodi fuga quo at fugit? Ullam,
             deleniti. Magni, atque! Similique quidem laboriosam voluptatem modi
             eaque expedita obcaecati molestiae repudiandae nemo quasi.
