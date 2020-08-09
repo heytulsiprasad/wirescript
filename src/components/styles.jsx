@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroText = styled.div`
+export const HeroHeader = styled.header`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ export const Slider = styled.div`
   padding-bottom: 2rem;
 
   p {
-    margin-left: 1rem;
+    margin-left: 0.9rem;
     font-weight: 500;
   }
 `;

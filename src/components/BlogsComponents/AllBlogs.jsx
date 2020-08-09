@@ -74,11 +74,11 @@ function AllBlogs() {
   return (
     <Layout bgColor="var(--color-white)">
       <AllBlogsContainer>
-        <FirstBigText>Web</FirstBigText>
+        <FirstBigText id="web">Web</FirstBigText>
         <Articles blogs={blogs} topic="We learn Redux." />
-        <BigText>Hardware</BigText>
+        <BigText id="hardware">Hardware</BigText>
         <Articles blogs={series} topic="How to learn the JAMStack?" />
-        <BigText>Physics</BigText>
+        <BigText id="physics">Physics</BigText>
         <div style={{ padding: "0 0 4rem 0" }}>
           <PictureBox
             align="left"

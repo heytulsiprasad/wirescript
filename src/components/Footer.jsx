@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Icon from "../images/logo";
+import { Link } from "gatsby";
 
 import {
   FaFacebookF,
@@ -97,13 +98,20 @@ const FooterItems = styled.div`
   flex-direction: column;
 `;
 
-const FooterItem = styled.p`
+const FooterItem = styled(Link)`
   color: var(--color-text-footer);
   font-size: 1rem;
   font-weight: 500;
 
   &:not(:first-of-type) {
     margin-top: 1rem;
+  }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
   }
 `;
 
@@ -132,7 +140,7 @@ const FooterCopy = styled.p`
   font-size: 1rem;
 `;
 
-const FooterLogo = styled.div`
+const FooterLogo = styled(Link)`
   color: white;
   text-align: right;
 `;
@@ -184,9 +192,9 @@ function Footer({ bgColor }) {
       <FooterActual>
         <FooterMenu>
           <FooterItems>
-            <FooterItem>Blog</FooterItem>
-            <FooterItem>About</FooterItem>
-            <FooterItem>Newsletter</FooterItem>
+            <FooterItem to="/blog">Blog</FooterItem>
+            <FooterItem to="/about">About</FooterItem>
+            <FooterItem to="/one">Newsletter</FooterItem>
           </FooterItems>
           <FooterIcons>
             <FaFacebookF />
@@ -199,8 +207,14 @@ function Footer({ bgColor }) {
           </FooterIcons>
         </FooterMenu>
         <FooterCredits>
-          <FooterLogo>
-            <Icon color="var(--color-secondary)" height="75px" width="75px" />
+          <FooterLogo to="/">
+            <Icon
+              color="var(--color-secondary
+              
+              )"
+              height="75px"
+              width="75px"
+            />
           </FooterLogo>
           <FooterCopy>
             &copy; Copyright The Wirescript {new Date().getFullYear()}

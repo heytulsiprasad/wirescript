@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 import Prism from "prismjs";
 
 import Layout from "./../components/Layout";

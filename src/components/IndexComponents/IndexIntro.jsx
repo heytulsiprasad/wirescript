@@ -42,7 +42,7 @@ const IntroText2 = styled(IntroText)`
 function IndexIntro({ bgColor }) {
   return (
     <Layout bgColor={bgColor}>
-      <Intro>
+      <Intro id="intro">
         <HeroText>
           Constant hustle. Unrealistic expectations. Endless pressure. Running
           on maximum capacity. Well, what if there is an alternative with the
