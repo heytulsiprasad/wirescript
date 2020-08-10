@@ -40,7 +40,7 @@ const Anchor = styled(AnchorLink)`
   font-weight: 500;
 
   &:not(:last-of-type) {
-    margin-bottom: 5px;
+    margin-bottom: 0.3333rem;
   }
 
   &,

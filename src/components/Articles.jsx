@@ -4,14 +4,14 @@ import styled from "styled-components";
 const Entries = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 3.3333rem;
 `;
 
 const Entry = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 0;
+  padding: 1.3333rem 0;
 `;
 
 const EntryDate = styled.div`
@@ -20,15 +20,15 @@ const EntryDate = styled.div`
   text-transform: uppercase;
   min-width: 10rem;
   position: relative;
-  margin-top: 12px;
+  margin-top: 0.8rem;
 
   &::after {
     content: "";
     position: absolute;
     left: 100%;
     top: 50%;
-    width: 100px;
-    height: 2px;
+    width: 6.6667rem;
+    height: 0.1333rem;
     background: var(--color-text-divider);
   }
 `;

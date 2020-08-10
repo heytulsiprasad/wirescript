@@ -26,7 +26,7 @@ const NavItem = styled(LinkReset)`
 
 const NavItemMain = styled(LinkReset)`
   margin-right: auto;
-  margin-left: 5px;
+  margin-left: 0.3333rem;
 
   && {
     color: var(--color-tertiary);

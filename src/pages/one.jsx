@@ -120,7 +120,7 @@ const BlogContent = styled.article`
   p {
     font-size: 1.1rem;
     color: var(--color-text-body);
-    line-height: 160%;
+    line-height: 2.1333rem;
   }
 
   ol,
@@ -161,11 +161,11 @@ const Code = ({ code }) => {
 
     /* Prism plugins component */
     .toolbar {
-      padding: 5px 15px 0 0;
+      padding: 0.3333rem 1rem 0 0;
 
       & > .toolbar-item {
         &:not(:last-child) {
-          margin-right: 5px;
+          margin-right: 0.3333rem;
         }
       }
     }

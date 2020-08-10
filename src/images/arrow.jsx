@@ -7,7 +7,7 @@ const slide = keyframes`
   }
 
   to {
-    transform: translateY(5px);
+    transform: translateY(0.3333rem);
   }
 `;
 

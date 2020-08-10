@@ -5,7 +5,7 @@ export const HeroHeader = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 5.3333rem;
 `;
 
 export const Slider = styled.div`
@@ -30,5 +30,5 @@ export const BigBody = styled.h1`
   font-size: 7vh;
   font-weight: 500;
   letter-spacing: -2.5px;
-  max-width: 1000px;
+  max-width: 66.6667rem;
 `;

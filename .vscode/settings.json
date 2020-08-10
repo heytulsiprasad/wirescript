@@ -4,5 +4,6 @@
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "html"
-  }
+  },
+  "px-to-rem.px-per-rem": 15
 }

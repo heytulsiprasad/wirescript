@@ -17,8 +17,8 @@ const FooterParent = styled.div`
   display: grid;
   background-color: ${({ bgColor }) =>
     bgColor ? bgColor : "var(--color-secondary)"};
-  grid-template-rows: repeat(12, minmax(75px, 1fr));
-  grid-template-columns: repeat(8, minmax(100px, 1fr));
+  grid-template-rows: repeat(12, minmax(5rem, 1fr));
+  grid-template-columns: repeat(8, minmax(6.6667rem, 1fr));
 `;
 
 const FooterNewsletter = styled.div`
@@ -34,7 +34,7 @@ const FooterActual = styled.div`
   background-color: var(--color-primary);
   width: 100%;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 10.6667rem;
 
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -66,7 +66,7 @@ const BigText = styled.h1`
 const SmallText = styled.h1`
   color: var(--color-secondary);
   padding: 0 5rem;
-  margin-left: 5px;
+  margin-left: 0.3333rem;
   font-weight: 500;
   font-size: 1rem;
   span {
@@ -212,8 +212,8 @@ function Footer({ bgColor }) {
               color="var(--color-secondary
               
               )"
-              height="75px"
-              width="75px"
+              height="5rem"
+              width="5rem"
             />
           </FooterLogo>
           <FooterCopy>

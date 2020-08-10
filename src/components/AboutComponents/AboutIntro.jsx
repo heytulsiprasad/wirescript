@@ -7,8 +7,8 @@ import PictureBox from "./../PictureBox";
 const Intro = styled.div`
   padding: 5rem 0;
   display: grid;
-  grid-column-gap: 40px;
-  grid-row-gap: 80px;
+  grid-column-gap: 2.6667rem;
+  grid-row-gap: 5.3333rem;
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -16,9 +16,9 @@ const Intro = styled.div`
 
 const HeroText = styled.h2`
   font-size: 1.8rem;
-  max-width: 800px;
+  max-width: 53.3333rem;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 2.6667rem;
   letter-spacing: -0.5px;
   color: var(--color-text-head);
 
@@ -32,7 +32,7 @@ const HeroTextWithDivider = styled(HeroText)`
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 0.0667rem;
     background: var(--color-text-divider);
     top: 10.2rem;
     left: 0rem;

@@ -25,7 +25,7 @@ const PicCaption = styled.figcaption`
   align-self: ${({ align }) => (align === "left" ? "end" : "end")};
   color: var(--color-text-body);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.8rem;
 
   a {
     text-decoration: underline;

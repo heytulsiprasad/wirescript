@@ -7,9 +7,9 @@ const ParentParentLayout = styled.div`
 
 const ParentLayout = styled.div`
   width: 100%;
-  max-width: 1580px;
+  max-width: 105.3333rem;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 10.6667rem;
   background-color: ${props => props.bgColor};
 `;
 
