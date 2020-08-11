@@ -9,8 +9,6 @@ import {
   FaYoutube,
   FaGithub,
   FaInstagram,
-  FaPinterest,
-  FaGooglePlusG,
 } from "react-icons/fa";
 
 const FooterActual = styled.div`

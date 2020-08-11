@@ -55,6 +55,7 @@ function PictureBox({ src, alt, by, align }) {
   // so that figcaption comes below image (as in left aligned)
   // this is only needed for right aligned image
 
+  // eslint-disable-next-line no-unused-vars
   const [toUpdate, setToUpdate] = useState(false);
 
   console.log("Run");

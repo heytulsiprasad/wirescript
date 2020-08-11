@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import Layout from "./../Layout";
 import Articles from "../Articles";
-import PictureBox from "../PictureBox";
 
 const AllBlogsContainer = styled.div`
   padding: 3rem 0 8rem 0;
