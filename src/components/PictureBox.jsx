@@ -63,7 +63,7 @@ function PictureBox({ src, alt, by, align }) {
   useEffect(() => {
     // Firstly, check if `window` exists or not.
 
-    if (typeof window !== undefined) {
+    if (typeof window !== `undefined`) {
       if (align === "right") {
         window.addEventListener("resize", () => {
           if (window.innerWidth <= 1300) {
@@ -78,7 +78,7 @@ function PictureBox({ src, alt, by, align }) {
 
   let pic;
 
-  if (typeof window !== undefined) {
+  if (typeof window !== `undefined`) {
     if (align === "left" || window.matchMedia("(max-width: 1300px)").matches) {
       pic = (
         <Fragment>
