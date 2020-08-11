@@ -2,27 +2,41 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-import Layout from "./Layout";
-import Articles from "./Articles";
+import Layout from "../Layout";
+import Articles from "../Articles";
 
 const Main = styled.main`
   width: 100%;
-  padding: 0 0 3.3333rem;
+  padding: 0 0 8rem;
   color: var(--color-primary);
 `;
 
 const BoldText = styled.h2`
   text-align: right;
-  font-size: 12vh;
+  /* font-size: clamp(6rem, 8vw, 10rem); */
+  font-size: clamp(4rem, 7vw, 8rem);
   letter-spacing: -2px;
   font-weight: 600;
   line-height: 1.05;
+  padding: 0 0 3rem;
+
+  @media (max-width: 1150px) {
+    text-align: left;
+  }
 
   span {
     display: block;
 
     &:first-of-type {
       color: var(--color-tertiary);
+    }
+
+    @media (max-width: 1300px) {
+      display: inline-block;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
     }
   }
 `;

@@ -6,7 +6,7 @@ import Articles from "../Articles";
 import PictureBox from "../PictureBox";
 
 const AllBlogsContainer = styled.div`
-  padding: 0 0 5rem 0;
+  padding: 3rem 0 8rem 0;
 `;
 
 const blogs = [
@@ -58,35 +58,28 @@ const series = [
 ];
 
 const BigText = styled.h2`
-  font-size: 10vh;
+  font-size: clamp(5rem, 8vw, 8rem);
   font-weight: 500;
-  letter-spacing: -3.5px;
+  letter-spacing: -3px;
   color: var(--color-tertiary);
   text-align: right;
-  padding: 5rem 0;
-`;
-
-const FirstBigText = styled(BigText)`
   padding: 1rem 0;
+
+  @media (max-width: 1000px) {
+    text-align: left;
+  }
 `;
 
 function AllBlogs() {
   return (
     <Layout bgColor="var(--color-white)">
       <AllBlogsContainer>
-        <FirstBigText id="web">Web</FirstBigText>
-        <Articles blogs={blogs} topic="We learn Redux." />
+        <BigText id="web">Web</BigText>
+        <Articles blogs={blogs} />
         <BigText id="hardware">Hardware</BigText>
-        <Articles blogs={series} topic="How to learn the JAMStack?" />
+        <Articles blogs={series} />
         <BigText id="physics">Physics</BigText>
-        <div style={{ padding: "0 0 4rem 0" }}>
-          <PictureBox
-            align="left"
-            alt="I clicked this on the peak of Mt Everest"
-            src="https://i.imgur.com/u3EiztR.jpeg"
-          />
-        </div>
-        <Articles blogs={blogs} topic="How the World Works?" />
+        <Articles blogs={blogs} />
       </AllBlogsContainer>
     </Layout>
   );

@@ -9,8 +9,11 @@ import { HeroHeader, BigHead, BigBody } from "../styles";
 const HeroFoot = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10rem;
   padding-bottom: 2rem;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const Slidey = styled(AnchorLink)`
@@ -34,6 +37,10 @@ const Slidey = styled(AnchorLink)`
 const Anchors = styled.div`
   text-align: right;
   grid-column: 3 / span 1;
+
+  @media (max-width: 1000px) {
+    grid-column: 2 / span 1;
+  }
 `;
 
 const Anchor = styled(AnchorLink)`
@@ -74,7 +81,6 @@ function BlogsPage() {
         <Anchors>
           <Anchor to="/blog#web">Web</Anchor>
           <Anchor to="/blog#physics">Physics</Anchor>
-          <Anchor to="/blog#motivation">Motivation</Anchor>
           <Anchor to="/blog#hardware">Hardware</Anchor>
         </Anchors>
       </HeroFoot>

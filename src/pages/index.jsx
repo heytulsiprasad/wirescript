@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import IndexHero from "../components/IndexComponents/IndexHero";
-import LatestArticles from "./../components/LatestArticles";
+import LatestArticles from "./../components/IndexComponents/LatestArticles";
 import Footer from "./../components/Footer";
 import IndexIntro from "../components/IndexComponents/IndexIntro";
 

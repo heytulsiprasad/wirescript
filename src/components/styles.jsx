@@ -20,15 +20,23 @@ export const Slider = styled.div`
 
 export const BigHead = styled.h1`
   width: 80%;
-  font-size: 10vh;
+  font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 500;
   letter-spacing: -3.5px;
   color: var(--color-tertiary);
+
+  @media (max-width: 700px) {
+    max-width: 100%;
+  }
 `;
 
-export const BigBody = styled.h1`
-  font-size: 7vh;
+export const BigBody = styled.h2`
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
   font-weight: 500;
-  letter-spacing: -2.5px;
-  max-width: 66.6667rem;
+  letter-spacing: -2px;
+  max-width: 85%;
+
+  @media (max-width: 700px) {
+    max-width: 100%;
+  }
 `;

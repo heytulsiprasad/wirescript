@@ -35,4 +35,12 @@ body {
   --color-text-divider: #33333326;
 
   --font-raleway: "Raleway", sans-serif;
+
+  /* --bp-largest: 1300px; */
+  /* --bp-large: 1250px; */
+  /* --bp-biggest: 1150px; */
+  /* --bp-big: 900px; */
+  /* --bp-normal: 700px; */
+  /* --bp-small: 600px; */
+  /* --bp-smaller: 500px; */
 }

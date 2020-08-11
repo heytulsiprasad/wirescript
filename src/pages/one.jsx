@@ -42,10 +42,10 @@ const HeroTitle = styled.hgroup`
 
 const BlogTitle = styled.h1`
   color: var(--color-tertiary);
-  font-size: 10vh;
+  font-size: clamp(4rem, 7vw, 7rem);
   font-weight: 700;
   letter-spacing: -1.5px;
-  line-height: 110px;
+  line-height: 1.25;
 `;
 
 const BlogDate = styled.h2`
@@ -64,9 +64,8 @@ const BlogContent = styled.article`
   max-width: 50rem;
   margin: 0 auto;
   text-align: left;
-  font-size: 1.1rem;
   font-kerning: normal;
-  padding: 3rem 0 5rem;
+  padding: 3rem 0 8rem;
 
   /* Internal HTML styles */
 
@@ -89,42 +88,43 @@ const BlogContent = styled.article`
   h5,
   h6 {
     color: var(--color-text-head);
-    line-height: 130%;
+    line-height: 1.3;
     margin: 2rem 0;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: clamp(2.8rem, 5vw, 3rem);
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: clamp(2.6rem, 4.8vw, 2.8rem);
   }
 
   h3 {
-    font-size: 2.6rem;
+    font-size: clamp(2.4rem, 4.6vw, 2.6rem);
   }
 
   h4 {
-    font-size: 2.4rem;
+    font-size: clamp(2.2rem, 4.4vw, 2.4rem);
   }
 
   h5 {
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 4.2vw, 2.2rem);
   }
 
   h6 {
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 4vw, 2rem);
   }
 
   p {
     font-size: 1.1rem;
     color: var(--color-text-body);
-    line-height: 2.1333rem;
+    line-height: 1.65;
   }
 
   ol,
   ul {
+    color: var(--color-text-body);
     list-style-position: inside;
     list-style-type: disc;
   }
@@ -187,20 +187,13 @@ function one() {
         <Navbar />
         <HeroContainer>
           <HeroTitle>
-            <BlogTitle>
-              What is hoisting but from a beginners perspective, not in any
-              other language but in JavaScript?
-            </BlogTitle>
+            <BlogTitle>How to get started with React?</BlogTitle>
             <BlogDate>May 26, 2020</BlogDate>
           </HeroTitle>
         </HeroContainer>
       </Layout>
       <Layout bgColor="var(--color-white)">
         <BlogContent>
-          {/* <h1>
-            Why API logging is a naive approach to API security, on this phase
-            of life?
-          </h1> */}
           <h1>This is a Heading 1</h1>
           <h2>This is a Heading 2</h2>
           <h3>This is a Heading 3</h3>
@@ -218,6 +211,30 @@ function one() {
             way.
           </p>
           <Code code={"console.log('Hello World');"} />
+          <p>
+            In order to convert this to a user-centric model, we need to tag
+            each event with user identifying information such as a tenant id, a
+            user id, or similar. Because the majority of APIs are secured by
+            some sort of OAuth or API Key, it's fairly easy to map the API key
+            to a permanent identifier like user id either directly or by
+            maintaining this mapping in a key/value store like Redis.
+          </p>
+          <p>
+            In order to convert this to a user-centric model, we need to tag
+            each event with user identifying information such as a tenant id, a
+            user id, or similar. Because the majority of APIs are secured by
+            some sort of OAuth or API Key, it's fairly easy to map the API key
+            to a permanent identifier like user id either directly or by
+            maintaining this mapping in a key/value store like Redis.
+          </p>
+          <p>
+            In order to convert this to a user-centric model, we need to tag
+            each event with user identifying information such as a tenant id, a
+            user id, or similar. Because the majority of APIs are secured by
+            some sort of OAuth or API Key, it's fairly easy to map the API key
+            to a permanent identifier like user id either directly or by
+            maintaining this mapping in a key/value store like Redis.
+          </p>
           <p>
             In order to convert this to a user-centric model, we need to tag
             each event with user identifying information such as a tenant id, a
