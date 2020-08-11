@@ -78,27 +78,27 @@ function PictureBox({ src, alt, by, align }) {
 
   let pic;
 
-  if (
-    align === "left" ||
-    (typeof window !== undefined &&
-      window.matchMedia("(max-width: 1300px)").matches)
-  ) {
-    pic = (
-      <Fragment>
-        <Picture>
-          <img src={src} alt={alt} />
-        </Picture>
-        {by ? (
-          <PicCaption align={align}>
-            Photo by <a href={`https://unsplash.com/@${by}`}>@{by}</a> on{" "}
-            <a href="https://unsplash.com/">Unsplash</a>
-          </PicCaption>
-        ) : (
-          <PicCaption align={align}>{alt}</PicCaption>
-        )}
-      </Fragment>
-    );
-  } else if (align === "right") {
+  if (typeof window !== undefined) {
+    if (align === "left" || window.matchMedia("(max-width: 1300px)").matches) {
+      pic = (
+        <Fragment>
+          <Picture>
+            <img src={src} alt={alt} />
+          </Picture>
+          {by ? (
+            <PicCaption align={align}>
+              Photo by <a href={`https://unsplash.com/@${by}`}>@{by}</a> on{" "}
+              <a href="https://unsplash.com/">Unsplash</a>
+            </PicCaption>
+          ) : (
+            <PicCaption align={align}>{alt}</PicCaption>
+          )}
+        </Fragment>
+      );
+    }
+  }
+
+  if (align === "right") {
     pic = (
       <Fragment>
         {by ? (
