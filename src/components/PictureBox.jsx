@@ -61,20 +61,28 @@ function PictureBox({ src, alt, by, align }) {
   console.log("Run");
 
   useEffect(() => {
-    if (align === "right") {
-      window.addEventListener("resize", () => {
-        if (window.innerWidth <= 1300) {
-          setToUpdate(true);
-        } else {
-          setToUpdate(false);
-        }
-      });
+    // Firstly, check if `window` exists or not.
+
+    if (typeof window !== undefined) {
+      if (align === "right") {
+        window.addEventListener("resize", () => {
+          if (window.innerWidth <= 1300) {
+            setToUpdate(true);
+          } else {
+            setToUpdate(false);
+          }
+        });
+      }
     }
   });
 
   let pic;
 
-  if (align === "left" || window.matchMedia("(max-width: 1300px)").matches) {
+  if (
+    align === "left" ||
+    (typeof window !== undefined &&
+      window.matchMedia("(max-width: 1300px)").matches)
+  ) {
     pic = (
       <Fragment>
         <Picture>
