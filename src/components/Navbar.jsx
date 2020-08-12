@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import Layout from "./Layout";
+import Icon from "./../images/logo";
 
 const Nav = styled.nav`
   display: flex;
   font-weight: 500;
-  padding-top: 3.5rem;
+  padding: 1vw 0;
+  align-items: center;
 
   @media (max-width: 500px) {
     display: grid;
@@ -20,12 +23,13 @@ const LinkReset = styled(Link)`
   &:hover,
   &:active,
   &:focus {
-    color: inherit;
     text-decoration: none;
   }
 `;
 
 const NavItem = styled(LinkReset)`
+  color: white;
+
   &:not(:last-of-type) {
     margin-right: 3rem;
   }
@@ -35,7 +39,6 @@ const NavItem = styled(LinkReset)`
     grid-row: 2 / 3;
     align-self: center;
     margin: 0 auto;
-    font-weight: 500;
 
     &:not(:last-of-type) {
       margin: 0 auto;
@@ -44,31 +47,31 @@ const NavItem = styled(LinkReset)`
 `;
 
 const NavItemMain = styled(LinkReset)`
+  color: white;
+
   margin-right: auto;
   margin-left: 0.3333rem;
-
-  && {
-    color: var(--color-tertiary);
-  }
 
   @media (max-width: 500px) {
     grid-column: 1 / -1;
     align-self: center;
     margin: 0 auto;
-    font-size: 2rem;
     margin-bottom: 10px;
-    font-weight: 700;
   }
 `;
 
 function Navbar() {
   return (
-    <Nav>
-      <NavItemMain to="/">The Wirescript</NavItemMain>
-      <NavItem to="/blog">Blog</NavItem>
-      <NavItem to="/one">I'm Feeling Lucky</NavItem>
-      <NavItem to="/about">About</NavItem>
-    </Nav>
+    <Layout bgColor="#232323">
+      <Nav>
+        <NavItemMain to="/">
+          <Icon color="#fff" height="3rem" width="3rem" />
+        </NavItemMain>
+        <NavItem to="/one">I'm Feeling Lucky</NavItem>
+        <NavItem to="/blog">Blog</NavItem>
+        <NavItem to="/about">About</NavItem>
+      </Nav>
+    </Layout>
   );
 }
 

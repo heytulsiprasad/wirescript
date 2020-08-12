@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
 import Navbar from "./Navbar";
@@ -14,12 +14,12 @@ const HeroHome = styled.div`
 
 function Hero({ children }) {
   return (
-    <Layout>
-      <HeroHome>
-        <Navbar />
-        {children}
-      </HeroHome>
-    </Layout>
+    <Fragment>
+      <Navbar />
+      <Layout>
+        <HeroHome>{children}</HeroHome>
+      </Layout>
+    </Fragment>
   );
 }
 

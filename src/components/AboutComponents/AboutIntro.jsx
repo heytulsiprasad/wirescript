@@ -19,43 +19,27 @@ const Intro = styled.div`
 `;
 
 const HeroText = styled.h2`
-  font-size: clamp(1.6rem, 2.4vw, 1.8rem);
+  font-size: 1.8rem;
   max-width: 53.3333rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2.6667rem;
-  letter-spacing: -0.5px;
-  color: var(--color-text-head);
+  color: #000;
 
   grid-column: 1 / span 2;
 
   @media (max-width: 1300px) {
     grid-column: 1 / span 2;
   }
-`;
-
-const HeroTextWithDivider = styled(HeroText)`
-  position: relative;
-  width: 110%;
 
   @media (max-width: 1000px) {
     width: 100%;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0.0667rem;
-    background: var(--color-text-divider);
-    left: 0rem;
-    margin-top: 20px;
-    top: 100%;
-  }
 `;
 
 const IntroText = styled.p`
-  color: var(--color-text-body);
-  line-height: 1.4;
+  color: #000;
+  line-height: 1.6;
+  font-size: 1.1rem;
   grid-row: 2 / span 1;
   grid-column: 1 / span 2;
 `;
@@ -65,12 +49,12 @@ function AboutIntro() {
     <Fragment>
       <Layout bgColor="var(--color-white)">
         <Intro>
-          <HeroTextWithDivider>
+          <HeroText>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
             laboriosam sunt eveniet quis culpa sed voluptatibus dolore. Hic
             soluta sequi temporibus rerum saepe ut aliquam dicta, maxime dolorum
             minima architecto?
-          </HeroTextWithDivider>
+          </HeroText>
           <IntroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             aperiam nesciunt corporis tempora quis dolore eaque quasi, eius hic
@@ -85,19 +69,18 @@ function AboutIntro() {
         </Intro>
         <div style={{ padding: "2rem 0 5rem" }}>
           <PictureBox
-            align="right"
             src="https://i.imgur.com/u3EiztR.jpeg"
             alt="Desk setup of a programmer"
             by="oscrse"
           />
         </div>
         <Intro>
-          <HeroTextWithDivider>
+          <HeroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             quo dicta eligendi numquam molestias commodi sed officiis vitae
             error maiores at deleniti, alias voluptatum expedita aut laudantium
             saepe vel illo.
-          </HeroTextWithDivider>
+          </HeroText>
           <IntroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             aperiam nesciunt corporis tempora quis dolore eaque quasi, eius hic

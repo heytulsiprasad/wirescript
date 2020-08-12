@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 const FooterActual = styled.div`
-  background-color: var(--color-primary);
+  background-color: #060b0e;
   width: 100%;
   margin: 0 auto;
   padding: 0 10.6667rem;

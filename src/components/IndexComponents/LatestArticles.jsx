@@ -45,8 +45,9 @@ const Refer = styled(Link)`
   display: block;
   font-size: 1.3rem;
   margin-top: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   width: fit-content;
+  color: var(--color-tertiary);
 
   &,
   &:hover,
@@ -54,10 +55,6 @@ const Refer = styled(Link)`
   &:focus {
     color: inherit;
     text-decoration: none;
-  }
-
-  span {
-    color: var(--color-tertiary);
   }
 `;
 

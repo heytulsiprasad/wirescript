@@ -21,7 +21,8 @@ const Entry = styled.div`
 
 const EntryDate = styled.div`
   font-size: 0.9rem;
-  color: var(--color-text-body);
+  color: #696969;
+  font-weight: 500;
   text-transform: uppercase;
   min-width: 10rem;
   position: relative;
@@ -55,19 +56,20 @@ const EntryDetail = styled.div`
 `;
 
 const EntryTitle = styled.h1`
-  font-family: var(--font-raleway);
+  font-family: var(--font-title);
   font-size: clamp(2rem, 3vw, 2.25rem);
   font-weight: 700;
+  color: #000;
   align-self: flex-end;
   width: 100%;
 `;
 
 const EntryDescription = styled.p`
-  font-family: var(--font-raleway);
-  color: var(--color-text-head);
+  font-family: var(--font-title);
+  color: #22211e;
   font-size: 17px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   width: 80%;
 
   @media (max-width: 900px) {

@@ -5,7 +5,7 @@ import Layout from "./../Layout";
 import Articles from "../Articles";
 
 const AllBlogsContainer = styled.div`
-  padding: 3rem 0 8rem 0;
+  padding: 2rem 0 8rem 0;
 `;
 
 const blogs = [
@@ -56,29 +56,34 @@ const series = [
   },
 ];
 
-const BigText = styled.h2`
-  font-size: clamp(5rem, 8vw, 8rem);
+const BlogCategory = styled.div`
+  padding: 1rem 0;
+`;
+
+const CategoryTitle = styled.h2`
+  font-size: clamp(5rem, 6vw, 8rem);
   font-weight: 500;
   letter-spacing: -3px;
   color: var(--color-tertiary);
-  text-align: right;
-  padding: 1rem 0;
-
-  @media (max-width: 1000px) {
-    text-align: left;
-  }
+  padding: 1rem 0 2rem;
 `;
 
 function AllBlogs() {
   return (
     <Layout bgColor="var(--color-white)">
       <AllBlogsContainer>
-        <BigText id="web">Web</BigText>
-        <Articles blogs={blogs} />
-        <BigText id="hardware">Hardware</BigText>
-        <Articles blogs={series} />
-        <BigText id="physics">Physics</BigText>
-        <Articles blogs={blogs} />
+        <BlogCategory>
+          <CategoryTitle id="web">Web</CategoryTitle>
+          <Articles blogs={blogs} />
+        </BlogCategory>
+        <BlogCategory>
+          <CategoryTitle id="hardware">Hardware</CategoryTitle>
+          <Articles blogs={series} />
+        </BlogCategory>
+        <BlogCategory>
+          <CategoryTitle id="physics">Physics</CategoryTitle>
+          <Articles blogs={blogs} />
+        </BlogCategory>
       </AllBlogsContainer>
     </Layout>
   );

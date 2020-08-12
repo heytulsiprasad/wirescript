@@ -1,12 +1,12 @@
 import React from "react";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 import Hero from "../Hero";
 import Arrow from "../../images/arrow";
 import { HeroHeader, Slider, BigHead, BigBody } from "../styles";
 
-const SlideLink = styled(AnchorLink)`
+const Slidey = styled(Link)`
   &,
   &:hover,
   &:active,
@@ -25,12 +25,12 @@ function IndexPage() {
           A journal of an experienced googler and dope ass coder.
         </BigBody>
       </HeroHeader>
-      <SlideLink to="/#intro">
+      <Slidey to="/#intro">
         <Slider>
           <Arrow />
           <p>Browse topics and resources</p>
         </Slider>
-      </SlideLink>
+      </Slidey>
     </Hero>
   );
 }

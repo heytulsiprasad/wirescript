@@ -24,10 +24,6 @@ export const BigHead = styled.h1`
   font-weight: 500;
   letter-spacing: -3.5px;
   color: var(--color-tertiary);
-
-  @media (max-width: 700px) {
-    max-width: 100%;
-  }
 `;
 
 export const BigBody = styled.h2`
@@ -35,8 +31,4 @@ export const BigBody = styled.h2`
   font-weight: 500;
   letter-spacing: -2px;
   max-width: 85%;
-
-  @media (max-width: 700px) {
-    max-width: 100%;
-  }
 `;

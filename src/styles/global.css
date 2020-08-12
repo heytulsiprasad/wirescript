@@ -1,4 +1,8 @@
+/* Raleway - for Titles */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* Merriweather - for Blogs */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   padding: 0;
@@ -12,7 +16,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -21,9 +25,9 @@ body {
 }
 
 :root {
-  --color-primary: #000000;
-  --color-secondary: #f8f8f7;
-  --color-tertiary: #659d89;
+  --color-primary: #22211ed5;
+  --color-secondary: #fff;
+  --color-tertiary: #252422;
   --color-white: #ffffff;
   --color-box-shadow: #00000082;
 
@@ -34,7 +38,8 @@ body {
   --color-text-footer: #ffffff96;
   --color-text-divider: #33333326;
 
-  --font-raleway: "Raleway", sans-serif;
+  --font-title: "Raleway", sans-serif;
+  --font-body: "Merriweather", serif;
 
   /* --bp-largest: 1300px; */
   /* --bp-large: 1250px; */

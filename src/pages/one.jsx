@@ -29,12 +29,14 @@ module.exports = function validateRegisterInput(data) {
 
 const HeroContainer = styled.div`
   color: var(--color-primary);
-  background: var(--color-secondary);
   display: flex;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 2rem;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    padding: 4rem 1rem;
+  }
 `;
 
 const HeroTitle = styled.hgroup`
@@ -45,7 +47,7 @@ const HeroTitle = styled.hgroup`
 
 const BlogTitle = styled.h1`
   color: var(--color-tertiary);
-  font-size: clamp(4rem, 7vw, 7rem);
+  font-size: clamp(4rem, 6vw, 6.5rem);
   font-weight: 700;
   letter-spacing: -1.5px;
   line-height: 1.25;
@@ -61,28 +63,18 @@ const BlogDate = styled.h2`
 const BlogContent = styled.article`
   /* Container styles */
   & > * + * {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
 
-  max-width: 50rem;
+  font-family: var(--font-body);
+  max-width: 45rem;
   margin: 0 auto;
   text-align: left;
   font-kerning: normal;
   padding: 3rem 0 8rem;
+  color: #000;
 
   /* Internal HTML styles */
-
-  h1,
-  h2 {
-    font-weight: 700;
-  }
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 500;
-  }
 
   h1,
   h2,
@@ -90,44 +82,30 @@ const BlogContent = styled.article`
   h4,
   h5,
   h6 {
-    color: var(--color-text-head);
-    line-height: 1.3;
-    margin: 2rem 0;
+    margin-top: 3rem;
   }
 
   h1 {
-    font-size: clamp(2.8rem, 5vw, 3rem);
+    font-size: 1.875rem;
   }
 
   h2 {
-    font-size: clamp(2.6rem, 4.8vw, 2.8rem);
+    font-size: 1.75rem;
   }
 
   h3 {
-    font-size: clamp(2.4rem, 4.6vw, 2.6rem);
-  }
-
-  h4 {
-    font-size: clamp(2.2rem, 4.4vw, 2.4rem);
-  }
-
-  h5 {
-    font-size: clamp(2rem, 4.2vw, 2.2rem);
-  }
-
-  h6 {
-    font-size: clamp(1.8rem, 4vw, 2rem);
+    font-size: 1.625rem;
   }
 
   p {
-    font-size: 1.1rem;
-    color: var(--color-text-body);
-    line-height: 1.65;
+    line-height: 1.75;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
   }
 
   ol,
   ul {
-    color: var(--color-text-body);
     list-style-position: inside;
     list-style-type: disc;
   }
@@ -136,12 +114,19 @@ const BlogContent = styled.article`
   a:hover,
   a:active,
   a:focus {
-    color: var(--color-text-link);
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  a:hover {
     text-decoration: none;
   }
 `;
 
 const ImageBox = styled.figure`
+  padding: 1rem 0;
+
   img {
     display: block;
     max-width: 100%;
@@ -175,11 +160,13 @@ const Code = ({ code }) => {
   `;
 
   return (
-    <CodeBox>
-      <pre className="line-numbers">
-        <code className="language-javascript">{code}</code>
-      </pre>
-    </CodeBox>
+    <div style={{ padding: "1rem 0" }}>
+      <CodeBox>
+        <pre className="line-numbers">
+          <code className="language-javascript">{code}</code>
+        </pre>
+      </CodeBox>
+    </div>
   );
 };
 
@@ -187,65 +174,49 @@ function one() {
   return (
     <SimpleBarReact style={{ maxHeight: "100vh" }}>
       <main>
-        <Layout as="header">
-          <Navbar />
+        <Navbar />
+        <Layout as="header" bgColor="#f8f8f7">
           <HeroContainer>
             <HeroTitle>
-              <BlogTitle>How to get started with React?</BlogTitle>
+              <BlogTitle>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                animi sunt reprehenderit saepe?
+              </BlogTitle>
               <BlogDate>May 26, 2020</BlogDate>
             </HeroTitle>
           </HeroContainer>
         </Layout>
         <Layout bgColor="var(--color-white)">
           <BlogContent>
-            <h1>This is a Heading 1</h1>
-            <h2>This is a Heading 2</h2>
-            <h3>This is a Heading 3</h3>
-            <h4>This is a Heading 4</h4>
-            <h5>This is a Heading 5</h5>
-            <h6>This is a Heading 6</h6>
+            <h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              nemo!
+            </h1>
             <p>
-              Raw API logs only contain the information pertaining to execute a
-              single action. Usually the HTTP headers, IP address, request body,
-              and other information is logged for later analysis. Monitoring can
-              be added by purchasing a license for Elasticsearch X-Pack. The
-              issue is that security incidents cannot always be detected by
-              looking at API calls in isolation. Instead, hackers are able to
-              perform elaborate behavioral flows that exercise your API in an
-              unintended way.
+              Lorem <a href="#">ipsum</a> dolor sit amet consectetur adipisicing
+              elit. Corporis vero maxime eligendi veritatis quam autem?
+              Perspiciatis obcaecati officiis enim soluta, temporibus architecto
+              amet provident sint placeat facere, exercitationem dignissimos
+              esse totam, tenetur laudantium atque vel suscipit aperiam deleniti
+              at illo. Molestias quos laborum porro sunt voluptates voluptatum
+              doloremque dolore similique?
             </p>
             <Code code={"console.log('Hello World');"} />
             <p>
-              In order to convert this to a user-centric model, we need to tag
-              each event with user identifying information such as a tenant id,
-              a user id, or similar. Because the majority of APIs are secured by
-              some sort of OAuth or API Key, it's fairly easy to map the API key
-              to a permanent identifier like user id either directly or by
-              maintaining this mapping in a key/value store like Redis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium rem ab incidunt placeat similique consequuntur commodi
+              sint deserunt porro laboriosam nesciunt ullam culpa ipsa facere
+              labore amet pariatur harum, sunt <a href="#">dolorem</a>{" "}
+              voluptates numquam. Incidunt at quae et ipsam possimus aspernatur
+              modi in accusantium beatae, impedit temporibus id quasi quidem
+              rem!
             </p>
             <p>
-              In order to convert this to a user-centric model, we need to tag
-              each event with user identifying information such as a tenant id,
-              a user id, or similar. Because the majority of APIs are secured by
-              some sort of OAuth or API Key, it's fairly easy to map the API key
-              to a permanent identifier like user id either directly or by
-              maintaining this mapping in a key/value store like Redis.
-            </p>
-            <p>
-              In order to convert this to a user-centric model, we need to tag
-              each event with user identifying information such as a tenant id,
-              a user id, or similar. Because the majority of APIs are secured by
-              some sort of OAuth or API Key, it's fairly easy to map the API key
-              to a permanent identifier like user id either directly or by
-              maintaining this mapping in a key/value store like Redis.
-            </p>
-            <p>
-              In order to convert this to a user-centric model, we need to tag
-              each event with user identifying information such as a tenant id,
-              a user id, or similar. Because the majority of APIs are secured by
-              some sort of OAuth or API Key, it's fairly easy to map the API key
-              to a permanent identifier like user id either directly or by
-              maintaining this mapping in a key/value store like Redis.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quos,
+              harum quasi incidunt fugit nam, iusto recusandae quam error maxime
+              blanditiis omnis accusamus atque dolorum excepturi molestias? Et
+              dolor officiis enim accusantium blanditiis magnam consectetur
+              quae, praesentium vel sunt atque.
             </p>
             <h1>How long to retain API logs for API security?</h1>
             <p>
@@ -284,20 +255,12 @@ function one() {
               down, then you lose access to valuable forensics data needed for
               auditing and postmortem review.
             </p>
-            <h4>Things that I love:</h4>
-            <ul>
-              <li>Coffee</li>
-              <li>Black tea</li>
-              <li>Green tea</li>
-              <li>Milk</li>
-            </ul>
-            <h3>Things that I love, but in ordered list:</h3>
-            <ol>
-              <li>Mango</li>
-              <li>Orange</li>
-              <li>Coconut</li>
-              <li>Strawberry</li>
-            </ol>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
+              sit sed tenetur eligendi delectus magni alias unde ipsam beatae
+              veniam facere iure nesciunt quasi laborum similique harum nulla
+              cupiditate minima?
+            </p>
           </BlogContent>
         </Layout>
         <Footer bgColor="var(--color-white)" />

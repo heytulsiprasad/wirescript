@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
 
 import Hero from "../Hero";
 import Arrow from "../../images/arrow";
@@ -16,7 +16,7 @@ const HeroFoot = styled.div`
   }
 `;
 
-const Slidey = styled(AnchorLink)`
+const Slidey = styled(Link)`
   align-self: flex-end;
   display: flex;
 
@@ -34,32 +34,6 @@ const Slidey = styled(AnchorLink)`
   }
 `;
 
-const Anchors = styled.div`
-  text-align: right;
-  grid-column: 3 / span 1;
-
-  @media (max-width: 1000px) {
-    grid-column: 2 / span 1;
-  }
-`;
-
-const Anchor = styled(AnchorLink)`
-  font-weight: 500;
-
-  &:not(:last-of-type) {
-    margin-bottom: 0.3333rem;
-  }
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-`;
-
 function BlogsPage() {
   return (
     <Hero>
@@ -69,20 +43,11 @@ function BlogsPage() {
           From the journal of an experienced googler and dope ass coder.
         </BigBody>
       </HeroHeader>
-      {/* <Slider>
-        <Arrow />
-        <p>Browse all blogs and content</p>
-      </Slider> */}
       <HeroFoot>
         <Slidey to="/blog#web">
           <Arrow />
           <p>Browse all blogs and content</p>
         </Slidey>
-        <Anchors>
-          <Anchor to="/blog#web">Web</Anchor>
-          <Anchor to="/blog#physics">Physics</Anchor>
-          <Anchor to="/blog#hardware">Hardware</Anchor>
-        </Anchors>
       </HeroFoot>
     </Hero>
   );

@@ -7,7 +7,7 @@ const Intro = styled.div`
   padding: 5rem 0;
   display: grid;
   grid-column-gap: 2.6667rem;
-  grid-row-gap: 5.3333rem;
+  grid-row-gap: 4.3333rem;
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -19,11 +19,9 @@ const Intro = styled.div`
 
 const HeroText = styled.h2`
   font-size: 1.8rem;
-  max-width: 53.3333rem;
-  font-weight: 400;
-  line-height: 2.6667rem;
-  letter-spacing: -0.5px;
-  color: #333;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000;
 
   grid-column: 2 / span 2;
 
@@ -33,10 +31,11 @@ const HeroText = styled.h2`
 `;
 
 const IntroText = styled.p`
-  color: #808080;
-  line-height: 1.4;
+  color: #000;
+  line-height: 1.6;
   grid-row: 2 / span 1;
   grid-column: 2 / span 2;
+  font-size: 1.1rem;
 
   @media (max-width: 1300px) {
     grid-column: 1 / span 2;
@@ -48,22 +47,17 @@ function IndexIntro({ bgColor }) {
     <Layout bgColor={bgColor}>
       <Intro id="intro">
         <HeroText>
-          Constant hustle. Unrealistic expectations. Endless pressure. Running
-          on maximum capacity. Well, what if there is an alternative with the
-          same results just a click away?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          sequi nihil repudiandae, autem illo expedita commodi aut officiis ipsa
+          cumque harum nisi blanditiis sint saepe! Nulla, amet voluptas.
         </HeroText>
         <IntroText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          aliquam quae magnam sunt dolorum error ratione esse adipisci qui ea
-          vel, veritatis aspernatur, dolorem exercitationem dolores accusantium
-          deleniti vitae rem quos nihil dicta. Voluptate quod vero veritatis
-          autem fuga dolores! Eos voluptatum nulla impedit delectus cum deleniti
-          dignissimos dolor nostrum assumenda aperiam id eligendi, beatae
-          tenetur quam at eaque, dolorem expedita, illo perferendis voluptate.
-          Odio sit accusamus, iusto hic, minus tempore laudantium a voluptas
-          animi adipisci assumenda aut dolorum quasi quae sint distinctio
-          maiores omnis. Adipisci labore neque deserunt ipsa, recusandae quis,
-          commodi fuga assumenda ab, dicta earum reprehenderit quae.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque sunt
+          nulla explicabo. Voluptatum, vel aliquam. Perferendis incidunt illum
+          modi suscipit porro, rem, blanditiis aspernatur cupiditate vitae
+          perspiciatis est accusantium voluptates rerum cum maxime, aliquid
+          animi. Consectetur aspernatur, quibusdam, totam explicabo illum a
+          magnam, facere blanditiis enim in eligendi tempora? Nemo.
         </IntroText>
       </Intro>
       <div style={{ padding: "2rem 0 5rem" }}>
