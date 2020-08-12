@@ -80,8 +80,8 @@ function Articles({ blogs, topic }) {
 
   return (
     <Entries>
-      {blogs.map(({ date, title, description }) => (
-        <Entry>
+      {blogs.map(({ date, title, description }, id) => (
+        <Entry key={id}>
           <EntryDate>{date}</EntryDate>
           <EntryDetail>
             <EntryTitle>{title}</EntryTitle>

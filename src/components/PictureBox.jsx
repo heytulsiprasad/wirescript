@@ -58,8 +58,6 @@ function PictureBox({ src, alt, by, align }) {
   // eslint-disable-next-line no-unused-vars
   const [toUpdate, setToUpdate] = useState(false);
 
-  console.log("Run");
-
   useEffect(() => {
     // Firstly, check if `window` exists or not.
 
