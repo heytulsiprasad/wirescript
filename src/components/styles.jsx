@@ -19,16 +19,16 @@ export const Slider = styled.div`
 `;
 
 export const BigHead = styled.h1`
-  width: 80%;
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(4rem, 8vw, 6rem);
   font-weight: 500;
-  letter-spacing: -3.5px;
+  letter-spacing: -3px;
+  line-height: 1;
   color: var(--color-tertiary);
 `;
 
 export const BigBody = styled.h2`
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 500;
   letter-spacing: -2px;
-  max-width: 85%;
+  margin-top: 2rem;
 `;

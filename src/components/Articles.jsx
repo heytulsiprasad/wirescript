@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Entries = styled.div`
   display: flex;
@@ -70,24 +71,32 @@ const EntryDescription = styled.p`
   font-size: 17px;
   line-height: 1.5;
   font-weight: 500;
-  width: 80%;
+`;
 
-  @media (max-width: 900px) {
-    width: 100%;
+const NewLink = styled(Link)`
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
   }
 `;
 
-function Articles({ blogs, topic }) {
+function Articles({ blogs }) {
   // `blogs` is an array of objects
+  // console.log(blogs);
 
   return (
     <Entries>
-      {blogs.map(({ date, title, description }, id) => (
+      {blogs.map((item, id) => (
         <Entry key={id}>
-          <EntryDate>{date}</EntryDate>
+          <EntryDate>{item.date}</EntryDate>
           <EntryDetail>
-            <EntryTitle>{title}</EntryTitle>
-            <EntryDescription>{description}</EntryDescription>
+            <EntryTitle>
+              <NewLink to={item.slug}>{item.title}</NewLink>
+            </EntryTitle>
+            <EntryDescription>{item.description}</EntryDescription>
           </EntryDetail>
         </Entry>
       ))}

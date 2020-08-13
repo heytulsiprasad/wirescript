@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 
 import Layout from "../Layout";
 import Articles from "../Articles";
@@ -58,34 +58,37 @@ const Refer = styled(Link)`
   }
 `;
 
-const blogs = [
-  {
-    date: "MAY 26 2020",
-    title: "Introducing Rekishi",
-    description:
-      "Becoming frustrated with gaps in the history api, I built Rekishi, a minimal pubsub wrapper to watch for URL changes.",
-  },
-  {
-    date: "APR 18 2020",
-    title: "How to name your agency with NLP",
-    description:
-      " An introduction to some of the basic concepts behind Natural Language Processing, and how they can be put to use.",
-  },
-  {
-    date: "FEB 10 2020",
-    title: "Synthwave '84 has changed",
-    description:
-      "Neon Dreams is a new release of Synthwave '84 that takes a different approach to enabling the glow than before.",
-  },
-  {
-    date: "JAN 22 2020",
-    title: "Launch day",
-    description:
-      " After several years in the wilderness, I have a new website. This post gives a little background on the twists and turns along the path to launch - from the tech choices to the design.",
-  },
-];
-
 function LatestArticles() {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: ASC }
+        limit: 4
+      ) {
+        edges {
+          node {
+            frontmatter {
+              date(formatString: "DD MMMM YYYY")
+              title
+              description
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const blogs = [];
+
+  data.allMarkdownRemark.edges.forEach(item => {
+    const blogData = item.node.frontmatter;
+    blogData["slug"] = item.node.fields.slug;
+    blogs.push(blogData);
+  });
+
   return (
     <Layout bgColor="var(--color-secondary)">
       <Main>

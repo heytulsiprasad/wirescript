@@ -16,11 +16,11 @@ const Slidey = styled(Link)`
   }
 `;
 
-function IndexPage() {
+function IndexPage({ head }) {
   return (
     <Hero>
       <HeroHeader>
-        <BigHead>The Wirescript</BigHead>
+        <BigHead>{head}</BigHead>
         <BigBody>
           A journal of an experienced googler and dope ass coder.
         </BigBody>
@@ -34,5 +34,9 @@ function IndexPage() {
     </Hero>
   );
 }
+
+IndexPage.defaultProps = {
+  head: "Just a head",
+};
 
 export default IndexPage;

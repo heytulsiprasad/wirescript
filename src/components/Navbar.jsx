@@ -35,13 +35,11 @@ const NavItem = styled(LinkReset)`
   }
 
   @media (max-width: 500px) {
-    display: block;
     grid-row: 2 / 3;
-    align-self: center;
-    margin: 0 auto;
+    justify-self: center;
 
     &:not(:last-of-type) {
-      margin: 0 auto;
+      margin-right: 0;
     }
   }
 `;
@@ -67,9 +65,9 @@ function Navbar() {
         <NavItemMain to="/">
           <Icon color="#fff" height="3rem" width="3rem" />
         </NavItemMain>
-        <NavItem to="/one">I'm Feeling Lucky</NavItem>
         <NavItem to="/blog">Blog</NavItem>
         <NavItem to="/about">About</NavItem>
+        <NavItem to="/about">Newsletter</NavItem>
       </Nav>
     </Layout>
   );
