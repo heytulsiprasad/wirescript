@@ -8,6 +8,7 @@ import SimpleBarReact from "simplebar-react";
 import Layout from "./../components/Layout";
 import Navbar from "./../components/Navbar";
 import Footer from "./../components/Footer";
+import Bio from "./../components/Bio";
 
 const HeroContainer = styled.div`
   color: var(--color-primary);
@@ -48,11 +49,9 @@ const BlogContent = styled.article`
     margin-top: 2rem;
   }
 
-  max-width: 45rem;
-  margin: 0 auto;
   text-align: left;
   font-kerning: normal;
-  padding: 3rem 0 8rem;
+  padding: 3rem 0 6rem;
   color: #000;
 
   /* Internal HTML styles */
@@ -125,7 +124,10 @@ function BlogPost({ data }) {
           </HeroContainer>
         </Layout>
         <Layout bgColor="var(--color-white)">
-          <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div style={{ maxWidth: "45rem", margin: "0 auto" }}>
+            <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Bio />
+          </div>
         </Layout>
         <Footer bgColor="var(--color-white)" />
       </main>
