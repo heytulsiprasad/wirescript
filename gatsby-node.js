@@ -25,6 +25,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`);
+  const blogShareTemplate = path.resolve(`src/templates/blog-share-image.jsx`);
 
   const result = await graphql(`
     query {
@@ -62,5 +63,16 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
       },
     });
+
+    // Create OG image for each blog post
+    if (process.env.NODE_ENV === "development") {
+      createPage({
+        path: `${post.node.fields.slug}/og_image`,
+        component: blogShareTemplate,
+        context: {
+          slug: post.node.fields.slug,
+        },
+      });
+    }
   });
 };

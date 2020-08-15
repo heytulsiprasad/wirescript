@@ -8,12 +8,14 @@ import IndexHero from "../components/IndexComponents/IndexHero";
 import LatestArticles from "./../components/IndexComponents/LatestArticles";
 import Footer from "./../components/Footer";
 import IndexIntro from "../components/IndexComponents/IndexIntro";
+import SEO from "../components/SEO";
 
 const Index = ({ data }) => {
   const meta = data.site.siteMetadata;
 
   return (
     <SimpleBarReact style={{ maxHeight: "100vh" }}>
+      <SEO />
       <IndexHero head={meta.title} />
       <IndexIntro />
       <LatestArticles />

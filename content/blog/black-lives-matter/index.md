@@ -3,6 +3,7 @@ title: "Black Lives Matter: From social media post to global movement"
 date: "2020-07-09T18:30:00.000Z"
 description: "A slogan chanted by tens of thousands around the world, Black Lives Matter has sparked a hashtag, a network of grass-roots organisations, and a moral collective of activists."
 category: "News"
+banner: "./banner.png"
 ---
 
 # How did it happened?

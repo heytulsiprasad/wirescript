@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const BioContainer = styled.div`
   padding: 4rem 0;
@@ -13,7 +15,7 @@ const BioContainer = styled.div`
     grid-template-rows: max-content 1fr;
   }
 
-  img {
+  .profile-img {
     border-radius: 50%;
     max-width: 80px;
     display: block;
@@ -32,11 +34,12 @@ const BioContainer = styled.div`
   }
 
   p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
   }
 
   h2 {
+    font-family: var(--font-title);
     margin-bottom: 1rem;
     margin-top: -2px;
   }
@@ -79,6 +82,21 @@ const Share = styled.div`
 `;
 
 const Bio = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      profile: file(relativePath: { eq: "hey-tulsi-prasad.jpg" }) {
+        childImageSharp {
+          id
+          fixed(height: 80, width: 80, grayscale: true) {
+            ...GatsbyImageSharpFixed_tracedSVG
+          }
+        }
+      }
+    }
+  `);
+
+  console.log(data);
+
   return (
     <Fragment>
       <Share>
@@ -92,14 +110,22 @@ const Bio = () => {
         </button>
       </Share>
       <BioContainer>
-        <img src="https://picsum.photos/200" alt="profile" />
+        <Img
+          className="profile-img"
+          fixed={data.profile.childImageSharp.fixed}
+        />
+        {/* <img src="https://picsum.photos/80/" className="profile-image" /> */}
         <div className="biotext">
-          <h2>The Wirescript</h2>
+          <h2>
+            <strong>Tulsi Prasad</strong>
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam cumque
-            sint, necessitatibus molestias reprehenderit in corrupti nostrum
-            voluptate nesciunt odit, quas neque praesentium quod quo sunt, fugit
-            accusantium eius possimus!
+            He is an aspiring software developer and blogger. He believes that
+            technology combined with human enthusiasm can achieve anything in
+            the world. He avidly takes part in Open Source projects and Meetups
+            in his community for greater good. Currently, he continues doing
+            freelance projects and learning Information Technology as a
+            graduate.
           </p>
         </div>
       </BioContainer>

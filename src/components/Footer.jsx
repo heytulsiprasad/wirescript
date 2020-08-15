@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Icon from "../images/logo";
+import Icon from "../components/svg/logo";
 import { Link } from "gatsby";
 
 import {

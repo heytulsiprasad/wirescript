@@ -1,8 +1,8 @@
 ---
-title: "The Fault in Our Stars"
-date: "2014-06-05T18:30:00.000Z"
-description: "Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam."
-category: "Movies"
+title: "Is JavaScript masively Overrated?"
+date: "2020-08-13T12:37:56.536Z"
+description: "JavaScript has become the front of the web and due to this popularity its now being made to adapt the backend as well, with curated tools like Node, but is it really worth it?"
+category: "Frontend"
 banner: "./banner.png"
 ---
 

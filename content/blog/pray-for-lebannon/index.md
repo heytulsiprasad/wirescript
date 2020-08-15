@@ -3,6 +3,7 @@ title: "Why Beirut’s ammonium nitrate blast was so devastating?"
 date: "2020-08-03T18:30:00.000Z"
 description: "The tragedy is one of the largest industrial accidents involving the explosive chemical, and it hit Lebanon amid the coronavirus pandemic and an economic crisis."
 category: "News"
+banner: "./banner.png"
 ---
 
 # What happened?

@@ -3,11 +3,14 @@ title: "Use ternaries rather than && in JSX"
 date: "2020-08-03T18:30:00.000Z"
 description: "The tragedy is one of the largest industrial accidents involving the explosive chemical, and it hit Lebanon amid the coronavirus pandemic and an economic crisis."
 category: "Frontend"
+banner: "./banner.png"
 ---
 
 # What problems can happen when you use && to conditionally render content in JSX
 
 ![Man Standing in a Metro](./man-standing-in-metro.jpg)
+
+<figcaption>Man in the middle</figcaption>
 
 ## What's wrong with this code?
 

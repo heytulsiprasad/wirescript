@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Layout from "./Layout";
-import Icon from "./../images/logo";
+import Icon from "../components/svg/logo";
 
 const Nav = styled.nav`
   display: flex;

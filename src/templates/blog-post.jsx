@@ -9,6 +9,7 @@ import Layout from "./../components/Layout";
 import Navbar from "./../components/Navbar";
 import Footer from "./../components/Footer";
 import Bio from "./../components/Bio";
+import SEO from "../components/SEO";
 
 const HeroContainer = styled.div`
   color: var(--color-primary);
@@ -106,13 +107,27 @@ const BlogContent = styled.article`
   img {
     border-radius: 10px;
   }
+
+  figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+  }
 `;
 
-function BlogPost({ data }) {
+function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark;
+  const { slug } = pageContext;
 
   return (
     <SimpleBarReact style={{ maxHeight: "100vh" }}>
+      <SEO
+        meta={[post.frontmatter.category]}
+        description={post.frontmatter.description}
+        image={post.frontmatter.banner.publicURL}
+        title={post.frontmatter.title}
+        slug={slug}
+      />
       <main>
         <Navbar />
         <Layout as="header" bgColor="#f8f8f7">
@@ -146,6 +161,9 @@ export const query = graphql`
         description
         date(formatString: "MMMM DD YYYY")
         title
+        banner {
+          publicURL
+        }
       }
     }
   }

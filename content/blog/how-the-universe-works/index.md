@@ -1,8 +1,9 @@
 ---
-title: "Why JavaScript is Overrated?"
-date: "2020-08-13T12:37:56.536Z"
-description: "JavaScript has become the front of the web and due to this popularity its now being made to adapt the backend as well, with curated tools like Node, but is it really worth it?"
-category: "Frontend"
+title: "How the Universe works?"
+date: "2014-06-05T18:30:00.000Z"
+description: "I definitely don't know."
+category: "Physics"
+banner: "./banner.png"
 ---
 
 # Storyline

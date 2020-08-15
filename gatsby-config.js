@@ -1,24 +1,39 @@
 module.exports = {
   siteMetadata: {
     title: `The Wirescript`,
+    description: `A blog on life and technical expertise gained on the way
+                  by Tulsi Prasad, a non-Sillicon Valley Software Developer.`,
+    keywords: `Personal Blog by Tulsi Prasad, Life, Technology, Public`,
+    siteUrl: `https://wirescript.heytulsiprasad.vercel.app/`,
     author: {
       name: `Tulsi Prasad`,
-      summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
     social: {
       twitter: `heytulsiprasad`,
+      github: `heytulsiprasad`,
+      dev: `heytulsiprasad`,
+      linkedin: `heytulsiprasad`,
     },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `assets`,
       },
     },
     {

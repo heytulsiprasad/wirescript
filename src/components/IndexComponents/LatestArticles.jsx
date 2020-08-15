@@ -90,7 +90,7 @@ function LatestArticles() {
   });
 
   return (
-    <Layout bgColor="var(--color-secondary)">
+    <Layout bgColor="var(--color-white)">
       <Main>
         <BoldText>
           <span>Latest</span>

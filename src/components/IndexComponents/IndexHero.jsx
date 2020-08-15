@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 import Hero from "../Hero";
-import Arrow from "../../images/arrow";
+import Arrow from "../svg/arrow";
 import { HeroHeader, Slider, BigHead, BigBody } from "../styles";
 
 const Slidey = styled(Link)`
