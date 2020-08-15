@@ -26,7 +26,7 @@ const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
 
   const metaDescription = description || data.site.siteMetadata.description;
   const metaTitle = title || data.site.siteMetadata.title;
-  const ogImage = image;
+  const ogImage = `${data.site.siteMetadata.siteUrl}${image}`;
   const author = data.site.siteMetadata.author.name;
   const url =
     `${data.site.siteMetadata.siteUrl}${slug}` ||
