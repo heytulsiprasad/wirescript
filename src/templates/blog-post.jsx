@@ -124,7 +124,7 @@ function BlogPost({ data, pageContext }) {
     <SimpleBarReact style={{ maxHeight: "100vh" }}>
       <SEO
         slug={slug}
-        title={post.frontmatter.title}
+        title={`${post.frontmatter.title} — The Wirescript`}
         meta={[post.frontmatter.category]}
         description={post.frontmatter.description}
         image={post.frontmatter.banner.publicURL}

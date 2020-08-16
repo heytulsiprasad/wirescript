@@ -59,5 +59,23 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `The Wirescript — Blog`,
+        short_name: `Wirescript`,
+        start_url: `/`,
+        background_color: `#060b0e`,
+        theme_color: `#f8f8f7`,
+        display: `minimal-ui`,
+        icon: `src/images/ws_favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || null,
+      },
+    },
   ],
 };

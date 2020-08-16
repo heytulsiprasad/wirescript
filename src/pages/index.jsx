@@ -15,7 +15,7 @@ const Index = ({ data }) => {
 
   return (
     <SimpleBarReact style={{ maxHeight: "100vh" }}>
-      <SEO title="The Wirescript — Home" />
+      <SEO title="Home — The Wirescript" />
       <IndexHero head={meta.title} />
       <IndexIntro />
       <LatestArticles />

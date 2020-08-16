@@ -10,7 +10,7 @@ import SEO from "./../components/SEO";
 
 const Blog = () => (
   <SimpleBarReact style={{ maxHeight: "100vh" }}>
-    <SEO title="The Wirescript — Blog" />
+    <SEO title="Blog — The Wirescript" />
     <BlogsHero />
     <AllBlogs />
     <Footer bgColor="var(--color-white)" />
