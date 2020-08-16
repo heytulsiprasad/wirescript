@@ -104,7 +104,7 @@ function AboutIntro() {
           <HeroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             quo dicta eligendi numquam molestias commodi sed officiis vitae
-            error maiores at deleniti, alias voluptatum expedita aut laudantium
+            error maiores at deleniti, alias voluptatum expedita laudantium
             saepe vel illo.
           </HeroText>
           <IntroText>
