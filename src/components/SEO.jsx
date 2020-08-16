@@ -28,6 +28,7 @@ const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
   const metaTitle = title || data.site.siteMetadata.title;
   const ogImage = `${data.site.siteMetadata.siteUrl}${image}`;
   const author = data.site.siteMetadata.author.name;
+  const handle = data.site.siteMetadata.social.twitter;
   const url =
     `${data.site.siteMetadata.siteUrl}${slug}` ||
     data.site.siteMetadata.siteUrl;
@@ -64,7 +65,7 @@ const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -73,6 +74,10 @@ const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
         {
           name: `twitter:title`,
           content: metaTitle,
+        },
+        {
+          name: `twitter:site`,
+          content: handle,
         },
         {
           name: `twitter:description`,

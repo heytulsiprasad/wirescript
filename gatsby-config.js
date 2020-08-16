@@ -9,7 +9,7 @@ module.exports = {
       name: `Tulsi Prasad`,
     },
     social: {
-      twitter: `heytulsiprasad`,
+      twitter: `@heytulsiprasad`,
       github: `heytulsiprasad`,
       dev: `heytulsiprasad`,
       linkedin: `heytulsiprasad`,
