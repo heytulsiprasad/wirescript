@@ -133,14 +133,34 @@ function BlogPost({ data, pageContext }) {
         <Layout as="header" bgColor="#f8f8f7">
           <HeroContainer>
             <HeroTitle>
-              <BlogTitle>{post.frontmatter.title}</BlogTitle>
-              <BlogDate>{post.frontmatter.date}</BlogDate>
+              <BlogTitle
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-easing="ease"
+                data-sal-duration="1200"
+              >
+                {post.frontmatter.title}
+              </BlogTitle>
+              <BlogDate
+                data-sal="slide-up"
+                data-sal-delay="400"
+                data-sal-easing="ease"
+                data-sal-duration="1200"
+              >
+                {post.frontmatter.date}
+              </BlogDate>
             </HeroTitle>
           </HeroContainer>
         </Layout>
         <Layout bgColor="var(--color-white)">
           <div style={{ maxWidth: "45rem", margin: "0 auto" }}>
-            <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
+            <BlogContent
+              data-sal="fade"
+              data-sal-delay="200"
+              data-sal-easing="ease-in"
+              data-sal-duration="600"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
             <Bio />
           </div>
         </Layout>

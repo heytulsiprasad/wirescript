@@ -48,7 +48,12 @@ function AboutIntro() {
   return (
     <Fragment>
       <Layout bgColor="var(--color-white)">
-        <Intro>
+        <Intro
+          data-sal="slide-left"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1500"
+        >
           <HeroText>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
             laboriosam sunt eveniet quis culpa sed voluptatibus dolore. Hic
@@ -67,14 +72,26 @@ function AboutIntro() {
             eaque expedita obcaecati repudiandae nemo quasi.
           </IntroText>
         </Intro>
-        <div style={{ padding: "2rem 0 5rem" }}>
+        <div
+          style={{ padding: "2rem 0 5rem" }}
+          data-sal="zoom-out"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <PictureBox
             src="https://i.imgur.com/u3EiztR.jpeg"
             alt="Desk setup of a programmer"
             by="oscrse"
           />
         </div>
-        <Intro>
+        <Intro
+          style={{ padding: "2rem 0 5rem" }}
+          data-sal="slide-left"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1500"
+        >
           <HeroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             quo dicta eligendi numquam molestias commodi sed officiis vitae

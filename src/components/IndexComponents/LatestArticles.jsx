@@ -93,8 +93,22 @@ function LatestArticles() {
     <Layout bgColor="var(--color-white)">
       <Main>
         <BoldText>
-          <span>Latest</span>
-          <span>Articles</span>
+          <span
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            Latest
+          </span>
+          <span
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            Articles
+          </span>
         </BoldText>
         <Articles blogs={blogs} />
         <Refer to="/blog">

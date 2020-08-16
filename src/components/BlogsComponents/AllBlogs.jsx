@@ -74,7 +74,13 @@ function AllBlogs() {
   } else {
     for (const key in blogs) {
       let post = (
-        <BlogsParent key={key}>
+        <BlogsParent
+          key={key}
+          data-sal="slide-up"
+          data-sal-delay="200"
+          data-sal-easing="ease-out-expo"
+          data-sal-duration="1000"
+        >
           <CategoryTitle>{key}</CategoryTitle>
           <Articles blogs={blogs[key]} />
         </BlogsParent>

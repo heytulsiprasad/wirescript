@@ -20,8 +20,20 @@ function IndexPage({ head }) {
   return (
     <Hero>
       <HeroHeader>
-        <BigHead>{head}</BigHead>
-        <BigBody>
+        <BigHead
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          {head}
+        </BigHead>
+        <BigBody
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           A journal of an experienced googler and dope ass coder.
         </BigBody>
       </HeroHeader>

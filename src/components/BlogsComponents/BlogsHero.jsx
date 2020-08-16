@@ -38,8 +38,20 @@ function BlogsPage() {
   return (
     <Hero>
       <HeroHeader>
-        <BigHead>More Content</BigHead>
-        <BigBody>
+        <BigHead
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          More Content
+        </BigHead>
+        <BigBody
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease"
+          data-sal-duration="1200"
+        >
           From the journal of an experienced googler and dope ass coder.
         </BigBody>
       </HeroHeader>

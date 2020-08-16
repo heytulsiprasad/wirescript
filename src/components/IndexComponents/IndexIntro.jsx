@@ -45,7 +45,12 @@ const IntroText = styled.p`
 function IndexIntro() {
   return (
     <Layout bgColor="#fff">
-      <Intro id="intro">
+      <Intro
+        data-sal="slide-left"
+        data-sal-delay="200"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+      >
         <HeroText>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
           sequi nihil repudiandae, autem illo expedita commodi aut officiis ipsa
@@ -62,7 +67,6 @@ function IndexIntro() {
       </Intro>
       <div style={{ padding: "2rem 0 5rem" }}>
         <PictureBox
-          align="left"
           src="https://i.imgur.com/u3EiztR.jpeg"
           alt="Desk setup of a programmer"
           by="oscrse"

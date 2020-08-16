@@ -65,9 +65,9 @@ function Navbar() {
         <NavItemMain to="/">
           <Icon color="#fff" height="3rem" width="3rem" />
         </NavItemMain>
+        <NavItem to="/">Home</NavItem>
         <NavItem to="/blog">Blog</NavItem>
         <NavItem to="/about">About</NavItem>
-        <NavItem to="/about">Newsletter</NavItem>
       </Nav>
     </Layout>
   );

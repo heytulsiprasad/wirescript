@@ -52,16 +52,21 @@ const PicCaption = styled.figcaption`
 function PictureBox({ src, alt, by, align }) {
   return (
     <PictureParent>
-      <Picture>
+      <Picture
+        data-sal="zoom-in"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+      >
         <img src={src} alt={alt} />
       </Picture>
       {by ? (
-        <PicCaption align={align}>
+        <PicCaption align="left">
           Photo by <a href={`https://unsplash.com/@${by}`}>@{by}</a> on{" "}
           <a href="https://unsplash.com/">Unsplash</a>
         </PicCaption>
       ) : (
-        <PicCaption align={align}>{alt}</PicCaption>
+        <PicCaption align="left">{alt}</PicCaption>
       )}
     </PictureParent>
   );

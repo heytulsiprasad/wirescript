@@ -7,8 +7,20 @@ function AboutPage() {
   return (
     <Hero>
       <HeroHeader>
-        <BigHead>About Me</BigHead>
-        <BigBody>
+        <BigHead
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          About Me
+        </BigHead>
+        <BigBody
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-easing="ease"
+          data-sal-duration="1200"
+        >
           Let's change ourselves first, so that the world could change by
           itself.
         </BigBody>
