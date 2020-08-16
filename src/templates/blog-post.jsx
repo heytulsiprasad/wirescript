@@ -122,11 +122,11 @@ function BlogPost({ data, pageContext }) {
   return (
     <SimpleBarReact style={{ maxHeight: "100vh" }}>
       <SEO
+        slug={slug}
+        title={post.frontmatter.title}
         meta={[post.frontmatter.category]}
         description={post.frontmatter.description}
         image={post.frontmatter.banner.publicURL}
-        title={post.frontmatter.title}
-        slug={slug}
       />
       <main>
         <Navbar />
