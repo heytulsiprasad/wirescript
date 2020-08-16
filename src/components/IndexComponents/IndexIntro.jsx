@@ -42,9 +42,9 @@ const IntroText = styled.p`
   }
 `;
 
-function IndexIntro({ bgColor }) {
+function IndexIntro() {
   return (
-    <Layout bgColor={bgColor}>
+    <Layout bgColor="#fff">
       <Intro id="intro">
         <HeroText>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos

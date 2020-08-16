@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
+const SEO = ({ description, meta, title, image, slug, lang }) => {
   const data = useStaticQuery(
     graphql`
       query MyQuery {
@@ -20,19 +20,26 @@ const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
             }
           }
         }
+        file(relativePath: { eq: "wiresc.png" }) {
+          publicURL
+        }
       }
     `
   );
 
   const metaDescription = description || data.site.siteMetadata.description;
   const metaTitle = title || data.site.siteMetadata.title;
-  const ogImage = `${data.site.siteMetadata.siteUrl}${image}`;
+  const ogImage = image
+    ? `${data.site.siteMetadata.siteUrl}${image}`
+    : `${data.site.siteMetadata.siteUrl}${data.file.publicURL}`;
   const author = data.site.siteMetadata.author.name;
   const handle = data.site.siteMetadata.social.twitter;
   const url =
     `${data.site.siteMetadata.siteUrl}${slug}` ||
     data.site.siteMetadata.siteUrl;
   const metaKeywords = meta || data.site.siteMetadata.keywords;
+
+  console.log(ogImage);
 
   return (
     <Helmet
@@ -87,7 +94,14 @@ const SEO = ({ description, meta, title, image, slug, lang = `en` }) => {
           name: `twitter:image`,
           content: ogImage,
         },
-      ].concat(metaKeywords)}
+      ].concat(
+        metaKeywords && metaKeywords.length > 0
+          ? {
+              name: `keywords`,
+              content: metaKeywords.join(", "),
+            }
+          : []
+      )}
     />
   );
 };

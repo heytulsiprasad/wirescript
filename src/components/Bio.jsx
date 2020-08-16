@@ -95,8 +95,6 @@ const Bio = () => {
     }
   `);
 
-  console.log(data);
-
   return (
     <Fragment>
       <Share>

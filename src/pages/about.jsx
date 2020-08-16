@@ -10,7 +10,7 @@ import SEO from "./../components/SEO";
 
 const About = () => (
   <SimpleBarReact style={{ maxHeight: "100vh" }}>
-    <SEO />
+    <SEO title="The Wirescript — About" />
     <AboutHero />
     <AboutIntro />
     <Footer bgColor="var(--color-white)" />
