@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 const BioContainer = styled.div`
-  padding: 4rem 0;
+  padding: 4rem 0 1rem;
   margin-bottom: 4rem;
   display: grid;
   grid-column-gap: 2rem;

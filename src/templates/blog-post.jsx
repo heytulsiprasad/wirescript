@@ -10,6 +10,7 @@ import Navbar from "./../components/Navbar";
 import Footer from "./../components/Footer";
 import Bio from "./../components/Bio";
 import SEO from "../components/SEO";
+import Newsletter from "../components/Newsletter";
 
 const HeroContainer = styled.div`
   color: var(--color-primary);
@@ -164,6 +165,7 @@ function BlogPost({ data, pageContext }) {
             <Bio />
           </div>
         </Layout>
+        <Newsletter />
         <Footer bgColor="var(--color-white)" />
       </main>
     </SimpleBarReact>

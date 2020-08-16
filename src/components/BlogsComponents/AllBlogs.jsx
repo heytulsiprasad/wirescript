@@ -6,7 +6,7 @@ import Layout from "./../Layout";
 import Articles from "../Articles";
 
 const AllBlogsContainer = styled.div`
-  padding: 2rem 0 8rem 0;
+  padding: 2rem 0;
 `;
 
 const BlogsCategory = styled.div`
