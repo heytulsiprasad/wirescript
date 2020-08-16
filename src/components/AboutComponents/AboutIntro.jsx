@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
 
 import Layout from "./../Layout";
 import PictureBox from "./../PictureBox";
@@ -45,6 +46,18 @@ const IntroText = styled.p`
 `;
 
 function AboutIntro() {
+  const data = useStaticQuery(graphql`
+    query {
+      banner: file(relativePath: { eq: "gemma-evans.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Fragment>
       <Layout bgColor="var(--color-white)">
@@ -79,11 +92,7 @@ function AboutIntro() {
           data-sal-easing="ease"
           data-sal-duration="1000"
         >
-          <PictureBox
-            src="https://i.imgur.com/u3EiztR.jpeg"
-            alt="Desk setup of a programmer"
-            by="oscrse"
-          />
+          <PictureBox src={data.banner.childImageSharp.fluid} />
         </div>
         <Intro
           style={{ padding: "2rem 0 5rem" }}

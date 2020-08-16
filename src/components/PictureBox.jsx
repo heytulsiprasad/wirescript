@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 const PictureParent = styled.figure`
   /* Grid Stuff */
@@ -49,7 +50,7 @@ const PicCaption = styled.figcaption`
   }
 `;
 
-function PictureBox({ src, alt, by, align }) {
+function PictureBox({ src, alt, by }) {
   return (
     <PictureParent>
       <Picture
@@ -58,7 +59,7 @@ function PictureBox({ src, alt, by, align }) {
         data-sal-easing="ease"
         data-sal-duration="1000"
       >
-        <img src={src} alt={alt} />
+        <Img fluid={src} alt={alt} />
       </Picture>
       {by ? (
         <PicCaption align="left">
@@ -66,16 +67,12 @@ function PictureBox({ src, alt, by, align }) {
           <a href="https://unsplash.com/">Unsplash</a>
         </PicCaption>
       ) : (
-        <PicCaption align="left">{alt}</PicCaption>
+        <PicCaption align="left">
+          Photo from <a href="https://unsplash.com/">Unsplash</a>
+        </PicCaption>
       )}
     </PictureParent>
   );
 }
-
-PictureBox.defaultProps = {
-  align: "left",
-  src: "https://i.imgur.com/eZXO4DD.jpg",
-  alt: "Doing work with a Laptop",
-};
 
 export default PictureBox;
