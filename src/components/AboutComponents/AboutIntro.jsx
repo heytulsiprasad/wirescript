@@ -51,7 +51,7 @@ function AboutIntro() {
       banner: file(relativePath: { eq: "gemma-evans.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

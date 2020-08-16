@@ -50,7 +50,7 @@ function IndexIntro() {
       banner: file(relativePath: { eq: "guard-infront-of-window.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

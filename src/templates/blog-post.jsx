@@ -155,13 +155,7 @@ function BlogPost({ data, pageContext }) {
         </Layout>
         <Layout bgColor="var(--color-white)">
           <div style={{ maxWidth: "45rem", margin: "0 auto" }}>
-            <BlogContent
-              data-sal="fade"
-              data-sal-delay="200"
-              data-sal-easing="ease-in"
-              data-sal-duration="600"
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
+            <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
             <Bio />
           </div>
         </Layout>
