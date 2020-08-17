@@ -39,7 +39,7 @@ const SEO = ({ description, meta, title, image, slug, lang }) => {
     data.site.siteMetadata.siteUrl;
   const metaKeywords = meta || data.site.siteMetadata.keywords;
 
-  console.log(ogImage);
+  // console.log(ogImage);
 
   return (
     <Helmet

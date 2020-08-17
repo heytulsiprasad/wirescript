@@ -60,10 +60,10 @@ function IndexIntro() {
   return (
     <Layout bgColor="#fff">
       <Intro
-        data-sal="slide-left"
-        data-sal-delay="200"
-        data-sal-easing="ease"
-        data-sal-duration="1000"
+        data-sal="fade"
+        data-sal-delay="100"
+        data-sal-easing="ease-out-expo"
+        data-sal-duration="1100"
       >
         <HeroText>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos

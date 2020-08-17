@@ -25,8 +25,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-        threshold: 0.5,
+        threshold: 0.4,
         once: true,
+        disable: true,
       },
     },
     {
@@ -67,7 +68,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#060b0e`,
         theme_color: `#f8f8f7`,
-        display: `minimal-ui`,
+        display: `fullscreen`,
         icon: `src/images/ws_favicon.png`,
       },
     },

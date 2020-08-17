@@ -3,36 +3,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 import Hero from "../Hero";
-import Arrow from "../svg/arrow";
-import { HeroHeader, BigHead, BigBody } from "../styles";
-
-const HeroFoot = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 2rem;
-
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`;
-
-const Slidey = styled(Link)`
-  align-self: flex-end;
-  display: flex;
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  p {
-    margin-left: 0.9rem;
-    font-weight: 500;
-  }
-`;
+import { HeroHeader, BigHead, BigBody, Author } from "../styles";
 
 function BlogsPage() {
   return (
@@ -52,15 +23,18 @@ function BlogsPage() {
           data-sal-easing="ease"
           data-sal-duration="1200"
         >
-          From the journal of an experienced googler and dope ass coder.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+          laborum!
         </BigBody>
+        <Author
+          data-sal="slide-up"
+          data-sal-delay="450"
+          data-sal-easing="ease"
+          data-sal-duration="1200"
+        >
+          Handwritten by Tulsi Prasad
+        </Author>
       </HeroHeader>
-      <HeroFoot>
-        <Slidey to="/blog#web">
-          <Arrow />
-          <p>Browse all blogs and content</p>
-        </Slidey>
-      </HeroFoot>
     </Hero>
   );
 }

@@ -133,8 +133,8 @@ function Footer({ bgColor }) {
       <FooterMenu>
         <FooterItems>
           <FooterItem to="/blog">Blog</FooterItem>
+          <FooterItem to="/">Home</FooterItem>
           <FooterItem to="/about">About</FooterItem>
-          <FooterItem to="/one">Newsletter</FooterItem>
         </FooterItems>
         <FooterIcons>
           <FaFacebookF />

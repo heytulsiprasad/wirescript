@@ -609,6 +609,7 @@ const App = props => {
             </div>
             <div
               className="formkit-image formkit-image relative focus:outline-none"
+              style={{ outline: "none" }}
               role="button"
               tabIndex={0}
             >

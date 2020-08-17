@@ -6,10 +6,11 @@ import Layout from "./Layout";
 
 const HeroHome = styled.div`
   color: var(--color-primary);
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 function Hero({ children }) {

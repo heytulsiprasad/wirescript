@@ -1,20 +1,7 @@
 import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
 
 import Hero from "../Hero";
-import Arrow from "../svg/arrow";
-import { HeroHeader, Slider, BigHead, BigBody } from "../styles";
-
-const Slidey = styled(Link)`
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    color: inherit;
-    text-decoration: none;
-  }
-`;
+import { HeroHeader, BigHead, BigBody, Author } from "../styles";
 
 function IndexPage({ head }) {
   return (
@@ -34,15 +21,18 @@ function IndexPage({ head }) {
           data-sal-easing="ease"
           data-sal-duration="1000"
         >
-          A journal of an experienced googler and dope ass coder.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          numquam!
         </BigBody>
+        <Author
+          data-sal="slide-up"
+          data-sal-delay="450"
+          data-sal-easing="ease"
+          data-sal-duration="1200"
+        >
+          Handwritten by Tulsi Prasad
+        </Author>
       </HeroHeader>
-      <Slidey to="/#intro">
-        <Slider>
-          <Arrow />
-          <p>Browse topics and resources</p>
-        </Slider>
-      </Slidey>
     </Hero>
   );
 }

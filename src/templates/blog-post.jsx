@@ -32,7 +32,7 @@ const HeroTitle = styled.hgroup`
 
 const BlogTitle = styled.h1`
   color: var(--color-tertiary);
-  font-size: clamp(4rem, 6vw, 6.5rem);
+  font-size: clamp(2.6rem, 6vw, 6.5rem);
   font-weight: 700;
   letter-spacing: -1.5px;
   line-height: 1.25;
@@ -43,6 +43,11 @@ const BlogDate = styled.h2`
   font-weight: 400;
   letter-spacing: -2.5px;
   margin-top: 3rem;
+
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+  }
 `;
 
 const BlogContent = styled.article`
@@ -114,6 +119,77 @@ const BlogContent = styled.article`
     margin-top: 10px;
     font-style: italic;
   }
+
+  @media (max-width: 500px) {
+    & > * + * {
+      margin-top: 1.5rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 2rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.625rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+`;
+
+const Share = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .line {
+    flex-grow: 1;
+    border: 0.5px solid #d3d3d3;
+    margin-right: 20px;
+  }
+
+  span {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      font-size: 1.125rem;
+      color: inherit;
+
+      &:hover {
+        color: #d3d3d3;
+      }
+    }
+  }
+
+  button.twitter {
+    margin-right: 20px;
+  }
 `;
 
 function BlogPost({ data, pageContext }) {
@@ -156,6 +232,28 @@ function BlogPost({ data, pageContext }) {
         <Layout bgColor="var(--color-white)">
           <div style={{ maxWidth: "45rem", margin: "0 auto" }}>
             <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Share>
+              <div className="line"></div>
+              <span>Share Article</span>
+              <button aria-label="twitter" className="twitter">
+                <a
+                  href="https://twitter.com/intent/tweet?url=[ARTICLELINK]&text=Check%20this%20out:"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  Twitter
+                </a>
+              </button>
+              <button aria-label="linkedin" className="linkedin">
+                <a
+                  href="https://www.linkedin.com/shareArticle?mini=true&url=[ARTICLELINK]&title=Check%20this%20out&summary=An amazing article!&source=:"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  LinkedIn
+                </a>
+              </button>
+            </Share>
             <Bio />
           </div>
         </Layout>

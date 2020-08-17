@@ -9,6 +9,7 @@ import LatestArticles from "./../components/IndexComponents/LatestArticles";
 import Footer from "./../components/Footer";
 import IndexIntro from "../components/IndexComponents/IndexIntro";
 import SEO from "../components/SEO";
+import Newsletter from "../components/Newsletter";
 
 const Index = ({ data }) => {
   const meta = data.site.siteMetadata;
@@ -19,6 +20,7 @@ const Index = ({ data }) => {
       <IndexHero head={meta.title} />
       <IndexIntro />
       <LatestArticles />
+      <Newsletter />
       <Footer />
     </SimpleBarReact>
   );

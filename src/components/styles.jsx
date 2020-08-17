@@ -5,7 +5,6 @@ export const HeroHeader = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 5.3333rem;
 `;
 
 export const Slider = styled.div`
@@ -19,7 +18,7 @@ export const Slider = styled.div`
 `;
 
 export const BigHead = styled.h1`
-  font-size: clamp(4rem, 8vw, 6rem);
+  font-size: clamp(3.2rem, 8vw, 6rem);
   font-weight: 500;
   letter-spacing: -3px;
   line-height: 1;
@@ -27,8 +26,22 @@ export const BigHead = styled.h1`
 `;
 
 export const BigBody = styled.h2`
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  width: 95%;
   font-weight: 500;
   letter-spacing: -2px;
   margin-top: 2rem;
+`;
+
+export const Author = styled.h3`
+  font-size: 2rem;
+
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  margin-top: 2rem;
+
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+  }
 `;

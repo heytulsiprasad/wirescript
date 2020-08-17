@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -45,42 +45,6 @@ const BioContainer = styled.div`
   }
 `;
 
-const Share = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  .line {
-    flex-grow: 1;
-    border: 0.5px solid #d3d3d3;
-    margin-right: 20px;
-  }
-
-  span {
-    text-transform: uppercase;
-    margin-right: 20px;
-    font-size: 0.75rem;
-    opacity: 0.7;
-  }
-
-  button {
-    background-color: transparent;
-    border: none;
-    padding: 0px;
-    font-size: 1.125rem;
-    color: inherit;
-    cursor: pointer;
-
-    &:hover {
-      color: #d3d3d3;
-    }
-  }
-
-  button.twitter {
-    margin-right: 20px;
-  }
-`;
-
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -96,38 +60,22 @@ const Bio = () => {
   `);
 
   return (
-    <Fragment>
-      <Share>
-        <div className="line"></div>
-        <span>Share Article</span>
-        <button aria-label="twitter" className="twitter">
-          Twitter
-        </button>
-        <button aria-label="facebook" className="facebook">
-          Facebook
-        </button>
-      </Share>
-      <BioContainer>
-        <Img
-          className="profile-img"
-          fixed={data.profile.childImageSharp.fixed}
-        />
-        {/* <img src="https://picsum.photos/80/" className="profile-image" /> */}
-        <div className="biotext">
-          <h2>
-            <strong>Tulsi Prasad</strong>
-          </h2>
-          <p>
-            He is an aspiring software developer and blogger. He believes that
-            technology combined with human enthusiasm can achieve anything in
-            the world. He avidly takes part in Open Source projects and Meetups
-            in his community for greater good. Currently, he continues doing
-            freelance projects and learning Information Technology as a
-            graduate.
-          </p>
-        </div>
-      </BioContainer>
-    </Fragment>
+    <BioContainer>
+      <Img className="profile-img" fixed={data.profile.childImageSharp.fixed} />
+      {/* <img src="https://picsum.photos/80/" className="profile-image" /> */}
+      <div className="biotext">
+        <h2>
+          <strong>Tulsi Prasad</strong>
+        </h2>
+        <p>
+          He is an aspiring software developer and blogger. He believes that
+          technology combined with human enthusiasm can achieve anything in the
+          world. He avidly takes part in Open Source projects and Meetups in his
+          community for greater good. Currently, he continues doing freelance
+          projects and learning Information Technology as a graduate.
+        </p>
+      </div>
+    </BioContainer>
   );
 };
 

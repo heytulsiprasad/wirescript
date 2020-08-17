@@ -7,7 +7,7 @@ import Articles from "../Articles";
 
 const Main = styled.main`
   width: 100%;
-  padding: 0 0 8rem;
+  padding: 0 0 4rem;
   color: var(--color-primary);
 `;
 

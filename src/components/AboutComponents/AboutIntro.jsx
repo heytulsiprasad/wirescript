@@ -62,10 +62,10 @@ function AboutIntro() {
     <Fragment>
       <Layout bgColor="var(--color-white)">
         <Intro
-          data-sal="slide-left"
+          data-sal="fade"
           data-sal-delay="200"
-          data-sal-easing="ease"
-          data-sal-duration="1500"
+          data-sal-easing="ease-out-expo"
+          data-sal-duration="1000"
         >
           <HeroText>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
@@ -87,19 +87,19 @@ function AboutIntro() {
         </Intro>
         <div
           style={{ padding: "2rem 0 5rem" }}
-          data-sal="zoom-out"
+          data-sal="fade"
           data-sal-delay="100"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
+          data-sal-easing="ease-out-expo"
+          data-sal-duration="1100"
         >
           <PictureBox src={data.banner.childImageSharp.fluid} />
         </div>
         <Intro
           style={{ padding: "2rem 0 5rem" }}
-          data-sal="slide-left"
+          data-sal="fade"
           data-sal-delay="200"
-          data-sal-easing="ease"
-          data-sal-duration="1500"
+          data-sal-easing="ease-out-expo"
+          data-sal-duration="1000"
         >
           <HeroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
