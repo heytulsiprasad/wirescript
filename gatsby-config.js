@@ -72,6 +72,7 @@ module.exports = {
         icon: `src/images/ws_favicon.png`,
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
