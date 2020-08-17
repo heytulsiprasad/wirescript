@@ -5,7 +5,7 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import Layout from "../Layout";
 import Articles from "../Articles";
 
-const Main = styled.main`
+const Main = styled.div`
   width: 100%;
   padding: 0 0 4rem;
   color: var(--color-primary);

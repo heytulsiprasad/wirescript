@@ -29,18 +29,18 @@ const PicCaption = styled.figcaption`
 
   justify-self: end;
   align-self: end;
-  color: var(--color-text-body);
+  color: #464646;
   text-transform: uppercase;
   font-size: 0.8rem;
 
   a {
     text-decoration: underline;
-    color: var(--color-text-body);
+    color: #464646;
 
     &:active,
     &:hover,
     &:focus {
-      color: var(--color-text-link);
+      color: var(--color-text-body);
     }
   }
 

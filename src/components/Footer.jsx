@@ -129,7 +129,7 @@ const FooterIcons = styled.div`
 
 function Footer({ bgColor }) {
   return (
-    <FooterActual>
+    <FooterActual role="contentinfo">
       <FooterMenu>
         <FooterItems>
           <FooterItem to="/blog">Blog</FooterItem>
@@ -145,7 +145,7 @@ function Footer({ bgColor }) {
         </FooterIcons>
       </FooterMenu>
       <FooterCredits>
-        <FooterLogo to="/">
+        <FooterLogo aria-label="Go to Home" to="/">
           <Icon color="var(--color-secondary)" height="4.5rem" width="4.5rem" />
         </FooterLogo>
         <FooterCopy>Wirescript {new Date().getFullYear()}</FooterCopy>

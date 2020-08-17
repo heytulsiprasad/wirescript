@@ -205,7 +205,7 @@ function BlogPost({ data, pageContext }) {
         description={post.frontmatter.description}
         image={post.frontmatter.banner.publicURL}
       />
-      <main>
+      <main role="main">
         <Navbar />
         <Layout as="header" bgColor="#f8f8f7">
           <HeroContainer>

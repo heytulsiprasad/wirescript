@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const HeroHeader = styled.header`
+export const HeroHeader = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  margin-top: 8rem;
 `;
 
 export const Slider = styled.div`

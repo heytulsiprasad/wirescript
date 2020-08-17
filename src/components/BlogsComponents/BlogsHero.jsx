@@ -1,6 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
 
 import Hero from "../Hero";
 import { HeroHeader, BigHead, BigBody, Author } from "../styles";

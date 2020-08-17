@@ -62,6 +62,7 @@ function AboutIntro() {
     <Fragment>
       <Layout bgColor="var(--color-white)">
         <Intro
+          role="main"
           data-sal="fade"
           data-sal-delay="200"
           data-sal-easing="ease-out-expo"

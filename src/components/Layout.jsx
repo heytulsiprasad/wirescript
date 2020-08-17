@@ -31,7 +31,11 @@ const ParentLayout = styled.div`
 
 function Layout({ children, bgColor }) {
   return (
-    <ParentParentLayout bgColor={bgColor ? bgColor : "var(--color-secondary)"}>
+    <ParentParentLayout
+      role="complementary"
+      aria-label="container-for-spacing"
+      bgColor={bgColor ? bgColor : "var(--color-secondary)"}
+    >
       <ParentLayout>{children}</ParentLayout>
     </ParentParentLayout>
   );

@@ -92,7 +92,7 @@ function AllBlogs() {
 
   return (
     <Layout bgColor="var(--color-white)">
-      <AllBlogsContainer>
+      <AllBlogsContainer role="main">
         <BlogsCategory>{posts.map(post => post)}</BlogsCategory>
       </AllBlogsContainer>
     </Layout>

@@ -581,6 +581,7 @@ const App = props => {
         <div data-style="full">
           <div
             data-element="column"
+            role="form"
             className="formkit-column"
             style={{ backgroundColor: "rgb(249, 250, 251)" }}
           >
@@ -627,7 +628,11 @@ const App = props => {
               data-element="errors"
               data-group="alert"
             />
-            <div data-element="fields" className="seva-fields formkit-fields">
+            <div
+              data-element="fields"
+              role="form"
+              className="seva-fields formkit-fields"
+            >
               <div className="formkit-field">
                 <input
                   className="formkit-input"
@@ -648,6 +653,7 @@ const App = props => {
                 <input
                   className="formkit-input"
                   name="email_address"
+                  aria-label="email address"
                   placeholder="Your email address"
                   required
                   type="email"
@@ -680,6 +686,7 @@ const App = props => {
             <div
               className="formkit-guarantee"
               data-element="guarantee"
+              role="form"
               style={{
                 color: "rgb(77, 77, 77)",
                 fontSize: 13,
@@ -688,7 +695,10 @@ const App = props => {
             >
               <p>No spam ever. I pinky promise &lt;3</p>
             </div>
-            <div className="formkit-powered-by-convertkit-container">
+            <div
+              role="form"
+              className="formkit-powered-by-convertkit-container"
+            >
               <a
                 href="https://convertkit.com?utm_source=dynamic&utm_medium=referral&utm_campaign=poweredby&utm_content=form"
                 data-element="powered-by"

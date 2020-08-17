@@ -61,8 +61,8 @@ const NavItemMain = styled(LinkReset)`
 function Navbar() {
   return (
     <Layout bgColor="#232323">
-      <Nav>
-        <NavItemMain to="/">
+      <Nav role="navigation">
+        <NavItemMain aria-label="Go to Home" to="/">
           <Icon color="#fff" height="3rem" width="3rem" />
         </NavItemMain>
         <NavItem to="/">Home</NavItem>

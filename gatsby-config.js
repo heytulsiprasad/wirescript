@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `The Wirescript`,
-    description: `A journey to thousand miles from scratch, handwritten by 
-                  Tulsi Prasad, a self-taught developer.`,
+    description: `A journey of a self-taught developer from scratch, handwritten by 
+                  Tulsi Prasad.`,
     keywords: ["gatsby blog"],
     siteUrl: `https://wirescript.heytulsiprasad.vercel.app/`,
     author: {
