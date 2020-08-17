@@ -6,6 +6,7 @@ export const HeroHeader = styled.div`
   flex-direction: column;
   justify-content: start;
   margin-top: 8rem;
+  margin-bottom: 8rem;
 `;
 
 export const Slider = styled.div`
