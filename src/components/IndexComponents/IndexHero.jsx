@@ -21,8 +21,7 @@ function IndexPage({ head }) {
           data-sal-easing="ease"
           data-sal-duration="1000"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          numquam!
+          A journey of a thousand miles, going from scratch to all the way up
         </BigBody>
         <Author
           data-sal="slide-up"

@@ -37,7 +37,7 @@ const HeroText = styled.h2`
   }
 `;
 
-const IntroText = styled.p`
+const IntroText = styled.div`
   color: #000;
   line-height: 1.6;
   font-size: 1.1rem;
@@ -69,21 +69,28 @@ function AboutIntro() {
           data-sal-duration="1000"
         >
           <HeroText>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-            laboriosam sunt eveniet quis culpa sed voluptatibus dolore. Hic
-            soluta sequi temporibus rerum saepe ut aliquam dicta, maxime dolorum
-            minima architecto?
+            Everyone you meet or speak to is fighting a battle you know nothing
+            about. So, be kind. Always.
           </HeroText>
           <IntroText>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            aperiam nesciunt corporis tempora quis dolore eaque quasi, eius hic
-            commodi fuga quo at fugit? Ullam, deleniti. Magni, atque! Similique
-            quidem laboriosam voluptatem modi eaque expedita obcaecati molestiae
-            repudiandae nemo quasi. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Error aperiam nesciunt corporis tempora quis
-            dolore eaque quasi, eius hic commodi fuga quo at fugit? Ullam,
-            deleniti. Magni, atque! Similique quidem laboriosam voluptatem modi
-            eaque expedita obcaecati repudiandae nemo quasi.
+            <p>
+              Hey, I'm an aspiring software developer and I love to write, so
+              much that I never needed a handwriting book ever. I used to write
+              about physics, space, life, stuff that bugged me when I am alone
+              (which I still do) and now mostly about tech and things I'm
+              learning.
+            </p>
+            <br />
+            <p>
+              One fine day, I wrote something on a piece of paper which got lost
+              or maybe I kept somewhere I couldn't find, and then I realized
+              that everything I've ever wrote would be lost someday without even
+              seeing the light of day, then I decided to make this website, to
+              store everything I write. Also, you can subscribe to my newsletter
+              to get notified a week before I publish on Medium or{" "}
+              <a href="https://dev.to/heytulsiprasad">Dev</a> and discuss
+              matters with me on my email.
+            </p>
           </IntroText>
         </Intro>
         <div
@@ -103,21 +110,18 @@ function AboutIntro() {
           data-sal-duration="1000"
         >
           <HeroText>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quo dicta eligendi numquam molestias commodi sed officiis vitae
-            error maiores at deleniti, alias voluptatum expedita laudantium
-            saepe vel illo.
+            You'll never know what you're capable of if you don't try, so get
+            out of comfort zone often, you'll never regret it.
           </HeroText>
           <IntroText>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            aperiam nesciunt corporis tempora quis dolore eaque quasi, eius hic
-            commodi fuga quo at fugit? Ullam, deleniti. Magni, atque! Similique
-            quidem laboriosam voluptatem modi eaque expedita obcaecati molestiae
-            repudiandae nemo quasi, em ipsum dolor sit amet consectetur
-            adipisicing elit. Error apTeriam nesciunt corporis tempora quis
-            dolore eaque quasi, eius hic commodi fuga quo at fugit? Ullam,
-            deleniti. Magni, atque! Similique quidem laboriosam voluptatem modi
-            eaque expedita obcaecati molestiae repudiandae nemo quasi.
+            <p>
+              No matter how hard you try or what you've planned to overcome
+              procrastination and acheive your goals, life always finds out a
+              way to kick you back to your comfort zone, without you even
+              knowing. So, be persistent in whatever you do or belive in because
+              a river cuts through rock not because of its power, but because of
+              its persistence.
+            </p>
           </IntroText>
         </Intro>
       </Layout>

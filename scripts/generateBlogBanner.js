@@ -4,6 +4,9 @@ const fs = require("fs");
 const YAML = require("yaml");
 const glob = require("glob");
 
+// Sets max listener capability to Infinite
+process.setMaxListeners(Infinity); // <== Important line
+
 // Takes the screenshot in headless mode (default is true)
 const takeScreenshot = async (url, destination) => {
   const browser = await puppeteer.launch();
@@ -55,10 +58,11 @@ const main = async () => {
     const destinationFile = path.join(file.directory, "banner.png");
     const slug = await file.directory.split("/").splice(-2, 2).join("/");
 
-    if (!fs.existsSync(destinationFile)) {
-      await takeScreenshot(`${baseUrl}/${slug}/og_image`, destinationFile);
-      console.log(`Created ${destinationFile}`);
-    }
+    // Removes graphql error message
+    // if (!fs.existsSync(destinationFile)) {
+    await takeScreenshot(`${baseUrl}/${slug}/og_image`, destinationFile);
+    console.log(`Created ${destinationFile}`);
+    // }
   });
 };
 

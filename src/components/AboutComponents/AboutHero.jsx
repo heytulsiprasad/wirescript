@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../Hero";
 
-import { HeroHeader, BigHead, BigBody } from "../styles";
+import { HeroHeader, BigHead, BigBody, Author } from "../styles";
 
 function AboutPage() {
   return (
@@ -24,6 +24,14 @@ function AboutPage() {
           Let's change ourselves first, so that the world could change by
           itself.
         </BigBody>
+        <Author
+          data-sal="slide-up"
+          data-sal-delay="450"
+          data-sal-easing="ease"
+          data-sal-duration="1200"
+        >
+          Handwritten by Tulsi Prasad
+        </Author>
       </HeroHeader>
     </Hero>
   );

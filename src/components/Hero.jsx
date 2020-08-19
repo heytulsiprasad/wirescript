@@ -19,7 +19,7 @@ const HeroHome = styled.div`
 
   @media (min-height: 624px) {
     height: auto;
-    min-height: 42vh;
+    min-height: 45vh;
   }
 `;
 

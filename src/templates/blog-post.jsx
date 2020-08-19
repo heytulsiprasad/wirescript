@@ -112,6 +112,8 @@ const BlogContent = styled.article`
 
   img {
     border-radius: 10px;
+    display: block;
+    width: 100%;
   }
 
   figcaption {
