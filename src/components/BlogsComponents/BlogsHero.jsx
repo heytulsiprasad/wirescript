@@ -13,7 +13,7 @@ function BlogsPage() {
           data-sal-easing="ease"
           data-sal-duration="1000"
         >
-          More Content
+          Everything I've ever written
         </BigHead>
         <BigBody
           data-sal="slide-up"
@@ -21,8 +21,8 @@ function BlogsPage() {
           data-sal-easing="ease"
           data-sal-duration="1200"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-          laborum!
+          From the day I didn't know what programming was, till my last cup of
+          coffee
         </BigBody>
         <Author
           data-sal="slide-up"

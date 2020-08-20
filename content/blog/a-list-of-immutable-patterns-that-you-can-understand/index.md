@@ -1,8 +1,9 @@
 ---
 title: "A List of Immutable Update Patterns that you can understand"
 date: "2020-06-09"
-description: "The tragedy is one of the largest industrial accidents involving the explosive chemical, and it hit Lebanon amid the coronavirus pandemic and an economic crisis."
-category: "Web Developement"
+description: "We learn Redux: Part 4. Basic examples on immutable update patterns, which is required to update data in a Redux store"
+category: "Frontend"
+keywords: "We Learn Redux, Redux, React, Immutable Patterns Redux, React-Redux"
 banner: "./banner.png"
 ---
 

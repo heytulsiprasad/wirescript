@@ -1,8 +1,9 @@
 ---
 title: "The last piece of explanation on slice vs splice"
 date: "2020-04-29"
-description: ""
-category: "Web Developement"
+description: "How to not get confused between Slice and Splice methods in JavaScript Arrays? Nice little trick to distinguish between both almost instantly."
+keywords: "Javascript Splice, JavaScript slice, Splice vs Slice, Confusion Splice vs Slice"
+category: "Frontend"
 banner: "./banner.png"
 ---
 

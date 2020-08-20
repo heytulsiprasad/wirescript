@@ -48,7 +48,7 @@ const IntroText = styled.div`
 function AboutIntro() {
   const data = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { eq: "gemma-evans.jpg" }) {
+      banner: file(relativePath: { eq: "books-on-shelf.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -75,17 +75,17 @@ function AboutIntro() {
           <IntroText>
             <p>
               Hey, I'm an aspiring software developer and I love to write, so
-              much that I never needed a handwriting book ever. I used to write
-              about physics, space, life, stuff that bugged me when I am alone
-              (which I still do) and now mostly about tech and things I'm
-              learning.
+              much that I never needed a handwriting book in my childhood. I
+              used to write about physics, space, life, stuff that bugged me
+              when I am alone (which I still do) and now mostly about tech and
+              things I'm learning.
             </p>
             <br />
             <p>
               One fine day, I wrote something on a piece of paper which got lost
               or maybe I kept somewhere I couldn't find, and then I realized
               that everything I've ever wrote would be lost someday without even
-              seeing the light of day, then I decided to make this website, to
+              seeing the light of day, and so I decided to make this website, to
               store everything I write. Also, you can subscribe to my newsletter
               to get notified a week before I publish on Medium or{" "}
               <a href="https://dev.to/heytulsiprasad">Dev</a> and discuss
@@ -100,7 +100,7 @@ function AboutIntro() {
           data-sal-easing="ease-out-expo"
           data-sal-duration="1100"
         >
-          <PictureBox src={data.banner.childImageSharp.fluid} />
+          <PictureBox src={data.banner.childImageSharp.fluid} by="siebaut" />
         </div>
         <Intro
           style={{ padding: "2rem 0 5rem" }}
@@ -118,9 +118,9 @@ function AboutIntro() {
               No matter how hard you try or what you've planned to overcome
               procrastination and acheive your goals, life always finds out a
               way to kick you back to your comfort zone, without you even
-              knowing. So, be persistent in whatever you do or belive in because
-              a river cuts through rock not because of its power, but because of
-              its persistence.
+              knowing. So, be persistent in whatever you do or believe in it,
+              because a river cuts through rock not because of its power, but
+              because of its persistence.
             </p>
           </IntroText>
         </Intro>

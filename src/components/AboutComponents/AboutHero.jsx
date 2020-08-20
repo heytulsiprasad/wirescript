@@ -21,8 +21,7 @@ function AboutPage() {
           data-sal-easing="ease"
           data-sal-duration="1200"
         >
-          Let's change ourselves first, so that the world could change by
-          itself.
+          If you can't stop thinking about it, don't stop working for it.
         </BigBody>
         <Author
           data-sal="slide-up"

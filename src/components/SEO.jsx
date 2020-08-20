@@ -51,6 +51,10 @@ const SEO = ({ description, meta, title, image, slug, lang }) => {
           content: metaDescription,
         },
         {
+          name: `author`,
+          content: author,
+        },
+        {
           property: `og:title`,
           content: metaTitle,
         },
@@ -98,7 +102,7 @@ const SEO = ({ description, meta, title, image, slug, lang }) => {
         metaKeywords && metaKeywords.length > 0
           ? {
               name: `keywords`,
-              content: metaKeywords.join(", "),
+              content: metaKeywords,
             }
           : []
       )}

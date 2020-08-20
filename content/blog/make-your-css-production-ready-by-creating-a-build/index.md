@@ -1,9 +1,9 @@
 ---
 title: "Make your CSS production ready by creating a build process"
 date: "2020-04-08"
-tags: "webdev, codenewbie, beginners, css"
-description: ""
-category: "Web Developement"
+description: "How to make your SASS (CSS) production ready by adding various vendor prefixes using Autoprefixer, and concatenating all your CSS into one minified \n bundle to improve performance?"
+keywords: "SASS, Autoprefixing vendor prefixes, CSS, Improve performance in CSS"
+category: "Frontend"
 banner: "./banner.png"
 ---
 

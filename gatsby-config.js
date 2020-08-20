@@ -3,7 +3,8 @@ module.exports = {
     title: `The Wirescript`,
     description: `A journey of a self-taught developer from scratch, handwritten by 
                   Tulsi Prasad.`,
-    keywords: ["gatsby blog"],
+    keywords:
+      "Tulsi Prasad, Wirescript, Beginners Web Development, Frontend Development, Python programming",
     siteUrl: `https://wirescript.heytulsiprasad.vercel.app/`,
     author: {
       name: `Tulsi Prasad`,
@@ -56,6 +57,10 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+              noInlineHighlight: true,
+            },
           },
         ],
       },

@@ -62,7 +62,7 @@ function LatestArticles() {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: ASC }
+        sort: { fields: [frontmatter___date], order: DESC }
         limit: 4
       ) {
         edges {

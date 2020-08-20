@@ -1,8 +1,9 @@
 ---
-title: "Tell more story with Emojis 🐨"
+title: "Tell more story with Emojis"
 date: "2020-04-29"
-description: ""
-category: "Web Developement"
+description: "Big Fan of Emojis? Why not bring all fun to your website which also can grab user attention and improve their interaction with your blog? Learn how to add emojis to your websites."
+keywords: "Add emojis to website, Emojis in HTML, Emoji as Favicon, Emoji as cursor"
+category: "Frontend"
 banner: "./banner.png"
 ---
 

@@ -57,7 +57,7 @@ const IntroText = styled.p`
 function IndexIntro() {
   const data = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { eq: "guard-infront-of-window.jpg" }) {
+      banner: file(relativePath: { eq: "cycling-on-road.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -92,7 +92,7 @@ function IndexIntro() {
         </IntroText>
       </Intro>
       <div style={{ padding: "2rem 0 5rem" }}>
-        <PictureBox src={data.banner.childImageSharp.fluid} />
+        <PictureBox src={data.banner.childImageSharp.fluid} by="nairdasemaj" />
       </div>
     </Layout>
   );

@@ -111,9 +111,11 @@ const BlogContent = styled.article`
   }
 
   img {
-    border-radius: 10px;
+    border-radius: 5px;
     display: block;
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
   }
 
   figcaption {
@@ -203,7 +205,7 @@ function BlogPost({ data, pageContext }) {
       <SEO
         slug={slug}
         title={`${post.frontmatter.title} — The Wirescript`}
-        meta={[post.frontmatter.category]}
+        meta={[post.frontmatter.keywords]}
         description={post.frontmatter.description}
         image={post.frontmatter.banner.publicURL}
       />
@@ -274,6 +276,7 @@ export const query = graphql`
       html
       frontmatter {
         category
+        keywords
         description
         date(formatString: "MMMM DD YYYY")
         title

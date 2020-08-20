@@ -19,7 +19,7 @@ const Picture = styled.div`
   img {
     display: block;
     max-width: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0px 5px 15px var(--color-box-shadow);
   }
 `;

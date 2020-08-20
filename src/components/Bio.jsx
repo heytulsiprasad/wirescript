@@ -68,11 +68,11 @@ const Bio = () => {
           <strong>Tulsi Prasad</strong>
         </h2>
         <p>
-          He is an aspiring software developer and blogger. He believes that
+          He is an aspiring software developer and blogger. He believes in
           technology combined with human enthusiasm can achieve anything in the
           world. He avidly takes part in Open Source projects and Meetups in his
           community for greater good. Currently, he continues doing freelance
-          projects and learning Information Technology as a graduate.
+          projects and learning Information Technology as an undergraduate.
         </p>
       </div>
     </BioContainer>

@@ -1,8 +1,9 @@
 ---
 title: "Easy to Write Media Queries "
 date: "2020-04-05"
-description: "The tragedy is one of the largest industrial accidents involving the explosive chemical, and it hit Lebanon amid the coronavirus pandemic and an economic crisis."
-category: "Web Developement"
+description: "A easy and reliable way to write media queries using SASS variables, mixins and if directives in your frontend application, that is modular and \n reusable."
+keywords: "CSS, Media queries, SASS variables, Mixins, If directives"
+category: "Frontend"
 banner: "./banner.png"
 ---
 

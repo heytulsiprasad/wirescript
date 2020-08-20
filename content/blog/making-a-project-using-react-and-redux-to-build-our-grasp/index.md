@@ -1,8 +1,9 @@
 ---
 title: "Making a project using React and Redux to build our grasp"
 date: "2020-06-21"
-description: ""
-category: "Web Developement"
+description: "We Learn Redux: Part 5 (Final). We are making a Countdown timer app. This is loaded with many actions and reducer which are core \n concepts of Redux to give you a clear understanding of it. "
+keywords: "Build a Countdown timer app, Redux projects, React Redux projects, Implementing Redux with React"
+category: "Frontend"
 banner: "./banner.png"
 ---
 
