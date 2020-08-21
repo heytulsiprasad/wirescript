@@ -241,7 +241,11 @@ function BlogPost({ data, pageContext }) {
               <span>Share Article</span>
               <button aria-label="twitter" className="twitter">
                 <a
-                  href="https://twitter.com/intent/tweet?url=[ARTICLELINK]&text=Check%20this%20out:"
+                  href={`https://twitter.com/intent/tweet?url=${
+                    data.site.siteMetadata.siteUrl + slug
+                  }&text=${encodeURIComponent(
+                    post.frontmatter.title
+                  )}&via=heytulsiprasad`}
                   target="_blank"
                   rel="nofollow noreferrer noopener"
                 >
@@ -250,7 +254,10 @@ function BlogPost({ data, pageContext }) {
               </button>
               <button aria-label="linkedin" className="linkedin">
                 <a
-                  href="https://www.linkedin.com/shareArticle?mini=true&url=[ARTICLELINK]&title=Check%20this%20out&summary=An amazing article!&source=:"
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${
+                    data.site.siteMetadata.siteUrl + slug
+                  }&title=${encodeURIComponent(post.frontmatter.title)}
+                  `}
                   target="_blank"
                   rel="nofollow noreferrer noopener"
                 >
@@ -283,6 +290,11 @@ export const query = graphql`
         banner {
           publicURL
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

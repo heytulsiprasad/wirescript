@@ -3,7 +3,7 @@ title: "Visualizing the power of CSS Filters using Picturesque CSS"
 date: "2020-05-27"
 description: "Have issues in distinguishing from different CSS Filters? Easily learn CSS filters using a playground containing useful CSS filters we use in everyday lives"
 keywords: "Picturesque CSS, CSS Filters Playground, Understanding CSS Filters, CSS Filters properties"
-category: "Frontend"
+category: "CSS"
 banner: "./banner.png"
 ---
 

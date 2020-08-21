@@ -3,7 +3,7 @@ title: "The subtle difference between controlled and uncontrolled inputs"
 date: "2020-04-12"
 description: "What is the difference between controlled and uncontrolled inputs in React? How to make forms in React using both Controlled and Uncontrolled input types. "
 keywords: "Forms in React, Uncontrolled controlled components React, Refs in React, File in React"
-category: "Frontend"
+category: "React"
 banner: "./banner.png"
 ---
 

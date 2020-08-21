@@ -3,7 +3,7 @@ title: "What is Redux and what Immutability has to do with it?"
 date: "2020-06-07"
 description: "We Learn Redux: Part 2. What is Redux in laymans terms? What is all the fuss about Actions, Reducer and Store along with illustations?"
 keywords: "We Learn Redux, Real world Redux example, Why use Redux, Redux Actions Reducer and Stores"
-category: "Frontend"
+category: "Redux"
 banner: "./banner.png"
 ---
 

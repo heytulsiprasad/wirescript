@@ -3,7 +3,7 @@ title: "Learn enough Redux to get started with your projects"
 date: "2020-06-08"
 description: "We Learn Redux: Part 3. Learning how to implement Redux in projects, along with Redux APIs like createStore and how to create a Reducer function and Action Object in Redux"
 keywords: "Redux Reducer Function, Redux Action Object, How to add Redux to projects, We Learn Redux"
-category: "Frontend"
+category: "Redux"
 banner: "./banner.png"
 ---
 

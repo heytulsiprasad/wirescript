@@ -3,7 +3,7 @@ title: "What is hoisting, from a beginners perspective?"
 date: "2020-05-04"
 description: "Learn what is hoisting, an often misunderstood but so easy concept in easy steps."
 keywords: "Hoisting in Javascript, Hoisting for beginners, Hoisting is easy"
-category: "Frontend"
+category: "JavaScript"
 banner: "./banner.png"
 ---
 

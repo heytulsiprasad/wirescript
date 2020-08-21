@@ -4,11 +4,13 @@ import Icon from "../components/svg/logo";
 import { Link } from "gatsby";
 
 import {
-  FaFacebookF,
+  FaStackOverflow,
   FaTwitter,
-  FaYoutube,
   FaGithub,
-  FaInstagram,
+  FaDev,
+  FaTelegramPlane,
+  FaTwitch,
+  FaYoutube,
 } from "react-icons/fa";
 
 const FooterActual = styled.div`
@@ -127,6 +129,17 @@ const FooterIcons = styled.div`
   }
 `;
 
+const FLink = styled.a`
+  color: var(--color-text-footer);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+`;
+
 function Footer({ bgColor }) {
   return (
     <FooterActual role="contentinfo">
@@ -137,11 +150,55 @@ function Footer({ bgColor }) {
           <FooterItem to="/about">About</FooterItem>
         </FooterItems>
         <FooterIcons>
-          <FaFacebookF />
-          <FaTwitter />
-          <FaYoutube />
-          <FaGithub />
-          <FaInstagram />
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://twitter.com/heytulsiprasad"
+          >
+            <FaTwitter />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://github.com/heytulsiprasad"
+          >
+            <FaGithub />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://dev.to/heytulsiprasad"
+          >
+            <FaDev />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://t.me/heytulsiprasad"
+          >
+            <FaTelegramPlane />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://stackoverflow.com/users/11674552/heytulsiprasad"
+          >
+            <FaStackOverflow />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://www.twitch.tv/heytulsiprasad"
+          >
+            <FaTwitch />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            href="https://www.youtube.com/channel/UCzHBBd5x8b9dvYNg-WksDZQ"
+          >
+            <FaYoutube />
+          </FLink>
         </FooterIcons>
       </FooterMenu>
       <FooterCredits>

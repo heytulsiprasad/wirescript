@@ -87,5 +87,18 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || null,
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
+    },
   ],
 };

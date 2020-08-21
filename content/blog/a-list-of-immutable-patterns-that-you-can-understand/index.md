@@ -2,7 +2,7 @@
 title: "A List of Immutable Update Patterns that you can understand"
 date: "2020-06-09"
 description: "We learn Redux: Part 4. Basic examples on immutable update patterns, which is required to update data in a Redux store"
-category: "Frontend"
+category: "Redux"
 keywords: "We Learn Redux, Redux, React, Immutable Patterns Redux, React-Redux"
 banner: "./banner.png"
 ---

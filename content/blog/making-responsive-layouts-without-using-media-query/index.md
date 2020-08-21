@@ -3,7 +3,7 @@ title: "Making Responsive Layouts without using Media Queries"
 date: "2020-04-16"
 description: "How to add responsiveness to your site without using CSS media queries with use of CSS Grid Layouts? A new approach to do responsive web design."
 keywords: "Responsive web design without media queries, Media query less Responsiveness, CSS Grid Responsiveness"
-category: "Frontend"
+category: "CSS"
 banner: "./banner.png"
 ---
 

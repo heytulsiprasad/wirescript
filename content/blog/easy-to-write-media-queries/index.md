@@ -3,7 +3,7 @@ title: "Easy to Write Media Queries "
 date: "2020-04-05"
 description: "A easy and reliable way to write media queries using SASS variables, mixins and if directives in your frontend application, that is modular and \n reusable."
 keywords: "CSS, Media queries, SASS variables, Mixins, If directives"
-category: "Frontend"
+category: "CSS"
 banner: "./banner.png"
 ---
 
