@@ -98,6 +98,10 @@ const SEO = ({ description, meta, title, image, slug, lang }) => {
           name: `twitter:image`,
           content: ogImage,
         },
+        {
+          name: `google-site-verification`,
+          content: `Wdm8xhSZd8BD4R3i-k19kSAlrRgcvx0h4h2W46x56EQ`,
+        },
       ].concat(
         metaKeywords && metaKeywords.length > 0
           ? {
