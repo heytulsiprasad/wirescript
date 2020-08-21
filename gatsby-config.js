@@ -4,7 +4,7 @@ module.exports = {
     description: `A journey of a self-taught developer from scratch, handwritten by 
                   Tulsi Prasad.`,
     keywords:
-      "Tulsi Prasad, Wirescript, Beginners Web Development, Frontend Development, Python programming",
+      "Tulsi Prasad, Wirescript, Beginners Web Development, React Redux, Python programming",
     siteUrl: `https://wirescript.heytulsiprasad.vercel.app/`,
     author: {
       name: `Tulsi Prasad`,
