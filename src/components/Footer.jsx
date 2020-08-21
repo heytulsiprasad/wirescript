@@ -153,6 +153,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Follow me on Twitter"
             href="https://twitter.com/heytulsiprasad"
           >
             <FaTwitter />
@@ -160,6 +161,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Follow my code on Github"
             href="https://github.com/heytulsiprasad"
           >
             <FaGithub />
@@ -167,6 +169,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Follow my public articles on Dev"
             href="https://dev.to/heytulsiprasad"
           >
             <FaDev />
@@ -174,6 +177,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Come chat with me on Telegram"
             href="https://t.me/heytulsiprasad"
           >
             <FaTelegramPlane />
@@ -181,6 +185,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="See my public answers on Stackoverflow"
             href="https://stackoverflow.com/users/11674552/heytulsiprasad"
           >
             <FaStackOverflow />
@@ -188,6 +193,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Follow my livestreams in future on Twitch"
             href="https://www.twitch.tv/heytulsiprasad"
           >
             <FaTwitch />
@@ -195,6 +201,7 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Follow my upcoming videos on YouTube"
             href="https://www.youtube.com/channel/UCzHBBd5x8b9dvYNg-WksDZQ"
           >
             <FaYoutube />
