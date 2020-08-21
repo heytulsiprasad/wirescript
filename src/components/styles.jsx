@@ -33,6 +33,10 @@ export const BigBody = styled.h2`
   font-weight: 500;
   letter-spacing: -2px;
   margin-top: 2rem;
+
+  @media (max-width: 500px) {
+    letter-spacing: -1px;
+  }
 `;
 
 export const Author = styled.h3`
@@ -44,6 +48,6 @@ export const Author = styled.h3`
 
   @media (max-width: 500px) {
     font-size: 1.5rem;
-    letter-spacing: -1px;
+    letter-spacing: -0.9px;
   }
 `;

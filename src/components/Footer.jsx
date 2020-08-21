@@ -78,7 +78,7 @@ const FooterMenu = styled.div`
 
   @media (max-width: 500px) {
     grid-row: 2 / 6;
-    grid-column: 3 / 7;
+    grid-column: 1 / -1;
     justify-self: center;
     margin: 0 auto;
   }
