@@ -59,10 +59,10 @@ const main = async () => {
     const slug = await file.directory.split("/").splice(-2, 2).join("/");
 
     // Removes graphql error message
-    // if (!fs.existsSync(destinationFile)) {
-    await takeScreenshot(`${baseUrl}/${slug}/og_image`, destinationFile);
-    console.log(`Created ${destinationFile}`);
-    // }
+    if (!fs.existsSync(destinationFile)) {
+      await takeScreenshot(`${baseUrl}/${slug}/og_image`, destinationFile);
+      console.log(`Created ${destinationFile}`);
+    }
   });
 };
 

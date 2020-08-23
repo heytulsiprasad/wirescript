@@ -202,6 +202,8 @@ fs.writeFileSync("sample.json", jsonData);
 
 As you'll now see a new file gets created with all the data you had in the csv file in a JSON format.
 
+<iframe height="500" width="100%" src="https://repl.it/@heytulsiprasad/Reduce-Final-Example?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
 # Conclusion
 
 It's easy to do a lot of things in reduce which is like a superpower. Personally, when I used reduce I felt I don't need to have a variable name for everything and that makes stuff easier for me to debug and working with nice looking, more understandable code makes my day better. You can discuss more with me on Twitter, [@heytulsiprasad](https://twitter.com/heytulsiprasad).
