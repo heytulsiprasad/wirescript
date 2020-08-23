@@ -39,7 +39,8 @@ How to define our grid layout?
 
 Believe it or not! 😱 This above line of code is all it takes to set you up for a basic responsive layout such as the one down below. Let me tell you, you also don't need to define any rows as the grid figures it out automatically. 🤖 Apart from this, you might wanna add a custom `grid-gap` to give some beautiful whitespace among them. 😎
 
-[https://codepen.io/tulsi-prasad/pen/qBOZOWK?editors=1100](https://codepen.io/tulsi-prasad/pen/qBOZOWK?editors=1100)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/qBOZOWK?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 The Original Grid Layout
 
@@ -57,7 +58,8 @@ The `auto-fill` makes more columns of its size when the viewport is increased in
 
 Further reading on this down below.
 
-[https://codepen.io/tulsi-prasad/pen/XWmddjK](https://codepen.io/tulsi-prasad/pen/XWmddjK)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/XWmddjK?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 # ⚡ Let's get to Flex
 
@@ -77,7 +79,8 @@ Properties of flex-wrap
 
 So, in our case we are going to use `flex-wrap: wrap` to wrap the items in the flex container to give a shiny little responsive feel to our section. We also use a tiny `justify-content: space-around` to give a more symmetrical look. 😎
 
-[https://codepen.io/tulsi-prasad/pen/qBOZNvG?editors=1100](https://codepen.io/tulsi-prasad/pen/qBOZNvG?editors=1100)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/qBOZNvG?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 ## 🌈 Can I make responsive layouts now?
 

@@ -62,7 +62,8 @@ Okay, lets see how to write the codepoint. If you don't have a emoji keyboard or
 
 Now, you can see the codepoint for our 😍 emoji is, `U+1F60D` which you got to copy and then replace the `U+` with some escape characters which are `&#x`. And end the string with a semi-colon `;`. Here we go. Our emoji is showing fine!
 
-[https://codepen.io/tulsi-prasad/pen/RwWKwXq](https://codepen.io/tulsi-prasad/pen/RwWKwXq)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/RwWKwXq?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 **P.S:** As all our emojis are coming under **UTF-8** character encoding, so if you're emoji isn't displayed somehow or you want to make things more robust, so you can add a `meta` tag with the charset. All you need to do is add, `<meta charset="UTF-8">` to your `<head>` tag and you're all set!
 
@@ -74,13 +75,15 @@ We can use it for many cool purposes, I'm going to show you two of them. Hold on
 
 You can see how the emoji is added inside `content` property of the pseudo selectors in the CSS. As said, they can be put anywhere like normal characters.
 
-[https://codepen.io/tulsi-prasad/pen/OJyWVxg](https://codepen.io/tulsi-prasad/pen/OJyWVxg)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/OJyWVxg?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 ### Cursors with Emojis
 
 I learnt it recently and it feels so awesome! 😍 You might already be knowing the `cursor` property in CSS, that can take values like `progress, pointer` etc, and also you can give a custom URL. This allows you to customize whatever you want as a cursor, it can be a picture or even emoji! 🙈
 
-[https://codepen.io/tulsi-prasad/pen/wvKgKJY](https://codepen.io/tulsi-prasad/pen/wvKgKJY)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/wvKgKJY?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 So, how did I get all the gibberish written inside `cursor: url()`! You guessed it right, there's a site called [emojicursor.app](http://emojicursor.app) which generates the emoji url for you! Gotcha? 🙌 You can just copy and paste it in your required element.
 
@@ -90,7 +93,8 @@ Also there's a hard way which is also awesome, but thats beyond the scope of thi
 
 As said you can use them alike characters wherever you want, either from its codepoint or by putting the icon. Well, here's one more example! 💁‍♂️
 
-[https://codepen.io/tulsi-prasad/pen/abvpJXa](https://codepen.io/tulsi-prasad/pen/abvpJXa)
+<iframe height="500" style="width: 100%;" scrolling="no" title="Grid Approach to Responsive Design" src="https://codepen.io/tulsi-prasad/embed/abvpJXa?height=500&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
 You can see in the **JS**, how we get the emoji from its codepoint. As said earlier, you can go to the unicode emoji list, but the only catch is that replace **U+** with **0x** this time. And write it like this. `String.fromCodePoint(0x1F4AA)`.
 
@@ -107,7 +111,7 @@ To begin with, Favicons are those small icons you see beside the title of your w
 - Copy the URL from the new tab with image
 - And paste it in your HTML in this manner (ofc, give your own href 😅)
 
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/heart-with-arrow_1f498.png" />
+<link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/heart-with-arrow_1f498.png" />
 
 ## 🥳 Add emojis to your Git Commits
 

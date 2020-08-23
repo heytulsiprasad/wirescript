@@ -213,4 +213,4 @@ You can check these out for more examples on using reduce!
 - [A Guide To The Reduce Method In Javascript​](https://www.freecodecamp.org/news/reduce-f47a7da511a9/)
 - [Useful "reduce" use cases](https://itnext.io/useful-reduce-use-cases-91a86ee10bcd)
 - [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-- [Explanation of javascript's reduce() with a real world use case](https://medium.com/@trekinbami/explanation-of-javascripts-reduce-with-a-real-world-use-case-f3f5014951e2)
+- [Explanation of avascript's reduce() with a real world use case](https://medium.com/@trekinbami/explanation-of-javascripts-reduce-with-a-real-world-use-case-f3f5014951e2)
