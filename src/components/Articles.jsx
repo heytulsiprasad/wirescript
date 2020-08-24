@@ -58,7 +58,7 @@ const EntryDetail = styled.div`
 
 const EntryTitle = styled.h1`
   font-family: var(--font-title);
-  font-size: clamp(2rem, 3vw, 2.25rem);
+  font-size: clamp(1.8rem, 3vw, 2.25rem);
   font-weight: 700;
   color: #000;
   align-self: flex-end;
@@ -71,6 +71,10 @@ const EntryDescription = styled.p`
   font-size: 17px;
   line-height: 1.5;
   font-weight: 500;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
 `;
 
 const NewLink = styled(Link)`

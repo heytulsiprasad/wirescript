@@ -13,8 +13,8 @@ const Main = styled.div`
 
 const BoldText = styled.h2`
   text-align: right;
-  /* font-size: clamp(6rem, 8vw, 10rem); */
-  font-size: clamp(4rem, 7vw, 8rem);
+  /* font-size: clamp(4rem, 7vw, 8rem); */
+  font-size: clamp(3.8rem, 6vw, 8rem);
   letter-spacing: -2px;
   font-weight: 600;
   line-height: 1.05;

@@ -18,7 +18,7 @@ const BlogsParent = styled.div`
 `;
 
 const CategoryTitle = styled.h2`
-  font-size: clamp(5rem, 6vw, 8rem);
+  font-size: clamp(3.8rem, 6vw, 8rem);
   font-weight: 500;
   letter-spacing: -3px;
   color: var(--color-tertiary);

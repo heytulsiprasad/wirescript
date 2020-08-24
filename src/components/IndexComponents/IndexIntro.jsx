@@ -32,6 +32,10 @@ const HeroText = styled.h2`
     grid-column: 1 / span 2;
   }
 
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+
   /* // TODO: Create a back tick image */
   /* 
   &::before {
@@ -51,6 +55,10 @@ const IntroText = styled.p`
 
   @media (max-width: 1300px) {
     grid-column: 1 / span 2;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1rem;
   }
 `;
 

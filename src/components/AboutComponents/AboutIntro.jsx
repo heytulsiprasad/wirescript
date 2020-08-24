@@ -6,13 +6,14 @@ import Layout from "./../Layout";
 import PictureBox from "./../PictureBox";
 
 const Intro = styled.div`
-  padding: 5rem 0 8rem;
+  padding: 5rem 0 2rem;
   display: grid;
   grid-column-gap: 2.6667rem;
   grid-row-gap: 5.3333rem;
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  margin-bottom: 3rem;
 
   @media (max-width: 1300px) {
     grid-template-columns: repeat(2, 1fr);
@@ -23,7 +24,7 @@ const HeroText = styled.h2`
   font-size: 1.8rem;
   max-width: 53.3333rem;
   font-weight: 500;
-  line-height: 2.6667rem;
+  line-height: 1.4;
   color: #000;
 
   grid-column: 1 / span 2;
@@ -35,6 +36,10 @@ const HeroText = styled.h2`
   @media (max-width: 1000px) {
     width: 100%;
   }
+
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const IntroText = styled.div`
@@ -43,6 +48,10 @@ const IntroText = styled.div`
   font-size: 1.1rem;
   grid-row: 2 / span 1;
   grid-column: 1 / span 2;
+
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 function AboutIntro() {
