@@ -95,6 +95,10 @@ const BlogContent = styled.article`
   ul {
     list-style-position: inside;
     list-style-type: disc;
+
+    li {
+      margin: 10px 0;
+    }
   }
 
   a,
