@@ -136,6 +136,32 @@ const vegetables = items.filter(item => isVegetable(item));
 
 Ultimately, we came to know how to write a curry function, which was way easier than we thought.
 
+## Edit
+
+Can you think of a slightly different way to write our functions in the above example, to write less code and make it more straightforward? Is it possible?
+
+Yes and thanks to [Rudy Nappée](https://dev.to/devdufutur) for showing us the same in the [comments](https://dev.to/devdufutur/comment/1465n) and I thought it'll be useful for everyone reading this post.
+
+So, what we should do is: "**Always put the point (argument on which the partial application operates in the end) at the last position**".
+
+```jsx
+const isType = type => obj => obj.type === type;
+```
+
+In this way, we don't have to redefine yet another function, like we did for `isFruit` and `isVegetable` , instead we can write.
+
+```jsx
+const isFruit = isType("Fruit");
+const isVegetable = isType("Vegetable");
+```
+
+Or you can write it in a more straightforward way, directly in the filter callbacks.
+
+```jsx
+const fruits = items.filter(isType("Fruit"));
+const vegetables = items.filter(isType("Vegetable"));
+```
+
 # Making our own helper function
 
 After being able to transform a normal function to a curry function using a helper function, like `.curry()` from [Lodash](https://lodash.com/), I was curious to know how to build one for ourselves. Because, you know at times, we only need handful of functions for which including a giant utility library like [Lodash](https://github.com/lodash/lodash) isn't necessary.
