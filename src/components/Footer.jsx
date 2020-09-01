@@ -11,7 +11,10 @@ import {
   FaTelegramPlane,
   FaTwitch,
   FaYoutube,
+  FaLinkedinIn,
 } from "react-icons/fa";
+
+import { FiMail } from "react-icons/fi";
 
 const FooterActual = styled.div`
   background-color: #060b0e;
@@ -165,6 +168,22 @@ function Footer({ bgColor }) {
             href="https://github.com/heytulsiprasad"
           >
             <FaGithub />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            aria-label="Connect on LinkedIn"
+            href="https://linkedin.com/in/heytulsiprasad"
+          >
+            <FaLinkedinIn />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            aria-label="Reach out to me with email"
+            href="mailto:tulsi.prasad50@gmail.com"
+          >
+            <FiMail />
           </FLink>
           <FLink
             target="_blank"
