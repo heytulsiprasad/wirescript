@@ -17,7 +17,7 @@ Hopefully, this will be a checklist for anyone who wants to implement Redux, in 
 
 # Getting Started
 
-To get started lets get a fresh project bootstraped with the CRA template on our machine.
+To get started lets get a fresh project bootstrapped with the CRA template on our machine.
 
 ```bash
 npx create-react-app redux-demo-setup
@@ -33,13 +33,13 @@ There are couple of ways to deal with initial state management like:
 - React's own Context API
 - Unstated, which internally uses context to manage state simply
 
-But ofcourse, I won't go over all those steps as you've come here to know how to setup Redux for your project.
+But of course, I won't go over all those steps as you've come here to know how to setup Redux for your project.
 
 ### A quick one image recap on redux
 
 ![./redux-cycle.png](./redux-cycle.png)
 
-A screen-cap from [Moden React with Redux](https://www.udemy.com/course/react-redux/).
+A screen-cap from [Modern React with Redux](https://www.udemy.com/course/react-redux/).
 
 # Where to start?
 
@@ -215,11 +215,11 @@ This is a very in-depth explanation regarding why you should use `redux-thunk` f
 
 [Why do we need middleware for async flow in Redux?](https://stackoverflow.com/a/34599594/11674552)
 
-In a nutshell, you'll always want to approach asyncronous requests in our action creators with some kind of middleware like **[Thunk](https://github.com/reduxjs/redux-thunk)** or **[Saga](https://redux-saga.js.org/).** As otherwise, you'd have to clutter up your components by passing dispatch as a parameter to your action creators, which is not something your component should worry about. Again, the above post explains it much more clearly than I do.
+In a nutshell, you'll always want to approach asynchronous requests in our action creators with some kind of middleware like **[Thunk](https://github.com/reduxjs/redux-thunk)** or **[Saga](https://redux-saga.js.org/).** As otherwise, you'd have to clutter up your components by passing dispatch as a parameter to your action creators, which is not something your component should worry about. Again, the above post explains it much more clearly than I do.
 
 # Connect Redux store using `react-redux` to application
 
-This is where the package `react-redux` works. It assigns our `store` object to its `[<Provider>` API](https://react-redux.js.org/api/provider) which allows us to access the global store from any where within our application.
+This is where the package `react-redux` works. It assigns our `store` object to its [<Provider> API](https://react-redux.js.org/api/provider) which allows us to access the global store from any where within our application.
 
 When I say _"you can access the store from anywhere within your application"_ doesn't mean that you should, but it's a matter of preference. I stick to making components which are separated into **container** and **components** folder inside my `src`. You might know them as **Presentational and Container** components and allow only the **container components** to access the global store and pass it down to presentational ones. You can read about this pattern from [Dan's Medium Post](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
 
@@ -248,7 +248,7 @@ class App extends Component {
 export default App;
 ```
 
-Make sure you wrap `Provider` around the entirity of your application, to access the store everywhere.
+Make sure you wrap `Provider` around the entirety of your application, to access the store everywhere.
 
 ## Accessing state from components
 
