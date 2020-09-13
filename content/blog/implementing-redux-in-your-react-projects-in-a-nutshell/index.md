@@ -219,7 +219,7 @@ In a nutshell, you'll always want to approach asynchronous requests in our actio
 
 # Connect Redux store using `react-redux` to application
 
-This is where the package `react-redux` works. It assigns our `store` object to its [<Provider> API](https://react-redux.js.org/api/provider) which allows us to access the global store from any where within our application.
+This is where the package `react-redux` works. It assigns our `store` object to its [Provider API](https://react-redux.js.org/api/provider) which allows us to access the global store from any where within our application.
 
 When I say _"you can access the store from anywhere within your application"_ doesn't mean that you should, but it's a matter of preference. I stick to making components which are separated into **container** and **components** folder inside my `src`. You might know them as **Presentational and Container** components and allow only the **container components** to access the global store and pass it down to presentational ones. You can read about this pattern from [Dan's Medium Post](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
 
