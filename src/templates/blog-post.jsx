@@ -59,6 +59,7 @@ const BlogContent = styled.article`
   text-align: left;
   font-kerning: normal;
   padding: 3rem 0 6rem;
+  word-wrap: break-word;
   color: #000;
 
   /* Internal HTML styles */
