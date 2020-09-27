@@ -3,7 +3,7 @@ title: "How to setup MongoDB with Node.js and Express?"
 date: "2020-09-19"
 description: "Need a database for your project? Learn how to add MongoDB to your Node Express Server instantly and host it on Mongo Atlas for production."
 keywords: "MongoDB Setup, Setup MongoDB with Node Express, Mongo Atlas Setup, MongoDB in Production"
-category: "Database"
+category: "NodeJS"
 banner: "./banner.png"
 ---
 
