@@ -1,5 +1,5 @@
 ---
-title: "Top 5 CORS Issues You Don't Want To Run Into"
+title: "Top Five CORS Issues You Don't Want To Run Into"
 date: "2020-09-27"
 description: "The guide to fixing all the CORS issues in your application and beyond."
 keywords: "Top CORS Issues, Access Control Allow Origin Cors Header, SameSite cookie blocked"
