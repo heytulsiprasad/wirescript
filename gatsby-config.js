@@ -80,7 +80,7 @@ module.exports = {
         background_color: `#060b0e`,
         theme_color: `#f8f8f7`,
         display: `fullscreen`,
-        icon: `src/images/ws_favicon.png`,
+        icon: `src/images/ws_favicon1.png`,
         icon_options: {
           purpose: `maskable`,
         },
