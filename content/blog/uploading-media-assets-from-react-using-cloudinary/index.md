@@ -15,9 +15,9 @@ I usually don't like making examples just for blogs (as they're time consuming) 
 
 Speaking of, last week I made [this app](https://talk-to.vercel.app/) to learn about authentication, where you can create your account (OAuth/Local) and edit your info, like image and name, so I liked to try out Cloudinary. You can tap _Change Photo_ (on edit page) to add your photos, this is handled by Cloudinary in React itself. You can find it on my GitHub. ([talkto-frontend](https://github.com/heytulsiprasad/talkto-frontend) and [talkto-backend](https://github.com/heytulsiprasad/talkto-backend))
 
-![./talkto-home.png](./talkto-home.png)
+![Home page of Talk to](./talkto-home.png)
 
-![./talkto-edit.png](./talkto-edit.png)
+![Edit page of Talk to](./talkto-edit.png)
 
 # Do you have a Cloudinary Account?
 
@@ -90,7 +90,7 @@ Here, `imageUpload` is an utils function that handles the post request work to C
 
 Once you logged in, this is how you're dashboard will look like.
 
-![./cloudinary-dashboard.png](./cloudinary-dashboard.png)
+![Cloudinary Dashboard](./cloudinary-dashboard.png)
 
 And your endpoint will be something in terms of this: [`https://api.cloudinary.com/v1_1/:cloud_name/:action`](https://api.cloudinary.com/v1_1/:cloud_name/:action)
 
@@ -98,7 +98,7 @@ Our action here would be `/image/upload` as we're uploading images and cloud nam
 
 One last thing we need is an upload preset, which we'll pass with our `FormData` object, it'll define default behavior of your uploads. You can create/get one inside **Settings →** **Upload** then scroll down to upload presets.
 
-![./upload-preset.png](./upload-preset.png)
+![Upload Preset screenshot](./upload-preset.png)
 
 If you're creating one, you can select signing mode as **Unsigned**. This will allow you to perform uploads directly from the browser without going through your servers. Once it's done, hit save and you're preset name will appear as shown above.
 
@@ -137,7 +137,7 @@ This function takes, `imageFile` from our component and the `upload_preset` we g
 
 This is a great feature that you can take advantage of. It shows an upload widget which allows you to upload files from various sources, like Dropbox or Google Drive. You can also add it to your project according to requirements. You can refer [the official docs](https://cloudinary.com/documentation/upload_widget) or [this blog](https://medium.com/@jordanmmartin/quickstart-guide-to-using-cloudinary-upload-widget-v2-in-react-4c4d9041d55e) for clarification with React.
 
-![./upload_widget.png](./upload_widget.png)
+![Cloudinary Image Upload Widget](./upload_widget.png)
 
 Although I haven't used any transformations in my example, but you can absolutely use them if you want to crop or do some fancy edits, all you have to do is add your transformation to end of your request endpoint. Or if you want the edits to happen by default you can do so while setting your upload preset.
 
