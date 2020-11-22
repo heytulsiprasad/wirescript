@@ -1,18 +1,15 @@
 import React from "react";
 
-import "simplebar/src/simplebar.css";
-import SimpleBarReact from "simplebar-react";
-
 import SEO from "./../components/SEO";
-
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import { HeroHeader, BigHead, BigBody } from "../components/styles";
+import Banner from "./../components/Banner";
 
 const About = () => (
-  <SimpleBarReact style={{ maxHeight: "100vh" }}>
+  <>
     <SEO title="Oops, you've a 404 — The Wirescript" />
-
+    <Banner />
     <Hero>
       <HeroHeader>
         <BigHead
@@ -35,7 +32,7 @@ const About = () => (
     </Hero>
 
     <Footer bgColor="var(--color-white)" />
-  </SimpleBarReact>
+  </>
 );
 
 export default About;

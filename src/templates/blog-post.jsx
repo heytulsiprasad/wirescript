@@ -2,15 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
 
-import "simplebar/src/simplebar.css";
-import SimpleBarReact from "simplebar-react";
-
 import Layout from "./../components/Layout";
 import Navbar from "./../components/Navbar";
 import Footer from "./../components/Footer";
 import Bio from "./../components/Bio";
 import SEO from "../components/SEO";
 import Newsletter from "../components/Newsletter";
+import Banner from "./../components/Banner";
 
 const HeroContainer = styled.div`
   color: var(--color-primary);
@@ -206,7 +204,7 @@ function BlogPost({ data, pageContext }) {
   const { slug } = pageContext;
 
   return (
-    <SimpleBarReact style={{ maxHeight: "100vh" }}>
+    <>
       <SEO
         slug={slug}
         title={`${post.frontmatter.title} — The Wirescript`}
@@ -214,6 +212,7 @@ function BlogPost({ data, pageContext }) {
         description={post.frontmatter.description}
         image={post.frontmatter.banner.publicURL}
       />
+      <Banner />
       <main role="main">
         <Navbar />
         <Layout as="header" bgColor="#f8f8f7">
@@ -276,7 +275,7 @@ function BlogPost({ data, pageContext }) {
         <Newsletter />
         <Footer bgColor="var(--color-white)" />
       </main>
-    </SimpleBarReact>
+    </>
   );
 }
 
