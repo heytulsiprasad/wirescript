@@ -12,6 +12,7 @@ import {
   FaTwitch,
   FaYoutube,
   FaLinkedinIn,
+  FaDiscord,
 } from "react-icons/fa";
 
 import { FiMail } from "react-icons/fi";
@@ -164,11 +165,20 @@ function Footer({ bgColor }) {
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
+            aria-label="Join us on Discord"
+            href="https://discord.com/invite/TK8EMW59Zm"
+          >
+            <FaDiscord />
+          </FLink>
+          <FLink
+            target="_blank"
+            rel="nofollow noreferrer noopener"
             aria-label="Follow my code on Github"
             href="https://github.com/heytulsiprasad"
           >
             <FaGithub />
           </FLink>
+
           <FLink
             target="_blank"
             rel="nofollow noreferrer noopener"
@@ -213,17 +223,9 @@ function Footer({ bgColor }) {
             target="_blank"
             rel="nofollow noreferrer noopener"
             aria-label="Follow my livestreams in future on Twitch"
-            href="https://www.twitch.tv/heytulsiprasad"
+            href="https://www.twitch.tv/wirescripttech"
           >
             <FaTwitch />
-          </FLink>
-          <FLink
-            target="_blank"
-            rel="nofollow noreferrer noopener"
-            aria-label="Follow my upcoming videos on YouTube"
-            href="https://www.youtube.com/channel/UCzHBBd5x8b9dvYNg-WksDZQ"
-          >
-            <FaYoutube />
           </FLink>
         </FooterIcons>
       </FooterMenu>
