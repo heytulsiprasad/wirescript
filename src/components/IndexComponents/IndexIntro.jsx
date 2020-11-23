@@ -92,11 +92,11 @@ function IndexIntro() {
           helps us achieve more and become the best version of ourselves. But do
           we really follow that principle? Ask yourself. I used to think of it
           in my childhood, as most of the things we're taught in school had
-          nothing to do with my life, once I was out of school but still
+          nothing to do with my life once I was out of school, but still
           everyday I had to go there. Now you'd be like, but that's essential
-          I'm sorry I was never excited about who united the nomadic tribes of
-          the Mongolian plateau in 11th century. But still I had to go to school
-          anyway so that's when I started writing.
+          then I'm sorry, I was never excited about who united the nomadic
+          tribes of the Mongolian plateau in 11th century. But still I had to go
+          to school anyway so that's when I started writing.
         </IntroText>
       </Intro>
       <div style={{ padding: "2rem 0 5rem" }}>

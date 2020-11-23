@@ -52,6 +52,10 @@ const IntroText = styled.div`
   @media (max-width: 500px) {
     font-size: 1rem;
   }
+
+  a {
+    color: inherit;
+  }
 `;
 
 function AboutIntro() {
@@ -85,9 +89,12 @@ function AboutIntro() {
             <p>
               Hey, I'm an aspiring software developer and I love to write, so
               much that I never needed a handwriting book in my childhood. I
-              used to write about physics, space, life, stuff that bugged me
-              when I am alone (which I still do) and now mostly about tech and
-              things I'm learning.
+              used to write about{" "}
+              <a href="https://akidonscience.blogspot.com/2019/09/did-binary-fission-shape-our-universe.html">
+                physics
+              </a>
+              , space, life, stuff that bugged me when I am alone (which I still
+              do) and now mostly about tech and things I'm learning.
             </p>
             <br />
             <p>
@@ -96,9 +103,11 @@ function AboutIntro() {
               that everything I've ever wrote would be lost someday without even
               seeing the light of day, and so I decided to make this website, to
               store everything I write. Also, you can subscribe to my newsletter
-              to get notified a week before I publish on Medium or{" "}
-              <a href="https://dev.to/heytulsiprasad">Dev</a> and discuss
-              matters with me on my email.
+              to get more resources on frontend and design stuff. I also publish
+              on <a href="https://dev.to/heytulsiprasad">Dev</a> and as a side
+              note I now hangout most of the time on our{" "}
+              <a href="https://bit.ly/wirescript">Discord</a>, which you can
+              join to discuss stuff about tech, life, health or anything.
             </p>
           </IntroText>
         </Intro>

@@ -10,7 +10,6 @@ import {
   FaDev,
   FaTelegramPlane,
   FaTwitch,
-  FaYoutube,
   FaLinkedinIn,
   FaDiscord,
 } from "react-icons/fa";
