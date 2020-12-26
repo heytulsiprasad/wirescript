@@ -20,7 +20,7 @@ More info:
 
 Well, background images have been easy to do from CSS by adding just `background-image: url()` and it's as simple as that. However, in this way we couldn't use all the sick, speedy optimized images as gatsby images give.
 
-So as a result I ended up putting the link to an unoptimized picture uploaded to imgur (to add to the charm, it even was over 1MB!!). This harmed the overrall performance as well, coz the site needed to download all this data in the first load.
+So as a result I ended up putting the link to an unoptimized picture uploaded to imgur (to add to the charm, it even was over 1MB!!). This harmed the overall performance as well, coz the site needed to download all this data in the first load.
 
 ![Top Issues on GT Metrix](./top-issues.png)
 
@@ -212,7 +212,7 @@ And this popped up some more errors too 😥
 
 ### So ultimately,
 
-I created a basic `motion.div` wrapper that contained just the `Img` component inside it, along with `pointer-events: none` so the image won't posses it's default drag behavior.
+I created a basic `motion.div` wrapper that contained just the `Img` component inside it, along with `pointer-events: none` so the image won't posses it's default drag behaviour.
 
 ```jsx
 const Image = styled(Img)`

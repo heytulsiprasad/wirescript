@@ -48,32 +48,44 @@ const BioContainer = styled.div`
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query {
-      profile: file(relativePath: { eq: "hey-tulsi-prasad.jpg" }) {
+      profile: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {
           id
-          fixed(height: 80, width: 80, grayscale: true) {
+          fixed(height: 80, width: 80) {
             ...GatsbyImageSharpFixed_tracedSVG
+          }
+        }
+      }
+      bio: site {
+        siteMetadata {
+          author {
+            name
+            about
           }
         }
       }
     }
   `);
 
+  const {
+    profile: {
+      childImageSharp: { fixed: bioPic },
+    },
+    bio: {
+      siteMetadata: {
+        author: { name, about },
+      },
+    },
+  } = data;
+
   return (
     <BioContainer>
-      <Img className="profile-img" fixed={data.profile.childImageSharp.fixed} />
-      {/* <img src="https://picsum.photos/80/" className="profile-image" /> */}
+      <Img className="profile-img" fixed={bioPic} />
       <div className="biotext">
         <h2>
-          <strong>Tulsi Prasad</strong>
+          <strong>{name}</strong>
         </h2>
-        <p>
-          He is an aspiring software developer and blogger. He believes in
-          technology combined with human enthusiasm can achieve anything in the
-          world. He avidly takes part in Open Source projects and Meetups in his
-          community for greater good. Currently, he continues doing freelance
-          projects and learning Information Technology as an undergraduate.
-        </p>
+        <p>{about}</p>
       </div>
     </BioContainer>
   );

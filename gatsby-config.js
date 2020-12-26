@@ -8,6 +8,8 @@ module.exports = {
     siteUrl: `https://wirescript.now.sh`,
     author: {
       name: `Tulsi Prasad`,
+      about:
+        "19, Sophomore. Crafting meaningful user experiences. Works with React, Redux and JS. Learning through building useful tools and apps for people. Putting missing content out there. Helping people on the internet, to build a better web.",
     },
     social: {
       twitter: `@heytulsiprasad`,
