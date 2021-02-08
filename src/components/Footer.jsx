@@ -165,7 +165,7 @@ function Footer({ bgColor }) {
             target="_blank"
             rel="nofollow noreferrer noopener"
             aria-label="Join us on Discord"
-            href="https://discord.com/invite/TK8EMW59Zm"
+            href="https://bit.ly/wirescript2"
           >
             <FaDiscord />
           </FLink>

@@ -91,7 +91,7 @@ const Banner = () => {
           target="_blank"
           rel="noreferrer"
           style={{ textDecoration: "underline", color: "inherit" }}
-          href="https://discord.com/invite/TK8EMW59Zm"
+          href="https://bit.ly/wirescript2"
         >
           join us
         </a>{" "}
