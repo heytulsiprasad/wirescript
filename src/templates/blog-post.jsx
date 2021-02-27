@@ -8,7 +8,6 @@ import Footer from "./../components/Footer";
 import Bio from "./../components/Bio";
 import SEO from "../components/SEO";
 import Newsletter from "../components/Newsletter";
-import Banner from "./../components/Banner";
 
 const HeroContainer = styled.div`
   color: var(--color-primary);
@@ -212,7 +211,6 @@ function BlogPost({ data, pageContext }) {
         description={post.frontmatter.description}
         image={post.frontmatter.banner.publicURL}
       />
-      <Banner />
       <main role="main">
         <Navbar />
         <Layout as="header" bgColor="#f8f8f7">

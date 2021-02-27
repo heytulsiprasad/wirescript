@@ -4,12 +4,10 @@ import SEO from "./../components/SEO";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import { HeroHeader, BigHead, BigBody } from "../components/styles";
-import Banner from "./../components/Banner";
 
 const About = () => (
   <>
     <SEO title="Oops, you've a 404 — The Wirescript" />
-    <Banner />
     <Hero>
       <HeroHeader>
         <BigHead

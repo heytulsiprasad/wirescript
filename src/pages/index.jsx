@@ -7,7 +7,6 @@ import Footer from "./../components/Footer";
 import IndexIntro from "../components/IndexComponents/IndexIntro";
 import SEO from "../components/SEO";
 import Newsletter from "../components/Newsletter";
-import Banner from "./../components/Banner";
 
 const Index = ({ data }) => {
   const meta = data.site.siteMetadata;
@@ -15,7 +14,6 @@ const Index = ({ data }) => {
   return (
     <>
       <SEO title="Home — The Wirescript" />
-      <Banner />
       <IndexHero head={meta.title} />
       <IndexIntro />
       <LatestArticles />
