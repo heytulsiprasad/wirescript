@@ -26,14 +26,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-scroll-reveal`,
-      options: {
-        threshold: 0.4,
-        once: true,
-        disable: true,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],

@@ -74,13 +74,7 @@ function AboutIntro() {
   return (
     <Fragment>
       <Layout bgColor="var(--color-white)">
-        <Intro
-          role="main"
-          data-sal="fade"
-          data-sal-delay="200"
-          data-sal-easing="ease-out-expo"
-          data-sal-duration="1000"
-        >
+        <Intro role="main">
           <HeroText>
             Everyone you meet or speak to is fighting a battle you know nothing
             about. So, be kind. Always.
@@ -111,22 +105,10 @@ function AboutIntro() {
             </p>
           </IntroText>
         </Intro>
-        <div
-          style={{ padding: "2rem 0 5rem" }}
-          data-sal="fade"
-          data-sal-delay="100"
-          data-sal-easing="ease-out-expo"
-          data-sal-duration="1100"
-        >
+        <div style={{ padding: "2rem 0 5rem" }}>
           <PictureBox src={data.banner.childImageSharp.fluid} by="siebaut" />
         </div>
-        <Intro
-          style={{ padding: "2rem 0 5rem" }}
-          data-sal="fade"
-          data-sal-delay="200"
-          data-sal-easing="ease-out-expo"
-          data-sal-duration="1000"
-        >
+        <Intro style={{ padding: "2rem 0 5rem" }}>
           <HeroText>
             You'll never know what you're capable of if you don't try, so get
             out of comfort zone often, you'll never regret it.

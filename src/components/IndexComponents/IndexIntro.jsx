@@ -77,12 +77,7 @@ function IndexIntro() {
 
   return (
     <Layout bgColor="#fff">
-      <Intro
-        data-sal="fade"
-        data-sal-delay="100"
-        data-sal-easing="ease-out-expo"
-        data-sal-duration="1100"
-      >
+      <Intro>
         <HeroText>
           "The two most important days of your life are the day you were born
           and the day you find out why." — Mark Twain

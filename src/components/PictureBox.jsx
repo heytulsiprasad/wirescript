@@ -53,12 +53,7 @@ const PicCaption = styled.figcaption`
 function PictureBox({ src, alt, by }) {
   return (
     <PictureParent>
-      <Picture
-        data-sal="zoom-in"
-        data-sal-delay="100"
-        data-sal-easing="ease"
-        data-sal-duration="1000"
-      >
+      <Picture>
         <Img fluid={src} alt={alt} />
       </Picture>
       {by ? (

@@ -216,22 +216,8 @@ function BlogPost({ data, pageContext }) {
         <Layout as="header" bgColor="#f8f8f7">
           <HeroContainer>
             <HeroTitle>
-              <BlogTitle
-                data-sal="slide-up"
-                data-sal-delay="300"
-                data-sal-easing="ease"
-                data-sal-duration="1200"
-              >
-                {post.frontmatter.title}
-              </BlogTitle>
-              <BlogDate
-                data-sal="slide-up"
-                data-sal-delay="400"
-                data-sal-easing="ease"
-                data-sal-duration="1200"
-              >
-                {post.frontmatter.date}
-              </BlogDate>
+              <BlogTitle>{post.frontmatter.title}</BlogTitle>
+              <BlogDate>{post.frontmatter.date}</BlogDate>
             </HeroTitle>
           </HeroContainer>
         </Layout>

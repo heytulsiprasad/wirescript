@@ -94,13 +94,7 @@ function Articles({ blogs }) {
   return (
     <Entries>
       {blogs.map((item, id) => (
-        <Entry
-          data-sal="slide-up"
-          data-sal-delay="100"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
-          key={id}
-        >
+        <Entry key={id}>
           <EntryDate>{item.date}</EntryDate>
           <EntryDetail>
             <EntryTitle>

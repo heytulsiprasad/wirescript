@@ -10,22 +10,8 @@ const About = () => (
     <SEO title="Oops, you've a 404 — The Wirescript" />
     <Hero>
       <HeroHeader>
-        <BigHead
-          data-sal="slide-up"
-          data-sal-delay="300"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
-        >
-          404
-        </BigHead>
-        <BigBody
-          data-sal="slide-up"
-          data-sal-delay="400"
-          data-sal-easing="ease"
-          data-sal-duration="1200"
-        >
-          You've got this, just remember that!
-        </BigBody>
+        <BigHead>404</BigHead>
+        <BigBody>You've got this, just remember that!</BigBody>
       </HeroHeader>
     </Hero>
 

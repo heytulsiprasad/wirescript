@@ -7,30 +7,11 @@ function IndexPage({ head }) {
   return (
     <Hero>
       <HeroHeader>
-        <BigHead
-          data-sal="slide-up"
-          data-sal-delay="300"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
-        >
-          {head}
-        </BigHead>
-        <BigBody
-          data-sal="slide-up"
-          data-sal-delay="400"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
-        >
+        <BigHead>{head}</BigHead>
+        <BigBody>
           A journey of a thousand miles, going from scratch to all the way up
         </BigBody>
-        <Author
-          data-sal="slide-up"
-          data-sal-delay="450"
-          data-sal-easing="ease"
-          data-sal-duration="1200"
-        >
-          Handwritten by Tulsi Prasad
-        </Author>
+        <Author>Handwritten by Tulsi Prasad</Author>
       </HeroHeader>
     </Hero>
   );
