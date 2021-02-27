@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
 
-import Icon from "./../components/svg/logo";
+import Logo from "./../components/svg/logo";
 
 const Wrapper = styled.div`
   width: 1200px;
@@ -62,7 +62,7 @@ function BlogShareImage({ data }) {
               <p className="author">Tulsi Prasad</p>
             </div>
             <div className="footer_container">
-              <Icon color="#f6f6f6" height="4rem" width="4rem" />
+              <Logo color="#f6f6f6" height="4rem" width="4rem" />
             </div>
           </div>
         </Layout>

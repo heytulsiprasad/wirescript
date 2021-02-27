@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Layout from "./Layout";
-import Icon from "../components/svg/logo";
+import Logo from "../components/svg/logo";
 
 const Nav = styled.nav`
   display: flex;
@@ -63,7 +63,7 @@ function Navbar() {
     <Layout bgColor="#232323">
       <Nav role="navigation">
         <NavItemMain aria-label="Go to Home" to="/">
-          <Icon color="#fff" height="3rem" width="3rem" />
+          <Logo color="#fff" height="3rem" width="3rem" />
         </NavItemMain>
         <NavItem to="/">Home</NavItem>
         <NavItem to="/blog">Blog</NavItem>
