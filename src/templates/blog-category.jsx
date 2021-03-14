@@ -1,20 +1,33 @@
+// Page that holds a category of blogs
+
 import React from "react";
 import { graphql, Link } from "gatsby";
 
-import BlogsHero from "../components/BlogsComponents/BlogsHero";
-import Footer from "./../components/Footer";
 import SEO from "./../components/SEO";
-import Newsletter from "./../components/Newsletter";
-import {
-  AllBlogsContainer,
-  AllBlogCategories,
-} from "./../components/BlogsComponents/styles";
-import Articles from "./../components/Articles";
+import BlogsHero from "./../components/BlogsComponents/BlogsHero";
 import Layout from "./../components/Layout";
+import {
+  AllBlogCategories,
+  AllBlogsContainer,
+} from "./../components/BlogsComponents/styles";
+import Footer from "./../components/Footer";
+import Newsletter from "./../components/Newsletter";
+import Articles from "./../components/Articles";
 
-const Blog = ({ data, location }) => {
+const BlogCategory = ({ data, location }) => {
+  const route = location.pathname.split("/")[2];
+
   const blogs = {}; // { category: [{}, {}]}
-  const nodes = data.allMarkdownRemark.edges;
+  const nodes = data.categoryData.edges;
+  const allCategoriesData = data.allCategories.edges;
+
+  const allCategories = [];
+
+  allCategoriesData.forEach(item => {
+    if (!allCategories.includes(item.node.frontmatter.category)) {
+      allCategories.push(item.node.frontmatter.category);
+    }
+  });
 
   // Holds all each parent blogs component
   let posts = [];
@@ -49,16 +62,16 @@ const Blog = ({ data, location }) => {
       <BlogsHero />
       <Layout bgColor="var(--color-white)">
         <AllBlogCategories>
-          <Link to="#" className="selected">
-            All
-          </Link>
-          {Object.keys(blogs)
-            .sort()
-            .map((item, index) => (
-              <Link key={index} to={`/blog/${item.toLowerCase()}`}>
-                {item}
-              </Link>
-            ))}
+          <Link to="/blog">All</Link>
+          {allCategories.sort().map((item, index) => (
+            <Link
+              key={index}
+              className={route === item.toLowerCase() ? "selected" : null}
+              to={`/blog/${item.toLowerCase()}`}
+            >
+              {item}
+            </Link>
+          ))}
         </AllBlogCategories>
         <AllBlogsContainer role="main">
           {posts.map(post => post)}
@@ -70,11 +83,14 @@ const Blog = ({ data, location }) => {
   );
 };
 
-export default Blog;
+export default BlogCategory;
 
 export const data = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query($category: String!) {
+    categoryData: allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: $category } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           frontmatter {
@@ -85,6 +101,15 @@ export const data = graphql`
           }
           fields {
             slug
+          }
+        }
+      }
+    }
+    allCategories: allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            category
           }
         }
       }

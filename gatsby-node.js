@@ -26,6 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`);
   const blogShareTemplate = path.resolve(`src/templates/blog-share-image.jsx`);
+  const blogCategoryTemplate = path.resolve(`src/templates/blog-category.jsx`);
 
   const result = await graphql(`
     query {
@@ -37,6 +38,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               title
+              category
             }
           }
         }
@@ -51,6 +53,24 @@ exports.createPages = async ({ graphql, actions }) => {
   // console.log(JSON.stringify(result, null, 2));
 
   const posts = result.data.allMarkdownRemark.edges;
+  const categories = [];
+
+  posts.forEach(post => {
+    if (!categories.includes(post.node.frontmatter.category)) {
+      categories.push(post.node.frontmatter.category);
+    }
+  });
+
+  // Create blog category pages
+  categories.forEach(category => {
+    createPage({
+      path: `/blog/${category.toLowerCase()}`,
+      component: blogCategoryTemplate,
+      context: {
+        category: category,
+      },
+    });
+  });
 
   // Create blog post pages
   posts.forEach((post, index) => {
