@@ -56,18 +56,33 @@ const BlogCategory = ({ data, location }) => {
     }
   }
 
+  // let currentYPosition = 0;
+  // const isBrowser = typeof window !== undefined;
+
+  // if (isBrowser) {
+  //   currentYPosition = window.scrollY;
+  // }
+
   return (
     <>
       <SEO title="Blog — The Wirescript" />
       <BlogsHero />
       <Layout bgColor="var(--color-white)">
         <AllBlogCategories>
-          <Link to="/blog">All</Link>
+          <Link
+            to="/blog"
+            state={{ yPos: typeof window !== "undefined" ? window.scrollY : 0 }}
+          >
+            All
+          </Link>
           {allCategories.sort().map((item, index) => (
             <Link
               key={index}
               className={route === item.toLowerCase() ? "selected" : null}
               to={`/blog/${item.toLowerCase()}`}
+              state={{
+                yPos: typeof window !== "undefined" ? window.scrollY : 0,
+              }}
             >
               {item}
             </Link>

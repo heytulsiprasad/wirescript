@@ -9,7 +9,10 @@ process.setMaxListeners(Infinity); // <== Important line
 
 // Takes the screenshot in headless mode (default is true)
 const takeScreenshot = async (url, destination) => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox"],
+  });
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: "networkidle2" });

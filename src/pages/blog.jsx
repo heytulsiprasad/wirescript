@@ -49,13 +49,23 @@ const Blog = ({ data, location }) => {
       <BlogsHero />
       <Layout bgColor="var(--color-white)">
         <AllBlogCategories>
-          <Link to="#" className="selected">
+          <Link
+            to="#"
+            className="selected"
+            state={{ yPos: typeof window !== "undefined" ? window.scrollY : 0 }}
+          >
             All
           </Link>
           {Object.keys(blogs)
             .sort()
             .map((item, index) => (
-              <Link key={index} to={`/blog/${item.toLowerCase()}`}>
+              <Link
+                key={index}
+                to={`/blog/${item.toLowerCase()}`}
+                state={{
+                  yPos: typeof window !== "undefined" ? window.scrollY : 0,
+                }}
+              >
                 {item}
               </Link>
             ))}
