@@ -5,7 +5,6 @@ import { Link } from "gatsby";
 const Entries = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
 `;
 
 const Entry = styled.div`

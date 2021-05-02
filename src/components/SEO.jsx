@@ -40,8 +40,6 @@ const SEO = ({ description, meta, title, image, slug, lang, postTitle }) => {
     data.site.siteMetadata.siteUrl;
   const metaKeywords = meta || data.site.siteMetadata.keywords;
 
-  console.log(ogImage);
-
   return (
     <Helmet
       htmlAttributes={{ lang }}
