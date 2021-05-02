@@ -25,6 +25,7 @@ const HeroTitle = styled.hgroup`
   padding: 2rem 0 4rem 0;
   max-width: 70rem;
   margin: 0 auto;
+  width: 100%;
 `;
 
 const BlogTitle = styled.h1`
@@ -55,7 +56,7 @@ const BlogContent = styled.article`
 
   text-align: left;
   font-kerning: normal;
-  padding: 3rem 0 6rem;
+  padding: 6rem 0;
   word-wrap: break-word;
   color: #000;
 
