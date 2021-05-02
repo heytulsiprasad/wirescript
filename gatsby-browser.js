@@ -6,12 +6,12 @@ exports.shouldUpdateScroll = ({
   routerProps,
   getSavedScrollPosition,
 }) => {
-  const state = routerProps.location.state;
+  // const state = routerProps.location.state;
 
-  if (state && state.yPos) {
-    console.log("🔫🔫🔫");
-    window.scrollTo(0, state.yPos);
-  }
+  // if (state && state.yPos) {
+  //   window.scrollTo(0, state.yPos);
+  //   return [0, state.yPos];
+  // }
 
-  return false;
+  return [0, 0];
 };
