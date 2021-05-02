@@ -1,8 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import { generateOgImage } from "../utils/generateSocialImage";
 
-const SEO = ({ description, meta, title, image, slug, lang }) => {
+const SEO = ({ description, meta, title, image, slug, lang, postTitle }) => {
   const data = useStaticQuery(
     graphql`
       query MyQuery {
@@ -30,7 +31,7 @@ const SEO = ({ description, meta, title, image, slug, lang }) => {
   const metaDescription = description || data.site.siteMetadata.description;
   const metaTitle = title || data.site.siteMetadata.title;
   const ogImage = image
-    ? `${data.site.siteMetadata.siteUrl}${image}`
+    ? generateOgImage({ title: postTitle }) // generate OG image based on title
     : `${data.site.siteMetadata.siteUrl}${data.file.publicURL}`;
   const author = data.site.siteMetadata.author.name;
   const handle = data.site.siteMetadata.social.twitter;
@@ -39,7 +40,7 @@ const SEO = ({ description, meta, title, image, slug, lang }) => {
     data.site.siteMetadata.siteUrl;
   const metaKeywords = meta || data.site.siteMetadata.keywords;
 
-  // console.log(ogImage);
+  console.log(ogImage);
 
   return (
     <Helmet
