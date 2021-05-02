@@ -206,10 +206,11 @@ function BlogPost({ data, pageContext }) {
     <>
       <SEO
         slug={slug}
-        title={`${post.frontmatter.title} — The Wirescript`}
+        title={`${post.frontmatter.title} | The Wirescript`}
+        postTitle={post.frontmatter.title}
         meta={[post.frontmatter.keywords]}
         description={post.frontmatter.description}
-        image={post.frontmatter.banner.publicURL}
+        image={post.frontmatter.banner?.publicURL || true}
       />
       <main role="main">
         <Navbar />

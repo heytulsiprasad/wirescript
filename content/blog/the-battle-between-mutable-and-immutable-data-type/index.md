@@ -1,5 +1,5 @@
 ---
-title: "The battle between Mutable and Immutable data types"
+title: "The battle between Mutable, and Immutable data types"
 date: "2020-06-06"
 description: "We Learn Redux: Part 1. What are Mutable and Immutable data types in Javascript and how do they behave differently? This is most basic concept we'll use further while learning Redux"
 keywords: "We Learn Redux, Mutable Types, Immutable Types, Javascript Types, Redux Immutable and Mutable Types"

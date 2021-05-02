@@ -16,9 +16,7 @@ const Blog = ({ data, location }) => {
   const blogs = {}; // { category: [{}, {}]}
   const nodes = data.allMarkdownRemark.edges;
 
-  // Holds all each parent blogs component
-  let posts = [];
-
+  // Arrange blogs by category
   nodes.forEach(item => {
     if (blogs[item.node.frontmatter.category] === undefined) {
       const blogData = item.node.frontmatter; // object
@@ -33,15 +31,13 @@ const Blog = ({ data, location }) => {
     }
   });
 
-  // If blogs is empty
-  if (Object.keys(blogs).length === 0 && blogs.constructor === Object) {
-    posts = null;
-  } else {
-    for (const key in blogs) {
-      let post = <Articles key={key} blogs={blogs[key]} />;
-      posts.push(post);
-    }
-  }
+  // Arrange blogs by date
+  const postsByDate = [];
+  nodes.forEach(item => {
+    const { slug } = item.node.fields;
+    const { date, title, description } = item.node.frontmatter;
+    postsByDate.push({ slug, date, title, description });
+  });
 
   return (
     <>
@@ -49,19 +45,29 @@ const Blog = ({ data, location }) => {
       <BlogsHero />
       <Layout bgColor="var(--color-white)">
         <AllBlogCategories>
-          <Link to="#" className="selected">
+          <Link
+            to="#"
+            className="selected"
+            state={{ yPos: typeof window !== "undefined" ? window.scrollY : 0 }}
+          >
             All
           </Link>
           {Object.keys(blogs)
             .sort()
             .map((item, index) => (
-              <Link key={index} to={`/blog/${item.toLowerCase()}`}>
+              <Link
+                key={index}
+                to={`/blog/${item.toLowerCase()}`}
+                state={{
+                  yPos: typeof window !== "undefined" ? window.scrollY : 0,
+                }}
+              >
                 {item}
               </Link>
             ))}
         </AllBlogCategories>
         <AllBlogsContainer role="main">
-          {posts.map(post => post)}
+          <Articles blogs={postsByDate} />
         </AllBlogsContainer>
       </Layout>
       <Newsletter />
