@@ -1,6 +1,6 @@
 ---
 title: "How to use Webview in React Native?"
-date: "2020-05-26"
+date: "2021-05-26"
 description: "Here's how you can use WebView inside React Native to display websites or entire web apps natively inside your application"
 keywords: "WebView, React Native Webview, React Native, Mobile Webview Development"
 category: "Mobile"
