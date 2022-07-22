@@ -8,8 +8,9 @@ module.exports = {
     siteUrl: `https://wirescript.co`,
     author: {
       name: `Tulsi Prasad`,
-      about:
-        "19, Sophomore. Crafting meaningful user experiences. Works with React, Redux and JS. Learning through building useful tools and apps for people. Putting missing content out there. Helping people on the internet, to build a better web.",
+      about: `${
+        new Date().getFullYear() - 2001
+      }. Crafting meaningful user experiences. Works with React, Redux and JS. Learning through building useful tools and apps for people. Putting missing content out there. Helping people on the internet, to build a better web.`,
     },
     social: {
       twitter: `@heytulsiprasad`,
