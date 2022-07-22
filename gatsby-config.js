@@ -5,7 +5,7 @@ module.exports = {
                   Tulsi Prasad.`,
     keywords:
       "Tulsi Prasad, Wirescript, Beginners Web Development, React Redux, Python programming",
-    siteUrl: `https://wirescript.now.sh`,
+    siteUrl: `https://wirescript.co`,
     author: {
       name: `Tulsi Prasad`,
       about:

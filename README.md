@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://wirescript.now.sh">
+  <a href="https://wirescript.co">
       <img width="100" src="https://image.flaticon.com/icons/svg/156/156155.svg" class="loaded">
     <h2 align="center">Tulsi Prasad</h2>
   </a>
@@ -39,7 +39,7 @@ Here's why you should read this:
 - It doesn't assume any prerequisites (without stating) as its wrote while I learnt from scratch
 - Weekly new set of articles with useful links I come across while learning, delivered as Newsletter
 
-Explore more at [Wirescript](https://wirescript.now.sh) :tada:
+Explore more at [Wirescript](https://wirescript.co) :tada:
 
 ### Built With
 

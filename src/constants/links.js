@@ -51,6 +51,6 @@ export const links = [
     name: "twitch",
     label: "Follow my livestreams in future on Twitch",
     link: "https://www.twitch.tv/wirescripttech",
-    icon: "FaTwitter",
+    icon: "FaTwitch",
   },
 ];
