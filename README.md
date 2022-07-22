@@ -1,10 +1,9 @@
 <p align="center">
   <a href="https://wirescript.co">
-      <img width="100" src="https://image.flaticon.com/icons/svg/156/156155.svg" class="loaded">
     <h2 align="center">Tulsi Prasad</h2>
   </a>
 </p> 
-<p align="center">Out of the box Frontend Developer and Open Sourcer :pizza:</p>
+<p align="center">Out of the box Frontend Developer and Open Saucer :pizza:</p>
 
 <br/>
 
