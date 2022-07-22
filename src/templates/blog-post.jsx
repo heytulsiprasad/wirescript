@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
+import { Disqus } from "gatsby-plugin-disqus";
 
 import Layout from "./../components/Layout";
 import Navbar from "./../components/Navbar";
@@ -199,8 +200,13 @@ const Share = styled.div`
   }
 `;
 
+const DisqusContainer = styled.div`
+  padding: 2rem 0 4rem 0;
+`;
+
 function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark;
+  const { siteUrl } = data.site.siteMetadata;
   const { slug } = pageContext;
 
   return (
@@ -232,7 +238,7 @@ function BlogPost({ data, pageContext }) {
               <button aria-label="twitter" className="twitter">
                 <a
                   href={`https://twitter.com/intent/tweet?url=${
-                    data.site.siteMetadata.siteUrl + slug
+                    siteUrl + slug
                   }&text=${encodeURIComponent(
                     post.frontmatter.title
                   )}&via=heytulsiprasad`}
@@ -245,7 +251,7 @@ function BlogPost({ data, pageContext }) {
               <button aria-label="linkedin" className="linkedin">
                 <a
                   href={`https://www.linkedin.com/shareArticle?mini=true&url=${
-                    data.site.siteMetadata.siteUrl + slug
+                    siteUrl + slug
                   }&title=${encodeURIComponent(post.frontmatter.title)}
                   `}
                   target="_blank"
@@ -256,6 +262,15 @@ function BlogPost({ data, pageContext }) {
               </button>
             </Share>
             <Bio />
+            <DisqusContainer>
+              <Disqus
+                config={{
+                  url: `${siteUrl}${slug}`,
+                  identifier: slug,
+                  title: `${post.frontmatter.title} | The Wirescript`,
+                }}
+              />
+            </DisqusContainer>
           </div>
         </Layout>
         <Newsletter />
