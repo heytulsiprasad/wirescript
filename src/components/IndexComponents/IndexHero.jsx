@@ -11,7 +11,7 @@ function IndexPage({ head }) {
         <BigBody>
           A journey of a thousand miles, going from scratch to all the way up
         </BigBody>
-        <Author>Beta.</Author>
+        <Author>Beta version</Author>
       </HeroHeader>
     </Hero>
   );
