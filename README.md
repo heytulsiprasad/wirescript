@@ -38,7 +38,7 @@ Here's why you should read this:
 - It doesn't assume any prerequisites (without stating) as its wrote while I learnt from scratch
 - Weekly new set of articles with useful links I come across while learning, delivered as Newsletter
 
-Explore more at [Wirescript](https://wirescript.co) :tada:
+Explore more at [Wirescript](https://wirescript.tech) :tada:
 
 ### Built With
 
