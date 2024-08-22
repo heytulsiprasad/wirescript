@@ -78,8 +78,8 @@ const BlogCategory = ({ data, location }) => {
           {allCategories.sort().map((item, index) => (
             <Link
               key={index}
-              className={route === item.toLowerCase() ? "selected" : null}
-              to={`/blog/${item.toLowerCase()}`}
+              className={route === item?.toLowerCase() ? "selected" : null}
+              to={`/blog/${item?.toLowerCase()}`}
               state={{
                 yPos: typeof window !== "undefined" ? window.scrollY : 0,
               }}
@@ -101,7 +101,7 @@ const BlogCategory = ({ data, location }) => {
 export default BlogCategory;
 
 export const data = graphql`
-  query($category: String!) {
+  query ($category: String!) {
     categoryData: allMarkdownRemark(
       filter: { frontmatter: { category: { eq: $category } } }
       sort: { fields: [frontmatter___date], order: DESC }

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://wirescript.co">
+  <a href="https://wirescript.tech">
     <h2 align="center">Tulsi Prasad</h2>
   </a>
 </p> 

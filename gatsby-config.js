@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `The Wirescript`,
@@ -5,7 +9,7 @@ module.exports = {
                   Tulsi Prasad.`,
     keywords:
       "Tulsi Prasad, Wirescript, Beginners Web Development, React Redux, Python programming",
-    siteUrl: `https://wirescript.co`,
+    siteUrl: `https://wirescript.tech`,
     author: {
       name: `Tulsi Prasad`,
       about: `${
